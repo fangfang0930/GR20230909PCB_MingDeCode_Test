@@ -1,0 +1,905 @@
+Analysis & Synthesis report for driver_board
+Thu Dec 28 10:36:28 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: fiber_rx:fiber_rx
+ 13. Parameter Settings for User Entity Instance: fiber_rx:fiber_rx|verify_rx:verify_rx
+ 14. Parameter Settings for User Entity Instance: fiber_tx:fiber_tx
+ 15. Parameter Settings for User Entity Instance: BypDeal:BypDeal
+ 16. Parameter Settings for User Entity Instance: ads7822:ads7822
+ 17. Parameter Settings for User Entity Instance: pwm_out:pwm_out
+ 18. Parameter Settings for User Entity Instance: err_detect:err_detect
+ 19. Parameter Settings for User Entity Instance: div_1us:div_1us
+ 20. Port Connectivity Checks: "work_led:work_led"
+ 21. Port Connectivity Checks: "div_1us:div_1us"
+ 22. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:byppowererr"
+ 23. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:powererr"
+ 24. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:hot2"
+ 25. Port Connectivity Checks: "err_detect:err_detect|err_high_detect_unlock:hot1"
+ 26. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:soft_low"
+ 27. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:soft_over"
+ 28. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:udc_low"
+ 29. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:udc_over"
+ 30. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:err4"
+ 31. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:err3"
+ 32. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:err2"
+ 33. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:err1"
+ 34. Port Connectivity Checks: "err_detect:err_detect"
+ 35. Port Connectivity Checks: "pwm_out:pwm_out"
+ 36. Port Connectivity Checks: "volt_calc:volt_calc"
+ 37. Port Connectivity Checks: "ads7822:ads7822"
+ 38. Port Connectivity Checks: "err_high_detect:bypok_filt"
+ 39. Port Connectivity Checks: "BypDeal:BypDeal"
+ 40. Port Connectivity Checks: "fiber_tx:fiber_tx"
+ 41. Port Connectivity Checks: "fiber_rx:fiber_rx"
+ 42. Analysis & Synthesis Messages
+ 43. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                   ;
++-----------------------------+--------------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Thu Dec 28 10:36:28 2023            ;
+; Quartus II 64-Bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
+; Revision Name               ; driver_board                                     ;
+; Top-level Entity Name       ; driver_board                                     ;
+; Family                      ; MAX II                                           ;
+; Total logic elements        ; 261                                              ;
+; Total pins                  ; 40                                               ;
+; Total virtual pins          ; 0                                                ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                                    ;
++-----------------------------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EPM1270T144I5      ;                    ;
+; Top-level entity name                                                      ; driver_board       ; driver_board       ;
+; Family name                                                                ; MAX II             ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 20          ;
+; Maximum allowed            ; 14          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-20        ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                  ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
+; src/work_led.v                   ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/work_led.v               ;         ;
+; src/volt_calc.v                  ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/volt_calc.v              ;         ;
+; src/verify_rx.v                  ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/verify_rx.v              ;         ;
+; src/pwm_out.v                    ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/pwm_out.v                ;         ;
+; src/fiber_Tx.v                   ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/fiber_Tx.v               ;         ;
+; src/fiber_Rx.v                   ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/fiber_Rx.v               ;         ;
+; src/fiber_delay_rx.v             ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/fiber_delay_rx.v         ;         ;
+; src/err_high_detect_unlock.v     ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/err_high_detect_unlock.v ;         ;
+; src/err_high_detect.v            ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/err_high_detect.v        ;         ;
+; src/err_detect.v                 ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/err_detect.v             ;         ;
+; src/driver_board.v               ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/driver_board.v           ;         ;
+; src/div_1us.v                    ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/div_1us.v                ;         ;
+; src/BypDeal.v                    ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/BypDeal.v                ;         ;
+; src/ads7822.v                    ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/ads7822.v                ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 261   ;
+;     -- Combinational with no register       ; 136   ;
+;     -- Register only                        ; 43    ;
+;     -- Combinational with a register        ; 82    ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 82    ;
+;     -- 3 input functions                    ; 43    ;
+;     -- 2 input functions                    ; 85    ;
+;     -- 1 input functions                    ; 8     ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 183   ;
+;     -- arithmetic mode                      ; 78    ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 31    ;
+;     -- asynchronous clear/load mode         ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 125   ;
+; Total logic cells in carry chains           ; 89    ;
+; I/O pins                                    ; 40    ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 125   ;
+; Total fan-out                               ; 921   ;
+; Average fan-out                             ; 3.06  ;
++---------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                       ;
++-------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node          ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                             ; Library Name ;
++-------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------+--------------+
+; |driver_board                       ; 261 (0)     ; 125          ; 0          ; 40   ; 0            ; 136 (0)      ; 43 (0)            ; 82 (0)           ; 89 (0)          ; 0 (0)      ; |driver_board                                                   ; work         ;
+;    |ads7822:ads7822|                ; 62 (62)     ; 43           ; 0          ; 0    ; 0            ; 19 (19)      ; 14 (14)           ; 29 (29)          ; 12 (12)         ; 0 (0)      ; |driver_board|ads7822:ads7822                                   ; work         ;
+;    |div_1us:div_1us|                ; 39 (39)     ; 16           ; 0          ; 0    ; 0            ; 23 (23)      ; 3 (3)             ; 13 (13)          ; 16 (16)         ; 0 (0)      ; |driver_board|div_1us:div_1us                                   ; work         ;
+;    |err_detect:err_detect|          ; 26 (0)      ; 17           ; 0          ; 0    ; 0            ; 9 (0)        ; 1 (0)             ; 16 (0)           ; 14 (0)          ; 0 (0)      ; |driver_board|err_detect:err_detect                             ; work         ;
+;       |err_high_detect:hot2|        ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:hot2        ; work         ;
+;       |err_high_detect_unlock:hot1| ; 24 (24)     ; 15           ; 0          ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect_unlock:hot1 ; work         ;
+;    |fiber_tx:fiber_tx|              ; 75 (75)     ; 25           ; 0          ; 0    ; 0            ; 50 (50)      ; 13 (13)           ; 12 (12)          ; 25 (25)         ; 0 (0)      ; |driver_board|fiber_tx:fiber_tx                                 ; work         ;
+;    |volt_calc:volt_calc|            ; 59 (59)     ; 24           ; 0          ; 0    ; 0            ; 35 (35)      ; 12 (12)           ; 12 (12)          ; 22 (22)         ; 0 (0)      ; |driver_board|volt_calc:volt_calc                               ; work         ;
++-------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                           ;
++---------------------------------------------------------------------+------------------------------------------------------------------------+
+; Register name                                                       ; Reason for Removal                                                     ;
++---------------------------------------------------------------------+------------------------------------------------------------------------+
+; volt_calc:volt_calc|done                                            ; Stuck at VCC due to stuck port data_in                                 ;
+; err_high_detect:bypok_filt|signal_out                               ; Stuck at GND due to stuck port clear                                   ;
+; err_high_detect:bypok_filt|cnt_delay[0..13]                         ; Stuck at GND due to stuck port clear                                   ;
+; err_high_detect:bypok_filt|time_1us_syn[0,1]                        ; Lost fanout                                                            ;
+; fiber_tx:fiber_tx|send_moduleinfo[13]                               ; Stuck at GND due to stuck port data_in                                 ;
+; fiber_rx:fiber_rx|rx_syn[1]                                         ; Stuck at GND due to stuck port clear                                   ;
+; fiber_rx:fiber_rx|rx_syn[0]                                         ; Lost fanout                                                            ;
+; fiber_rx:fiber_rx|HighCnt[0..6]                                     ; Stuck at GND due to stuck port clear                                   ;
+; fiber_rx:fiber_rx|receive_flag                                      ; Stuck at GND due to stuck port clear                                   ;
+; fiber_rx:fiber_rx|divide_cnt[0..3]                                  ; Stuck at GND due to stuck port clear                                   ;
+; fiber_rx:fiber_rx|receive_code_cnt[0..4]                            ; Stuck at GND due to stuck port clear                                   ;
+; fiber_rx:fiber_rx|rx_data_syn[0..4]                                 ; Stuck at GND due to stuck port clear                                   ;
+; fiber_rx:fiber_rx|start_stop                                        ; Stuck at GND due to stuck port clear                                   ;
+; fiber_rx:fiber_rx|rst_cnt_nums[0..5]                                ; Stuck at GND due to stuck port clear                                   ;
+; fiber_rx:fiber_rx|strat_cnt_nums[0..5]                              ; Stuck at GND due to stuck port clear                                   ;
+; fiber_rx:fiber_rx|byp_cnt_nums[1..5]                                ; Stuck at GND due to stuck port clear                                   ;
+; fiber_rx:fiber_rx|cnt_byp[0]                                        ; Stuck at GND due to stuck port clear                                   ;
+; fiber_rx:fiber_rx|byp_cnt_nums[0]                                   ; Stuck at GND due to stuck port clear                                   ;
+; fiber_rx:fiber_rx|verify_rx:verify_rx|rx_data[0,1]                  ; Lost fanout                                                            ;
+; fiber_rx:fiber_rx|cnt_reset_err[0..5]                               ; Stuck at GND due to stuck port clear                                   ;
+; fiber_rx:fiber_rx|cnt_byp[1..15]                                    ; Stuck at GND due to stuck port clear                                   ;
+; fiber_rx:fiber_rx|time_1us_syn[0,1]                                 ; Lost fanout                                                            ;
+; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|fiber_delay_err     ; Stuck at GND due to stuck port clear                                   ;
+; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|delay_err_cnt[0..4] ; Lost fanout                                                            ;
+; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|time_1us_syn[0,1]   ; Lost fanout                                                            ;
+; fiber_rx:fiber_rx|verify_rx:verify_rx|fiber_verify_err              ; Stuck at GND due to stuck port clear                                   ;
+; fiber_rx:fiber_rx|verify_rx:verify_rx|rx_data[2,3]                  ; Stuck at GND due to stuck port clear                                   ;
+; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[0..3]         ; Stuck at GND due to stuck port clear                                   ;
+; pwm_out:pwm_out|RUCnt[0..8]                                         ; Lost fanout                                                            ;
+; pwm_out:pwm_out|LUCnt[0..8]                                         ; Lost fanout                                                            ;
+; pwm_out:pwm_out|RDCnt[0..8]                                         ; Lost fanout                                                            ;
+; pwm_out:pwm_out|LDCnt[0..8]                                         ; Lost fanout                                                            ;
+; pwm_out:pwm_out|RUDIN                                               ; Stuck at GND due to stuck port data_in                                 ;
+; pwm_out:pwm_out|RDDIN                                               ; Stuck at GND due to stuck port data_in                                 ;
+; pwm_out:pwm_out|LUDIN                                               ; Stuck at GND due to stuck port data_in                                 ;
+; pwm_out:pwm_out|LDDIN                                               ; Stuck at GND due to stuck port data_in                                 ;
+; fiber_tx:fiber_tx|send_moduleinfo[2,12]                             ; Stuck at GND due to stuck port data_in                                 ;
+; work_led:work_led|time_1us_syn[0,1]                                 ; Lost fanout                                                            ;
+; work_led:work_led|cnt_1ms[1..9]                                     ; Lost fanout                                                            ;
+; work_led:work_led|work_out                                          ; Lost fanout                                                            ;
+; work_led:work_led|cnt_1ms[0]                                        ; Lost fanout                                                            ;
+; work_led:work_led|cnt_500ms[0..8]                                   ; Lost fanout                                                            ;
+; err_detect:err_detect|err_high_detect:err1|time_1us_syn[0]          ; Merged with err_detect:err_detect|time_1us_syn[0]                      ;
+; err_detect:err_detect|err_high_detect:err2|time_1us_syn[0]          ; Merged with err_detect:err_detect|time_1us_syn[0]                      ;
+; err_detect:err_detect|err_high_detect:err3|time_1us_syn[0]          ; Merged with err_detect:err_detect|time_1us_syn[0]                      ;
+; err_detect:err_detect|err_high_detect:err4|time_1us_syn[0]          ; Merged with err_detect:err_detect|time_1us_syn[0]                      ;
+; err_detect:err_detect|err_high_detect:udc_over|time_1us_syn[0]      ; Merged with err_detect:err_detect|time_1us_syn[0]                      ;
+; err_detect:err_detect|err_high_detect:udc_low|time_1us_syn[0]       ; Merged with err_detect:err_detect|time_1us_syn[0]                      ;
+; err_detect:err_detect|err_high_detect:soft_over|time_1us_syn[0]     ; Merged with err_detect:err_detect|time_1us_syn[0]                      ;
+; err_detect:err_detect|err_high_detect:soft_low|time_1us_syn[0]      ; Merged with err_detect:err_detect|time_1us_syn[0]                      ;
+; err_detect:err_detect|err_high_detect:powererr|time_1us_syn[0]      ; Merged with err_detect:err_detect|time_1us_syn[0]                      ;
+; err_detect:err_detect|err_high_detect:byppowererr|time_1us_syn[0]   ; Merged with err_detect:err_detect|time_1us_syn[0]                      ;
+; err_detect:err_detect|err_high_detect:err1|time_1us_syn[1]          ; Merged with err_detect:err_detect|time_1us_syn[1]                      ;
+; err_detect:err_detect|err_high_detect:err2|time_1us_syn[1]          ; Merged with err_detect:err_detect|time_1us_syn[1]                      ;
+; err_detect:err_detect|err_high_detect:err3|time_1us_syn[1]          ; Merged with err_detect:err_detect|time_1us_syn[1]                      ;
+; err_detect:err_detect|err_high_detect:err4|time_1us_syn[1]          ; Merged with err_detect:err_detect|time_1us_syn[1]                      ;
+; err_detect:err_detect|err_high_detect:udc_over|time_1us_syn[1]      ; Merged with err_detect:err_detect|time_1us_syn[1]                      ;
+; err_detect:err_detect|err_high_detect:udc_low|time_1us_syn[1]       ; Merged with err_detect:err_detect|time_1us_syn[1]                      ;
+; err_detect:err_detect|err_high_detect:soft_over|time_1us_syn[1]     ; Merged with err_detect:err_detect|time_1us_syn[1]                      ;
+; err_detect:err_detect|err_high_detect:soft_low|time_1us_syn[1]      ; Merged with err_detect:err_detect|time_1us_syn[1]                      ;
+; err_detect:err_detect|err_high_detect:powererr|time_1us_syn[1]      ; Merged with err_detect:err_detect|time_1us_syn[1]                      ;
+; err_detect:err_detect|err_high_detect:byppowererr|time_1us_syn[1]   ; Merged with err_detect:err_detect|time_1us_syn[1]                      ;
+; err_detect:err_detect|err_high_detect_unlock:hot1|time_1us_syn[0]   ; Merged with err_detect:err_detect|err_high_detect:hot2|time_1us_syn[0] ;
+; err_detect:err_detect|err_high_detect_unlock:hot1|time_1us_syn[1]   ; Merged with err_detect:err_detect|err_high_detect:hot2|time_1us_syn[1] ;
+; err_detect:err_detect|BypCon_syn[0,1]                               ; Stuck at GND due to stuck port data_in                                 ;
+; err_detect:err_detect|err_unit                                      ; Stuck at VCC due to stuck port data_in                                 ;
+; err_detect:err_detect|byp_err                                       ; Stuck at VCC due to stuck port data_in                                 ;
+; err_detect:err_detect|err_high_detect:byppowererr|signal_out        ; Stuck at VCC due to stuck port data_in                                 ;
+; err_detect:err_detect|err_high_detect:powererr|signal_out           ; Stuck at VCC due to stuck port data_in                                 ;
+; err_detect:err_detect|err_high_detect:hot2|signal_out               ; Stuck at VCC due to stuck port data_in                                 ;
+; err_detect:err_detect|err_high_detect:soft_low|signal_out           ; Stuck at VCC due to stuck port data_in                                 ;
+; err_detect:err_detect|err_high_detect:soft_over|signal_out          ; Stuck at VCC due to stuck port data_in                                 ;
+; err_detect:err_detect|err_high_detect:udc_low|signal_out            ; Stuck at VCC due to stuck port data_in                                 ;
+; err_detect:err_detect|err_high_detect:udc_over|signal_out           ; Stuck at VCC due to stuck port data_in                                 ;
+; err_detect:err_detect|err_high_detect:err4|signal_out               ; Stuck at VCC due to stuck port data_in                                 ;
+; err_detect:err_detect|err_high_detect:err3|signal_out               ; Stuck at VCC due to stuck port data_in                                 ;
+; err_detect:err_detect|err_high_detect:err2|signal_out               ; Stuck at VCC due to stuck port data_in                                 ;
+; err_detect:err_detect|err_high_detect:err1|signal_out               ; Stuck at VCC due to stuck port data_in                                 ;
+; fiber_tx:fiber_tx|send_moduleinfo[0,1,3,5..11]                      ; Stuck at VCC due to stuck port data_in                                 ;
+; div_1us:div_1us|cnt_time[0]                                         ; Merged with fiber_tx:fiber_tx|cnt_4m[0]                                ;
+; Total Number of Removed Registers = 215                             ;                                                                        ;
++---------------------------------------------------------------------+------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                                 ;
++-----------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------+
+; Register name                                                   ; Reason for Removal        ; Registers Removed due to This Register                                        ;
++-----------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------+
+; fiber_rx:fiber_rx|rx_syn[1]                                     ; Stuck at GND              ; fiber_rx:fiber_rx|rx_syn[0], fiber_rx:fiber_rx|HighCnt[6],                    ;
+;                                                                 ; due to stuck port clear   ; fiber_rx:fiber_rx|HighCnt[5], fiber_rx:fiber_rx|HighCnt[4],                   ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|HighCnt[3], fiber_rx:fiber_rx|HighCnt[2],                   ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|HighCnt[1], fiber_rx:fiber_rx|HighCnt[0],                   ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|receive_flag, fiber_rx:fiber_rx|divide_cnt[1],              ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|receive_code_cnt[4], fiber_rx:fiber_rx|receive_code_cnt[3], ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|receive_code_cnt[1], fiber_rx:fiber_rx|rx_data_syn[0],      ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|rst_cnt_nums[5], fiber_rx:fiber_rx|rst_cnt_nums[4],         ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|rst_cnt_nums[3], fiber_rx:fiber_rx|rst_cnt_nums[2],         ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|rst_cnt_nums[1], fiber_rx:fiber_rx|rst_cnt_nums[0],         ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|strat_cnt_nums[5], fiber_rx:fiber_rx|strat_cnt_nums[4],     ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|strat_cnt_nums[3], fiber_rx:fiber_rx|strat_cnt_nums[2],     ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|strat_cnt_nums[1], fiber_rx:fiber_rx|strat_cnt_nums[0],     ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|byp_cnt_nums[5], fiber_rx:fiber_rx|byp_cnt_nums[4],         ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|byp_cnt_nums[3], fiber_rx:fiber_rx|byp_cnt_nums[2],         ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|byp_cnt_nums[1], fiber_rx:fiber_rx|cnt_byp[0],              ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|byp_cnt_nums[0], fiber_rx:fiber_rx|cnt_reset_err[5],        ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|cnt_reset_err[4], fiber_rx:fiber_rx|cnt_reset_err[3],       ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|cnt_reset_err[2], fiber_rx:fiber_rx|cnt_reset_err[1],       ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|cnt_reset_err[0], fiber_rx:fiber_rx|cnt_byp[15],            ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|cnt_byp[14], fiber_rx:fiber_rx|cnt_byp[13],                 ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|cnt_byp[12], fiber_rx:fiber_rx|cnt_byp[11],                 ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|cnt_byp[10], fiber_rx:fiber_rx|cnt_byp[9],                  ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|cnt_byp[8], fiber_rx:fiber_rx|cnt_byp[7],                   ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|cnt_byp[6], fiber_rx:fiber_rx|cnt_byp[5],                   ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|cnt_byp[4], fiber_rx:fiber_rx|cnt_byp[3],                   ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|cnt_byp[2], fiber_rx:fiber_rx|cnt_byp[1],                   ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|time_1us_syn[1], fiber_rx:fiber_rx|time_1us_syn[0],         ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|time_1us_syn[1],              ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|time_1us_syn[0],              ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|verify_rx:verify_rx|rx_data[3],                             ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|verify_rx:verify_rx|rx_data[2],                             ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[3],                     ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[2],                     ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[1],                     ;
+;                                                                 ;                           ; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[0]                      ;
+; fiber_rx:fiber_rx|start_stop                                    ; Stuck at GND              ; fiber_rx:fiber_rx|verify_rx:verify_rx|rx_data[1],                             ;
+;                                                                 ; due to stuck port clear   ; fiber_rx:fiber_rx|verify_rx:verify_rx|rx_data[0], pwm_out:pwm_out|RUDIN,      ;
+;                                                                 ;                           ; pwm_out:pwm_out|RDDIN, pwm_out:pwm_out|LUDIN, pwm_out:pwm_out|LDDIN,          ;
+;                                                                 ;                           ; fiber_tx:fiber_tx|send_moduleinfo[12], work_led:work_led|work_out             ;
+; err_high_detect:bypok_filt|signal_out                           ; Stuck at GND              ; fiber_tx:fiber_tx|send_moduleinfo[13], err_detect:err_detect|byp_err,         ;
+;                                                                 ; due to stuck port clear   ; fiber_tx:fiber_tx|send_moduleinfo[3]                                          ;
+; err_high_detect:bypok_filt|cnt_delay[13]                        ; Stuck at GND              ; err_high_detect:bypok_filt|time_1us_syn[1],                                   ;
+;                                                                 ; due to stuck port clear   ; err_high_detect:bypok_filt|time_1us_syn[0]                                    ;
+; fiber_rx:fiber_rx|divide_cnt[3]                                 ; Stuck at GND              ; fiber_rx:fiber_rx|rx_data_syn[4]                                              ;
+;                                                                 ; due to stuck port clear   ;                                                                               ;
+; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|fiber_delay_err ; Stuck at GND              ; fiber_tx:fiber_tx|send_moduleinfo[2]                                          ;
+;                                                                 ; due to stuck port clear   ;                                                                               ;
+; err_detect:err_detect|BypCon_syn[0]                             ; Stuck at GND              ; err_detect:err_detect|BypCon_syn[1]                                           ;
+;                                                                 ; due to stuck port data_in ;                                                                               ;
+; err_detect:err_detect|err_high_detect:byppowererr|signal_out    ; Stuck at VCC              ; fiber_tx:fiber_tx|send_moduleinfo[11]                                         ;
+;                                                                 ; due to stuck port data_in ;                                                                               ;
+; err_detect:err_detect|err_high_detect:powererr|signal_out       ; Stuck at VCC              ; fiber_tx:fiber_tx|send_moduleinfo[10]                                         ;
+;                                                                 ; due to stuck port data_in ;                                                                               ;
+; err_detect:err_detect|err_high_detect:hot2|signal_out           ; Stuck at VCC              ; fiber_tx:fiber_tx|send_moduleinfo[5]                                          ;
+;                                                                 ; due to stuck port data_in ;                                                                               ;
+; err_detect:err_detect|err_high_detect:soft_low|signal_out       ; Stuck at VCC              ; fiber_tx:fiber_tx|send_moduleinfo[0]                                          ;
+;                                                                 ; due to stuck port data_in ;                                                                               ;
+; err_detect:err_detect|err_high_detect:soft_over|signal_out      ; Stuck at VCC              ; fiber_tx:fiber_tx|send_moduleinfo[1]                                          ;
+;                                                                 ; due to stuck port data_in ;                                                                               ;
+; err_detect:err_detect|err_high_detect:err4|signal_out           ; Stuck at VCC              ; fiber_tx:fiber_tx|send_moduleinfo[9]                                          ;
+;                                                                 ; due to stuck port data_in ;                                                                               ;
+; err_detect:err_detect|err_high_detect:err3|signal_out           ; Stuck at VCC              ; fiber_tx:fiber_tx|send_moduleinfo[8]                                          ;
+;                                                                 ; due to stuck port data_in ;                                                                               ;
+; err_detect:err_detect|err_high_detect:err2|signal_out           ; Stuck at VCC              ; fiber_tx:fiber_tx|send_moduleinfo[7]                                          ;
+;                                                                 ; due to stuck port data_in ;                                                                               ;
+; err_detect:err_detect|err_high_detect:err1|signal_out           ; Stuck at VCC              ; fiber_tx:fiber_tx|send_moduleinfo[6]                                          ;
+;                                                                 ; due to stuck port data_in ;                                                                               ;
++-----------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 125   ;
+; Number of registers using Synchronous Clear  ; 20    ;
+; Number of registers using Synchronous Load   ; 11    ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 73    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |driver_board|ads7822:ads7822|numer_cnt[1]                                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |driver_board|fiber_tx:fiber_tx|send_nums[6]                                 ;
+; 3:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[5] ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |driver_board|ads7822:ads7822|ad_syn[0]                                      ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |driver_board|div_1us:div_1us|cnt_time1ms[6]                                 ;
+; 4:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; Yes        ; |driver_board|volt_calc:volt_calc|udc_volt[11]                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fiber_rx:fiber_rx ;
++----------------+------------------+----------------------------+
+; Parameter Name ; Value            ; Type                       ;
++----------------+------------------+----------------------------+
+; DATA_BITS_SIZE ; 5                ; Signed Integer             ;
+; DIV_4MHZ       ; 9                ; Signed Integer             ;
+; CMD_NUMS       ; 3                ; Signed Integer             ;
+; RESET_CNT      ; 100111           ; Unsigned Binary            ;
+; Byp_CNT        ; 0010011100010000 ; Unsigned Binary            ;
+; HighTime       ; 1000101          ; Unsigned Binary            ;
++----------------+------------------+----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fiber_rx:fiber_rx|verify_rx:verify_rx ;
++-----------------+-------+----------------------------------------------------------+
+; Parameter Name  ; Value ; Type                                                     ;
++-----------------+-------+----------------------------------------------------------+
+; DATA_BITS_SIZES ; 5     ; Signed Integer                                           ;
++-----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fiber_tx:fiber_tx ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; COUNT_4MHZ     ; 9     ; Signed Integer                        ;
+; SEND_BITS_NUMS ; 79    ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BypDeal:BypDeal ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; OnTime         ; 10000 ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ads7822:ads7822 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; COUNT_1MHZ     ; 39    ; Signed Integer                      ;
+; COUNT_M        ; 19    ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pwm_out:pwm_out ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; DeadTime       ; 0     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: err_detect:err_detect ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; CLK_1MS        ; 999   ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: div_1us:div_1us ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; COUNT_1US      ; 39    ; Signed Integer                      ;
+; COUNT_1MS      ; 999   ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "work_led:work_led"                                                                                                                                                                     ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rst_n     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rst_n[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "div_1us:div_1us"                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rst_n     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rst_n[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "err_detect:err_detect|err_high_detect:byppowererr"                                                                                                                                              ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type  ; Severity ; Details                                                                                                                                                                             ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; delay_tims        ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (14 bits) it drives.  The 18 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; delay_tims[3..0]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; delay_tims[13..4] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "err_detect:err_detect|err_high_detect:powererr"                                                                                                                                                 ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type  ; Severity ; Details                                                                                                                                                                             ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; delay_tims        ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (14 bits) it drives.  The 18 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; delay_tims[3..0]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; delay_tims[13..4] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "err_detect:err_detect|err_high_detect:hot2"                                                                                                                                                     ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type  ; Severity ; Details                                                                                                                                                                             ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; delay_tims        ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (14 bits) it drives.  The 18 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; delay_tims[6..5]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; delay_tims[13..7] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; delay_tims[4..3]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; delay_tims[1..0]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; delay_tims[2]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "err_detect:err_detect|err_high_detect_unlock:hot1"                                                                                                                                              ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type  ; Severity ; Details                                                                                                                                                                             ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; delay_tims        ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (14 bits) it drives.  The 18 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; delay_tims[6..5]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; delay_tims[13..7] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; delay_tims[4..3]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; delay_tims[1..0]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; delay_tims[2]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "err_detect:err_detect|err_high_detect:soft_low"                                                                                                                                                  ;
++--------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port               ; Type  ; Severity ; Details                                                                                                                                                                             ;
++--------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; delay_tims         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (14 bits) it drives.  The 18 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; delay_tims[9..5]   ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; delay_tims[13..10] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; delay_tims[2..0]   ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; delay_tims[4]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; delay_tims[3]      ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
++--------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "err_detect:err_detect|err_high_detect:soft_over"                                                                                                                                                 ;
++--------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port               ; Type  ; Severity ; Details                                                                                                                                                                             ;
++--------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; delay_tims         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (14 bits) it drives.  The 18 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; delay_tims[9..5]   ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; delay_tims[13..10] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; delay_tims[2..0]   ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; delay_tims[4]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; delay_tims[3]      ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
++--------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "err_detect:err_detect|err_high_detect:udc_low"                                                                                                                                                  ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type  ; Severity ; Details                                                                                                                                                                             ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; delay_tims        ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (14 bits) it drives.  The 18 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; delay_tims[3..0]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; delay_tims[13..4] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "err_detect:err_detect|err_high_detect:udc_over"                                                                                                                                                 ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type  ; Severity ; Details                                                                                                                                                                             ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; delay_tims        ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (14 bits) it drives.  The 18 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; delay_tims[3..0]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; delay_tims[13..4] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "err_detect:err_detect|err_high_detect:err4"                                                                                                                                                     ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type  ; Severity ; Details                                                                                                                                                                             ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; delay_tims        ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (14 bits) it drives.  The 18 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; delay_tims[13..2] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; delay_tims[1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; delay_tims[0]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "err_detect:err_detect|err_high_detect:err3"                                                                                                                                                     ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type  ; Severity ; Details                                                                                                                                                                             ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; delay_tims        ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (14 bits) it drives.  The 18 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; delay_tims[13..2] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; delay_tims[1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; delay_tims[0]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "err_detect:err_detect|err_high_detect:err2"                                                                                                                                                     ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type  ; Severity ; Details                                                                                                                                                                             ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; delay_tims        ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (14 bits) it drives.  The 18 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; delay_tims[13..2] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; delay_tims[1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; delay_tims[0]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "err_detect:err_detect|err_high_detect:err1"                                                                                                                                                     ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type  ; Severity ; Details                                                                                                                                                                             ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; delay_tims        ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (14 bits) it drives.  The 18 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; delay_tims[13..2] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; delay_tims[1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; delay_tims[0]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
++-------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "err_detect:err_detect"                                                                                                                                                                 ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rst_n     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rst_n[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pwm_out:pwm_out"                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rst_n     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rst_n[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "volt_calc:volt_calc"                                                                                                                                                                   ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rst_n     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rst_n[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ads7822:ads7822"                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rst_n     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rst_n[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "err_high_detect:bypok_filt"                                                                                                                                                                      ;
++--------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port               ; Type  ; Severity ; Details                                                                                                                                                                             ;
++--------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; delay_tims         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (14 bits) it drives.  The 18 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; delay_tims[9..5]   ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; delay_tims[13..10] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; delay_tims[2..0]   ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; delay_tims[4]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; delay_tims[3]      ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
++--------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BypDeal:BypDeal"                                                                                                                                                                                 ;
++--------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port               ; Type  ; Severity ; Details                                                                                                                                                                             ;
++--------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rst_n              ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts.  ;
+; rst_n[-1]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; delay_tims         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (14 bits) it drives.  The 18 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; delay_tims[9..5]   ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; delay_tims[13..10] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; delay_tims[2..0]   ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; delay_tims[4]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; delay_tims[3]      ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
++--------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fiber_tx:fiber_tx"                                                                                                                                                                     ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rst_n     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rst_n[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "fiber_rx:fiber_rx" ;
++-------+-------+----------+--------------------+
+; Port  ; Type  ; Severity ; Details            ;
++-------+-------+----------+--------------------+
+; rst_n ; Input ; Info     ; Stuck at GND       ;
++-------+-------+----------+--------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Thu Dec 28 10:36:27 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off driver_board -c driver_board
+Info (11104): Parallel Compilation has detected 20 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 14 of the 14 physical processors detected instead.
+Info (12021): Found 1 design units, including 1 entities, in source file src/work_led.v
+    Info (12023): Found entity 1: work_led
+Info (12021): Found 1 design units, including 1 entities, in source file src/volt_calc.v
+    Info (12023): Found entity 1: volt_calc
+Info (12021): Found 1 design units, including 1 entities, in source file src/verify_rx.v
+    Info (12023): Found entity 1: verify_rx
+Info (12021): Found 1 design units, including 1 entities, in source file src/pwm_out.v
+    Info (12023): Found entity 1: pwm_out
+Info (12021): Found 1 design units, including 1 entities, in source file src/mux12.v
+    Info (12023): Found entity 1: mux12
+Info (12021): Found 1 design units, including 1 entities, in source file src/fiber_tx.v
+    Info (12023): Found entity 1: fiber_tx
+Warning (10885): Verilog HDL Attribute warning at fiber_Rx.v(36): synthesis attribute "keep" with value "1" has no object and is ignored
+Warning (10885): Verilog HDL Attribute warning at fiber_Rx.v(43): synthesis attribute "keep" with value "1" has no object and is ignored
+Info (12021): Found 1 design units, including 1 entities, in source file src/fiber_rx.v
+    Info (12023): Found entity 1: fiber_rx
+Info (12021): Found 1 design units, including 1 entities, in source file src/fiber_delay_rx.v
+    Info (12023): Found entity 1: fiber_delay_rx
+Info (12021): Found 1 design units, including 1 entities, in source file src/err_low_detect.v
+    Info (12023): Found entity 1: err_low_detect
+Info (12021): Found 1 design units, including 1 entities, in source file src/err_high_detect_unlock.v
+    Info (12023): Found entity 1: err_high_detect_unlock
+Info (12021): Found 1 design units, including 1 entities, in source file src/err_high_detect.v
+    Info (12023): Found entity 1: err_high_detect
+Warning (10885): Verilog HDL Attribute warning at err_detect.v(48): synthesis attribute "keep" with value "1" has no object and is ignored
+Info (12021): Found 1 design units, including 1 entities, in source file src/err_detect.v
+    Info (12023): Found entity 1: err_detect
+Info (12021): Found 1 design units, including 1 entities, in source file src/driver_board.v
+    Info (12023): Found entity 1: driver_board
+Info (12021): Found 1 design units, including 1 entities, in source file src/div_1us.v
+    Info (12023): Found entity 1: div_1us
+Info (12021): Found 1 design units, including 1 entities, in source file src/bypdeal.v
+    Info (12023): Found entity 1: BypDeal
+Info (12021): Found 1 design units, including 1 entities, in source file src/ads7822.v
+    Info (12023): Found entity 1: ads7822
+Warning (10236): Verilog HDL Implicit Net warning at driver_board.v(136): created implicit net for "Bypok_filt"
+Info (12127): Elaborating entity "driver_board" for the top level hierarchy
+Warning (10858): Verilog HDL warning at driver_board.v(90): object PllLock used but never assigned
+Warning (10030): Net "PllLock" at driver_board.v(90) has no driver or initial value, using a default initial value '0'
+Warning (10034): Output port "test[7..2]" at driver_board.v(71) has no driver
+Info (12128): Elaborating entity "fiber_rx" for hierarchy "fiber_rx:fiber_rx"
+Info (12128): Elaborating entity "verify_rx" for hierarchy "fiber_rx:fiber_rx|verify_rx:verify_rx"
+Info (12128): Elaborating entity "fiber_delay_rx" for hierarchy "fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx"
+Info (12128): Elaborating entity "fiber_tx" for hierarchy "fiber_tx:fiber_tx"
+Info (12128): Elaborating entity "BypDeal" for hierarchy "BypDeal:BypDeal"
+Warning (10230): Verilog HDL assignment warning at BypDeal.v(64): truncated value with size 32 to match size of target (16)
+Info (12128): Elaborating entity "err_high_detect" for hierarchy "err_high_detect:bypok_filt"
+Info (12128): Elaborating entity "ads7822" for hierarchy "ads7822:ads7822"
+Warning (10036): Verilog HDL or VHDL warning at ads7822.v(27): object "ad_dout_syn1" assigned a value but never read
+Info (12128): Elaborating entity "volt_calc" for hierarchy "volt_calc:volt_calc"
+Info (12128): Elaborating entity "pwm_out" for hierarchy "pwm_out:pwm_out"
+Info (12128): Elaborating entity "err_detect" for hierarchy "err_detect:err_detect"
+Info (12128): Elaborating entity "err_high_detect_unlock" for hierarchy "err_detect:err_detect|err_high_detect_unlock:hot1"
+Info (12128): Elaborating entity "div_1us" for hierarchy "div_1us:div_1us"
+Info (12128): Elaborating entity "work_led" for hierarchy "work_led:work_led"
+Warning (12241): 21 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "RUDIN" is stuck at GND
+    Warning (13410): Pin "RDDIN" is stuck at GND
+    Warning (13410): Pin "LUDIN" is stuck at GND
+    Warning (13410): Pin "LDDIN" is stuck at GND
+    Warning (13410): Pin "LED1" is stuck at VCC
+    Warning (13410): Pin "LED2" is stuck at GND
+    Warning (13410): Pin "LED3" is stuck at VCC
+    Warning (13410): Pin "BypCon" is stuck at GND
+    Warning (13410): Pin "test[0]" is stuck at VCC
+    Warning (13410): Pin "test[1]" is stuck at GND
+    Warning (13410): Pin "test[2]" is stuck at GND
+    Warning (13410): Pin "test[3]" is stuck at GND
+    Warning (13410): Pin "test[4]" is stuck at GND
+    Warning (13410): Pin "test[5]" is stuck at GND
+    Warning (13410): Pin "test[6]" is stuck at GND
+    Warning (13410): Pin "test[7]" is stuck at GND
+Info (17049): 72 registers lost all their fanouts during netlist optimizations.
+Warning (21074): Design contains 12 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Reset"
+    Warning (15610): No output dependent on input pin "ERR[0]"
+    Warning (15610): No output dependent on input pin "ERR[1]"
+    Warning (15610): No output dependent on input pin "ERR[2]"
+    Warning (15610): No output dependent on input pin "ERR[3]"
+    Warning (15610): No output dependent on input pin "COMM_R"
+    Warning (15610): No output dependent on input pin "DCOV"
+    Warning (15610): No output dependent on input pin "DCUV"
+    Warning (15610): No output dependent on input pin "HOT_2"
+    Warning (15610): No output dependent on input pin "Powerfall"
+    Warning (15610): No output dependent on input pin "BypPowerErr"
+    Warning (15610): No output dependent on input pin "BypOk"
+Info (21057): Implemented 301 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 21 input pins
+    Info (21059): Implemented 19 output pins
+    Info (21061): Implemented 261 logic cells
+Info (144001): Generated suppressed messages file D:/temp/hff/power_unit_inGRboard/output_files/driver_board.map.smsg
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 40 warnings
+    Info: Peak virtual memory: 4586 megabytes
+    Info: Processing ended: Thu Dec 28 10:36:28 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in D:/temp/hff/power_unit_inGRboard/output_files/driver_board.map.smsg.
+
+
