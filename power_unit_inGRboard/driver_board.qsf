@@ -110,3 +110,6 @@ set_location_assignment PIN_104 -to DSW[1]
 set_location_assignment PIN_103 -to DSW[0]
 set_location_assignment PIN_78 -to HOT_2
 set_global_assignment -name CDF_FILE output_files/Chain1.cdf
+set_location_assignment PIN_43 -to LED4
+set_location_assignment PIN_44 -to LED5
+set_location_assignment PIN_45 -to LED6

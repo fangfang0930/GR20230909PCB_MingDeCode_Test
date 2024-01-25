@@ -14,6 +14,10 @@
 							LED1,
 							LED2,
 							LED3,
+							//GR20230909PCB添加--hff
+							LED4,
+							LED5,
+							LED6,
 							//光纤通信
 							COMM_R,
 							COMM_T,
@@ -47,6 +51,10 @@ input [3:0]ERR;//left igbt err   1 active
 output LED1;
 output LED2;
 output LED3;
+//hff-debug
+output LED4;
+output LED5;
+output LED6;
 //光纤通信
 input  COMM_R;
 output COMM_T;
@@ -95,8 +103,14 @@ wire SoftDCUV;
 wire BypConRx;//接收到的旁通闭合信号,Erik
 assign rst_n=((~Reset) && PllLock);//Erik
 assign LED1=~(work_out&start_stop&(~err_all));//工作指示灯
-assign LED2=~err_all;
+assign LED2=~err_all; 
 assign LED3=~reset_unit;//低电平亮灯，Erik
+//添加几个LED---hff
+assign LED4=~fiber_delay_err;//光纤通讯20us没有数据
+assign LED5=~fiber_verify_err;//光纤通讯，校验错误
+assign LED6=~err_unit;//
+
+//-----------------
 assign test[0] = err_unit;
 assign test[1] = start_stop;
 //assign test[7] = Clk80M;
@@ -116,7 +130,7 @@ PLL PLL(
 //fiber_rx 输入接收光纤，输出解析的各种指令信号，判断接收光纤的故障状态等
 fiber_rx fiber_rx(
 							.clk         		(clk				),
-							.rst_n				(rst_n				),
+							.rst_n				(1),//rst_n				),
 							.start_stop			(start_stop			),//启动停止
 							.time_1us			(time_1us			),
 							.igbt_control		(igbt_control		),
@@ -154,7 +168,7 @@ BypDeal BypDeal (
 //对旁路闭合成功信号进行防抖处理                            
 err_high_detect bypok_filt(
 						.clk(clk),
-						.rst_n(rst_n),
+						.rst_n(1),//rst_n),
 						.time_1us(time_1us),
 						.reset_unit(reset_unit),
 						.signal_in((!BypOk)),

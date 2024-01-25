@@ -1,5 +1,5 @@
 Analysis & Synthesis report for driver_board
-Thu Dec 28 10:36:28 2023
+Mon Jan 08 17:24:28 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -14,41 +14,40 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: fiber_rx:fiber_rx
- 13. Parameter Settings for User Entity Instance: fiber_rx:fiber_rx|verify_rx:verify_rx
- 14. Parameter Settings for User Entity Instance: fiber_tx:fiber_tx
- 15. Parameter Settings for User Entity Instance: BypDeal:BypDeal
- 16. Parameter Settings for User Entity Instance: ads7822:ads7822
- 17. Parameter Settings for User Entity Instance: pwm_out:pwm_out
- 18. Parameter Settings for User Entity Instance: err_detect:err_detect
- 19. Parameter Settings for User Entity Instance: div_1us:div_1us
- 20. Port Connectivity Checks: "work_led:work_led"
- 21. Port Connectivity Checks: "div_1us:div_1us"
- 22. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:byppowererr"
- 23. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:powererr"
- 24. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:hot2"
- 25. Port Connectivity Checks: "err_detect:err_detect|err_high_detect_unlock:hot1"
- 26. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:soft_low"
- 27. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:soft_over"
- 28. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:udc_low"
- 29. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:udc_over"
- 30. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:err4"
- 31. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:err3"
- 32. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:err2"
- 33. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:err1"
- 34. Port Connectivity Checks: "err_detect:err_detect"
- 35. Port Connectivity Checks: "pwm_out:pwm_out"
- 36. Port Connectivity Checks: "volt_calc:volt_calc"
- 37. Port Connectivity Checks: "ads7822:ads7822"
- 38. Port Connectivity Checks: "err_high_detect:bypok_filt"
- 39. Port Connectivity Checks: "BypDeal:BypDeal"
- 40. Port Connectivity Checks: "fiber_tx:fiber_tx"
- 41. Port Connectivity Checks: "fiber_rx:fiber_rx"
- 42. Analysis & Synthesis Messages
- 43. Analysis & Synthesis Suppressed Messages
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: fiber_rx:fiber_rx
+ 12. Parameter Settings for User Entity Instance: fiber_rx:fiber_rx|verify_rx:verify_rx
+ 13. Parameter Settings for User Entity Instance: fiber_tx:fiber_tx
+ 14. Parameter Settings for User Entity Instance: BypDeal:BypDeal
+ 15. Parameter Settings for User Entity Instance: ads7822:ads7822
+ 16. Parameter Settings for User Entity Instance: pwm_out:pwm_out
+ 17. Parameter Settings for User Entity Instance: err_detect:err_detect
+ 18. Parameter Settings for User Entity Instance: div_1us:div_1us
+ 19. Port Connectivity Checks: "work_led:work_led"
+ 20. Port Connectivity Checks: "div_1us:div_1us"
+ 21. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:byppowererr"
+ 22. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:powererr"
+ 23. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:hot2"
+ 24. Port Connectivity Checks: "err_detect:err_detect|err_high_detect_unlock:hot1"
+ 25. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:soft_low"
+ 26. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:soft_over"
+ 27. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:udc_low"
+ 28. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:udc_over"
+ 29. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:err4"
+ 30. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:err3"
+ 31. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:err2"
+ 32. Port Connectivity Checks: "err_detect:err_detect|err_high_detect:err1"
+ 33. Port Connectivity Checks: "err_detect:err_detect"
+ 34. Port Connectivity Checks: "pwm_out:pwm_out"
+ 35. Port Connectivity Checks: "volt_calc:volt_calc"
+ 36. Port Connectivity Checks: "ads7822:ads7822"
+ 37. Port Connectivity Checks: "err_high_detect:bypok_filt"
+ 38. Port Connectivity Checks: "BypDeal:BypDeal"
+ 39. Port Connectivity Checks: "fiber_tx:fiber_tx"
+ 40. Port Connectivity Checks: "fiber_rx:fiber_rx"
+ 41. Analysis & Synthesis Messages
+ 42. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -74,13 +73,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                   ;
 +-----------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Thu Dec 28 10:36:28 2023            ;
+; Analysis & Synthesis Status ; Successful - Mon Jan 08 17:24:28 2024            ;
 ; Quartus II 64-Bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name               ; driver_board                                     ;
 ; Top-level Entity Name       ; driver_board                                     ;
 ; Family                      ; MAX II                                           ;
-; Total logic elements        ; 261                                              ;
-; Total pins                  ; 40                                               ;
+; Total logic elements        ; 846                                              ;
+; Total pins                  ; 43                                               ;
 ; Total virtual pins          ; 0                                                ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                                    ;
 +-----------------------------+--------------------------------------------------+
@@ -176,26 +175,26 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                  ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
-; src/work_led.v                   ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/work_led.v               ;         ;
-; src/volt_calc.v                  ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/volt_calc.v              ;         ;
-; src/verify_rx.v                  ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/verify_rx.v              ;         ;
-; src/pwm_out.v                    ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/pwm_out.v                ;         ;
-; src/fiber_Tx.v                   ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/fiber_Tx.v               ;         ;
-; src/fiber_Rx.v                   ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/fiber_Rx.v               ;         ;
-; src/fiber_delay_rx.v             ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/fiber_delay_rx.v         ;         ;
-; src/err_high_detect_unlock.v     ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/err_high_detect_unlock.v ;         ;
-; src/err_high_detect.v            ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/err_high_detect.v        ;         ;
-; src/err_detect.v                 ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/err_detect.v             ;         ;
-; src/driver_board.v               ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/driver_board.v           ;         ;
-; src/div_1us.v                    ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/div_1us.v                ;         ;
-; src/BypDeal.v                    ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/BypDeal.v                ;         ;
-; src/ads7822.v                    ; yes             ; User Verilog HDL File  ; D:/temp/hff/power_unit_inGRboard/src/ads7822.v                ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
+; src/work_led.v                   ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/work_led.v               ;         ;
+; src/volt_calc.v                  ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/volt_calc.v              ;         ;
+; src/verify_rx.v                  ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/verify_rx.v              ;         ;
+; src/pwm_out.v                    ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/pwm_out.v                ;         ;
+; src/fiber_Tx.v                   ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/fiber_Tx.v               ;         ;
+; src/fiber_Rx.v                   ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/fiber_Rx.v               ;         ;
+; src/fiber_delay_rx.v             ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/fiber_delay_rx.v         ;         ;
+; src/err_high_detect_unlock.v     ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/err_high_detect_unlock.v ;         ;
+; src/err_high_detect.v            ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/err_high_detect.v        ;         ;
+; src/err_detect.v                 ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/err_detect.v             ;         ;
+; src/driver_board.v               ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/driver_board.v           ;         ;
+; src/div_1us.v                    ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/div_1us.v                ;         ;
+; src/BypDeal.v                    ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/BypDeal.v                ;         ;
+; src/ads7822.v                    ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/ads7822.v                ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -203,216 +202,113 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 261   ;
-;     -- Combinational with no register       ; 136   ;
-;     -- Register only                        ; 43    ;
-;     -- Combinational with a register        ; 82    ;
+; Total logic elements                        ; 846   ;
+;     -- Combinational with no register       ; 390   ;
+;     -- Register only                        ; 68    ;
+;     -- Combinational with a register        ; 388   ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 82    ;
-;     -- 3 input functions                    ; 43    ;
-;     -- 2 input functions                    ; 85    ;
-;     -- 1 input functions                    ; 8     ;
-;     -- 0 input functions                    ; 0     ;
+;     -- 4 input functions                    ; 308   ;
+;     -- 3 input functions                    ; 73    ;
+;     -- 2 input functions                    ; 361   ;
+;     -- 1 input functions                    ; 35    ;
+;     -- 0 input functions                    ; 1     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 183   ;
-;     -- arithmetic mode                      ; 78    ;
+;     -- normal mode                          ; 509   ;
+;     -- arithmetic mode                      ; 337   ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
-;     -- synchronous clear/load mode          ; 31    ;
+;     -- synchronous clear/load mode          ; 259   ;
 ;     -- asynchronous clear/load mode         ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 125   ;
-; Total logic cells in carry chains           ; 89    ;
-; I/O pins                                    ; 40    ;
+; Total registers                             ; 456   ;
+; Total logic cells in carry chains           ; 375   ;
+; I/O pins                                    ; 43    ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 125   ;
-; Total fan-out                               ; 921   ;
-; Average fan-out                             ; 3.06  ;
+; Maximum fan-out                             ; 456   ;
+; Total fan-out                               ; 3362  ;
+; Average fan-out                             ; 3.78  ;
 +---------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                       ;
-+-------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node          ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                             ; Library Name ;
-+-------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------+--------------+
-; |driver_board                       ; 261 (0)     ; 125          ; 0          ; 40   ; 0            ; 136 (0)      ; 43 (0)            ; 82 (0)           ; 89 (0)          ; 0 (0)      ; |driver_board                                                   ; work         ;
-;    |ads7822:ads7822|                ; 62 (62)     ; 43           ; 0          ; 0    ; 0            ; 19 (19)      ; 14 (14)           ; 29 (29)          ; 12 (12)         ; 0 (0)      ; |driver_board|ads7822:ads7822                                   ; work         ;
-;    |div_1us:div_1us|                ; 39 (39)     ; 16           ; 0          ; 0    ; 0            ; 23 (23)      ; 3 (3)             ; 13 (13)          ; 16 (16)         ; 0 (0)      ; |driver_board|div_1us:div_1us                                   ; work         ;
-;    |err_detect:err_detect|          ; 26 (0)      ; 17           ; 0          ; 0    ; 0            ; 9 (0)        ; 1 (0)             ; 16 (0)           ; 14 (0)          ; 0 (0)      ; |driver_board|err_detect:err_detect                             ; work         ;
-;       |err_high_detect:hot2|        ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:hot2        ; work         ;
-;       |err_high_detect_unlock:hot1| ; 24 (24)     ; 15           ; 0          ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect_unlock:hot1 ; work         ;
-;    |fiber_tx:fiber_tx|              ; 75 (75)     ; 25           ; 0          ; 0    ; 0            ; 50 (50)      ; 13 (13)           ; 12 (12)          ; 25 (25)         ; 0 (0)      ; |driver_board|fiber_tx:fiber_tx                                 ; work         ;
-;    |volt_calc:volt_calc|            ; 59 (59)     ; 24           ; 0          ; 0    ; 0            ; 35 (35)      ; 12 (12)           ; 12 (12)          ; 22 (22)         ; 0 (0)      ; |driver_board|volt_calc:volt_calc                               ; work         ;
-+-------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                         ;
++---------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node            ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                             ; Library Name ;
++---------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------+--------------+
+; |driver_board                         ; 846 (4)     ; 456          ; 0          ; 43   ; 0            ; 390 (4)      ; 68 (0)            ; 388 (0)          ; 375 (0)         ; 0 (0)      ; |driver_board                                                   ; work         ;
+;    |ads7822:ads7822|                  ; 62 (62)     ; 43           ; 0          ; 0    ; 0            ; 19 (19)      ; 14 (14)           ; 29 (29)          ; 12 (12)         ; 0 (0)      ; |driver_board|ads7822:ads7822                                   ; work         ;
+;    |div_1us:div_1us|                  ; 39 (39)     ; 16           ; 0          ; 0    ; 0            ; 23 (23)      ; 3 (3)             ; 13 (13)          ; 16 (16)         ; 0 (0)      ; |driver_board|div_1us:div_1us                                   ; work         ;
+;    |err_detect:err_detect|            ; 358 (63)    ; 212          ; 0          ; 0    ; 0            ; 146 (33)     ; 3 (2)             ; 209 (28)         ; 194 (26)        ; 0 (0)      ; |driver_board|err_detect:err_detect                             ; work         ;
+;       |err_high_detect:byppowererr|   ; 25 (25)     ; 15           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:byppowererr ; work         ;
+;       |err_high_detect:err1|          ; 25 (25)     ; 15           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:err1        ; work         ;
+;       |err_high_detect:err2|          ; 25 (25)     ; 15           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:err2        ; work         ;
+;       |err_high_detect:err3|          ; 25 (25)     ; 15           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:err3        ; work         ;
+;       |err_high_detect:err4|          ; 25 (25)     ; 15           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:err4        ; work         ;
+;       |err_high_detect:hot2|          ; 27 (27)     ; 17           ; 0          ; 0    ; 0            ; 10 (10)      ; 1 (1)             ; 16 (16)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:hot2        ; work         ;
+;       |err_high_detect:powererr|      ; 24 (24)     ; 15           ; 0          ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:powererr    ; work         ;
+;       |err_high_detect:soft_low|      ; 23 (23)     ; 15           ; 0          ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:soft_low    ; work         ;
+;       |err_high_detect:soft_over|     ; 23 (23)     ; 15           ; 0          ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:soft_over   ; work         ;
+;       |err_high_detect:udc_low|       ; 24 (24)     ; 15           ; 0          ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:udc_low     ; work         ;
+;       |err_high_detect:udc_over|      ; 24 (24)     ; 15           ; 0          ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:udc_over    ; work         ;
+;       |err_high_detect_unlock:hot1|   ; 25 (25)     ; 15           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect_unlock:hot1 ; work         ;
+;    |err_high_detect:bypok_filt|       ; 23 (23)     ; 15           ; 0          ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_high_detect:bypok_filt                        ; work         ;
+;    |fiber_rx:fiber_rx|                ; 138 (111)   ; 80           ; 0          ; 0    ; 0            ; 58 (46)      ; 11 (7)            ; 69 (58)          ; 57 (52)         ; 0 (0)      ; |driver_board|fiber_rx:fiber_rx                                 ; work         ;
+;       |fiber_delay_rx:fiber_delay_rx| ; 10 (10)     ; 6            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 6 (6)            ; 5 (5)           ; 0 (0)      ; |driver_board|fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx   ; work         ;
+;       |verify_rx:verify_rx|           ; 17 (17)     ; 9            ; 0          ; 0    ; 0            ; 8 (8)        ; 4 (4)             ; 5 (5)            ; 0 (0)           ; 0 (0)      ; |driver_board|fiber_rx:fiber_rx|verify_rx:verify_rx             ; work         ;
+;    |fiber_tx:fiber_tx|                ; 107 (107)   ; 38           ; 0          ; 0    ; 0            ; 69 (69)      ; 24 (24)           ; 14 (14)          ; 41 (41)         ; 0 (0)      ; |driver_board|fiber_tx:fiber_tx                                 ; work         ;
+;    |pwm_out:pwm_out|                  ; 4 (4)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |driver_board|pwm_out:pwm_out                                   ; work         ;
+;    |volt_calc:volt_calc|              ; 63 (63)     ; 26           ; 0          ; 0    ; 0            ; 37 (37)      ; 12 (12)           ; 14 (14)          ; 22 (22)         ; 0 (0)      ; |driver_board|volt_calc:volt_calc                               ; work         ;
+;    |work_led:work_led|                ; 48 (48)     ; 22           ; 0          ; 0    ; 0            ; 26 (26)      ; 1 (1)             ; 21 (21)          ; 19 (19)         ; 0 (0)      ; |driver_board|work_led:work_led                                 ; work         ;
++---------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                           ;
-+---------------------------------------------------------------------+------------------------------------------------------------------------+
-; Register name                                                       ; Reason for Removal                                                     ;
-+---------------------------------------------------------------------+------------------------------------------------------------------------+
-; volt_calc:volt_calc|done                                            ; Stuck at VCC due to stuck port data_in                                 ;
-; err_high_detect:bypok_filt|signal_out                               ; Stuck at GND due to stuck port clear                                   ;
-; err_high_detect:bypok_filt|cnt_delay[0..13]                         ; Stuck at GND due to stuck port clear                                   ;
-; err_high_detect:bypok_filt|time_1us_syn[0,1]                        ; Lost fanout                                                            ;
-; fiber_tx:fiber_tx|send_moduleinfo[13]                               ; Stuck at GND due to stuck port data_in                                 ;
-; fiber_rx:fiber_rx|rx_syn[1]                                         ; Stuck at GND due to stuck port clear                                   ;
-; fiber_rx:fiber_rx|rx_syn[0]                                         ; Lost fanout                                                            ;
-; fiber_rx:fiber_rx|HighCnt[0..6]                                     ; Stuck at GND due to stuck port clear                                   ;
-; fiber_rx:fiber_rx|receive_flag                                      ; Stuck at GND due to stuck port clear                                   ;
-; fiber_rx:fiber_rx|divide_cnt[0..3]                                  ; Stuck at GND due to stuck port clear                                   ;
-; fiber_rx:fiber_rx|receive_code_cnt[0..4]                            ; Stuck at GND due to stuck port clear                                   ;
-; fiber_rx:fiber_rx|rx_data_syn[0..4]                                 ; Stuck at GND due to stuck port clear                                   ;
-; fiber_rx:fiber_rx|start_stop                                        ; Stuck at GND due to stuck port clear                                   ;
-; fiber_rx:fiber_rx|rst_cnt_nums[0..5]                                ; Stuck at GND due to stuck port clear                                   ;
-; fiber_rx:fiber_rx|strat_cnt_nums[0..5]                              ; Stuck at GND due to stuck port clear                                   ;
-; fiber_rx:fiber_rx|byp_cnt_nums[1..5]                                ; Stuck at GND due to stuck port clear                                   ;
-; fiber_rx:fiber_rx|cnt_byp[0]                                        ; Stuck at GND due to stuck port clear                                   ;
-; fiber_rx:fiber_rx|byp_cnt_nums[0]                                   ; Stuck at GND due to stuck port clear                                   ;
-; fiber_rx:fiber_rx|verify_rx:verify_rx|rx_data[0,1]                  ; Lost fanout                                                            ;
-; fiber_rx:fiber_rx|cnt_reset_err[0..5]                               ; Stuck at GND due to stuck port clear                                   ;
-; fiber_rx:fiber_rx|cnt_byp[1..15]                                    ; Stuck at GND due to stuck port clear                                   ;
-; fiber_rx:fiber_rx|time_1us_syn[0,1]                                 ; Lost fanout                                                            ;
-; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|fiber_delay_err     ; Stuck at GND due to stuck port clear                                   ;
-; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|delay_err_cnt[0..4] ; Lost fanout                                                            ;
-; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|time_1us_syn[0,1]   ; Lost fanout                                                            ;
-; fiber_rx:fiber_rx|verify_rx:verify_rx|fiber_verify_err              ; Stuck at GND due to stuck port clear                                   ;
-; fiber_rx:fiber_rx|verify_rx:verify_rx|rx_data[2,3]                  ; Stuck at GND due to stuck port clear                                   ;
-; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[0..3]         ; Stuck at GND due to stuck port clear                                   ;
-; pwm_out:pwm_out|RUCnt[0..8]                                         ; Lost fanout                                                            ;
-; pwm_out:pwm_out|LUCnt[0..8]                                         ; Lost fanout                                                            ;
-; pwm_out:pwm_out|RDCnt[0..8]                                         ; Lost fanout                                                            ;
-; pwm_out:pwm_out|LDCnt[0..8]                                         ; Lost fanout                                                            ;
-; pwm_out:pwm_out|RUDIN                                               ; Stuck at GND due to stuck port data_in                                 ;
-; pwm_out:pwm_out|RDDIN                                               ; Stuck at GND due to stuck port data_in                                 ;
-; pwm_out:pwm_out|LUDIN                                               ; Stuck at GND due to stuck port data_in                                 ;
-; pwm_out:pwm_out|LDDIN                                               ; Stuck at GND due to stuck port data_in                                 ;
-; fiber_tx:fiber_tx|send_moduleinfo[2,12]                             ; Stuck at GND due to stuck port data_in                                 ;
-; work_led:work_led|time_1us_syn[0,1]                                 ; Lost fanout                                                            ;
-; work_led:work_led|cnt_1ms[1..9]                                     ; Lost fanout                                                            ;
-; work_led:work_led|work_out                                          ; Lost fanout                                                            ;
-; work_led:work_led|cnt_1ms[0]                                        ; Lost fanout                                                            ;
-; work_led:work_led|cnt_500ms[0..8]                                   ; Lost fanout                                                            ;
-; err_detect:err_detect|err_high_detect:err1|time_1us_syn[0]          ; Merged with err_detect:err_detect|time_1us_syn[0]                      ;
-; err_detect:err_detect|err_high_detect:err2|time_1us_syn[0]          ; Merged with err_detect:err_detect|time_1us_syn[0]                      ;
-; err_detect:err_detect|err_high_detect:err3|time_1us_syn[0]          ; Merged with err_detect:err_detect|time_1us_syn[0]                      ;
-; err_detect:err_detect|err_high_detect:err4|time_1us_syn[0]          ; Merged with err_detect:err_detect|time_1us_syn[0]                      ;
-; err_detect:err_detect|err_high_detect:udc_over|time_1us_syn[0]      ; Merged with err_detect:err_detect|time_1us_syn[0]                      ;
-; err_detect:err_detect|err_high_detect:udc_low|time_1us_syn[0]       ; Merged with err_detect:err_detect|time_1us_syn[0]                      ;
-; err_detect:err_detect|err_high_detect:soft_over|time_1us_syn[0]     ; Merged with err_detect:err_detect|time_1us_syn[0]                      ;
-; err_detect:err_detect|err_high_detect:soft_low|time_1us_syn[0]      ; Merged with err_detect:err_detect|time_1us_syn[0]                      ;
-; err_detect:err_detect|err_high_detect:powererr|time_1us_syn[0]      ; Merged with err_detect:err_detect|time_1us_syn[0]                      ;
-; err_detect:err_detect|err_high_detect:byppowererr|time_1us_syn[0]   ; Merged with err_detect:err_detect|time_1us_syn[0]                      ;
-; err_detect:err_detect|err_high_detect:err1|time_1us_syn[1]          ; Merged with err_detect:err_detect|time_1us_syn[1]                      ;
-; err_detect:err_detect|err_high_detect:err2|time_1us_syn[1]          ; Merged with err_detect:err_detect|time_1us_syn[1]                      ;
-; err_detect:err_detect|err_high_detect:err3|time_1us_syn[1]          ; Merged with err_detect:err_detect|time_1us_syn[1]                      ;
-; err_detect:err_detect|err_high_detect:err4|time_1us_syn[1]          ; Merged with err_detect:err_detect|time_1us_syn[1]                      ;
-; err_detect:err_detect|err_high_detect:udc_over|time_1us_syn[1]      ; Merged with err_detect:err_detect|time_1us_syn[1]                      ;
-; err_detect:err_detect|err_high_detect:udc_low|time_1us_syn[1]       ; Merged with err_detect:err_detect|time_1us_syn[1]                      ;
-; err_detect:err_detect|err_high_detect:soft_over|time_1us_syn[1]     ; Merged with err_detect:err_detect|time_1us_syn[1]                      ;
-; err_detect:err_detect|err_high_detect:soft_low|time_1us_syn[1]      ; Merged with err_detect:err_detect|time_1us_syn[1]                      ;
-; err_detect:err_detect|err_high_detect:powererr|time_1us_syn[1]      ; Merged with err_detect:err_detect|time_1us_syn[1]                      ;
-; err_detect:err_detect|err_high_detect:byppowererr|time_1us_syn[1]   ; Merged with err_detect:err_detect|time_1us_syn[1]                      ;
-; err_detect:err_detect|err_high_detect_unlock:hot1|time_1us_syn[0]   ; Merged with err_detect:err_detect|err_high_detect:hot2|time_1us_syn[0] ;
-; err_detect:err_detect|err_high_detect_unlock:hot1|time_1us_syn[1]   ; Merged with err_detect:err_detect|err_high_detect:hot2|time_1us_syn[1] ;
-; err_detect:err_detect|BypCon_syn[0,1]                               ; Stuck at GND due to stuck port data_in                                 ;
-; err_detect:err_detect|err_unit                                      ; Stuck at VCC due to stuck port data_in                                 ;
-; err_detect:err_detect|byp_err                                       ; Stuck at VCC due to stuck port data_in                                 ;
-; err_detect:err_detect|err_high_detect:byppowererr|signal_out        ; Stuck at VCC due to stuck port data_in                                 ;
-; err_detect:err_detect|err_high_detect:powererr|signal_out           ; Stuck at VCC due to stuck port data_in                                 ;
-; err_detect:err_detect|err_high_detect:hot2|signal_out               ; Stuck at VCC due to stuck port data_in                                 ;
-; err_detect:err_detect|err_high_detect:soft_low|signal_out           ; Stuck at VCC due to stuck port data_in                                 ;
-; err_detect:err_detect|err_high_detect:soft_over|signal_out          ; Stuck at VCC due to stuck port data_in                                 ;
-; err_detect:err_detect|err_high_detect:udc_low|signal_out            ; Stuck at VCC due to stuck port data_in                                 ;
-; err_detect:err_detect|err_high_detect:udc_over|signal_out           ; Stuck at VCC due to stuck port data_in                                 ;
-; err_detect:err_detect|err_high_detect:err4|signal_out               ; Stuck at VCC due to stuck port data_in                                 ;
-; err_detect:err_detect|err_high_detect:err3|signal_out               ; Stuck at VCC due to stuck port data_in                                 ;
-; err_detect:err_detect|err_high_detect:err2|signal_out               ; Stuck at VCC due to stuck port data_in                                 ;
-; err_detect:err_detect|err_high_detect:err1|signal_out               ; Stuck at VCC due to stuck port data_in                                 ;
-; fiber_tx:fiber_tx|send_moduleinfo[0,1,3,5..11]                      ; Stuck at VCC due to stuck port data_in                                 ;
-; div_1us:div_1us|cnt_time[0]                                         ; Merged with fiber_tx:fiber_tx|cnt_4m[0]                                ;
-; Total Number of Removed Registers = 215                             ;                                                                        ;
-+---------------------------------------------------------------------+------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                                 ;
-+-----------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------+
-; Register name                                                   ; Reason for Removal        ; Registers Removed due to This Register                                        ;
-+-----------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------+
-; fiber_rx:fiber_rx|rx_syn[1]                                     ; Stuck at GND              ; fiber_rx:fiber_rx|rx_syn[0], fiber_rx:fiber_rx|HighCnt[6],                    ;
-;                                                                 ; due to stuck port clear   ; fiber_rx:fiber_rx|HighCnt[5], fiber_rx:fiber_rx|HighCnt[4],                   ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|HighCnt[3], fiber_rx:fiber_rx|HighCnt[2],                   ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|HighCnt[1], fiber_rx:fiber_rx|HighCnt[0],                   ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|receive_flag, fiber_rx:fiber_rx|divide_cnt[1],              ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|receive_code_cnt[4], fiber_rx:fiber_rx|receive_code_cnt[3], ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|receive_code_cnt[1], fiber_rx:fiber_rx|rx_data_syn[0],      ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|rst_cnt_nums[5], fiber_rx:fiber_rx|rst_cnt_nums[4],         ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|rst_cnt_nums[3], fiber_rx:fiber_rx|rst_cnt_nums[2],         ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|rst_cnt_nums[1], fiber_rx:fiber_rx|rst_cnt_nums[0],         ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|strat_cnt_nums[5], fiber_rx:fiber_rx|strat_cnt_nums[4],     ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|strat_cnt_nums[3], fiber_rx:fiber_rx|strat_cnt_nums[2],     ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|strat_cnt_nums[1], fiber_rx:fiber_rx|strat_cnt_nums[0],     ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|byp_cnt_nums[5], fiber_rx:fiber_rx|byp_cnt_nums[4],         ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|byp_cnt_nums[3], fiber_rx:fiber_rx|byp_cnt_nums[2],         ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|byp_cnt_nums[1], fiber_rx:fiber_rx|cnt_byp[0],              ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|byp_cnt_nums[0], fiber_rx:fiber_rx|cnt_reset_err[5],        ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|cnt_reset_err[4], fiber_rx:fiber_rx|cnt_reset_err[3],       ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|cnt_reset_err[2], fiber_rx:fiber_rx|cnt_reset_err[1],       ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|cnt_reset_err[0], fiber_rx:fiber_rx|cnt_byp[15],            ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|cnt_byp[14], fiber_rx:fiber_rx|cnt_byp[13],                 ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|cnt_byp[12], fiber_rx:fiber_rx|cnt_byp[11],                 ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|cnt_byp[10], fiber_rx:fiber_rx|cnt_byp[9],                  ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|cnt_byp[8], fiber_rx:fiber_rx|cnt_byp[7],                   ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|cnt_byp[6], fiber_rx:fiber_rx|cnt_byp[5],                   ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|cnt_byp[4], fiber_rx:fiber_rx|cnt_byp[3],                   ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|cnt_byp[2], fiber_rx:fiber_rx|cnt_byp[1],                   ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|time_1us_syn[1], fiber_rx:fiber_rx|time_1us_syn[0],         ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|time_1us_syn[1],              ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|time_1us_syn[0],              ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|verify_rx:verify_rx|rx_data[3],                             ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|verify_rx:verify_rx|rx_data[2],                             ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[3],                     ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[2],                     ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[1],                     ;
-;                                                                 ;                           ; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[0]                      ;
-; fiber_rx:fiber_rx|start_stop                                    ; Stuck at GND              ; fiber_rx:fiber_rx|verify_rx:verify_rx|rx_data[1],                             ;
-;                                                                 ; due to stuck port clear   ; fiber_rx:fiber_rx|verify_rx:verify_rx|rx_data[0], pwm_out:pwm_out|RUDIN,      ;
-;                                                                 ;                           ; pwm_out:pwm_out|RDDIN, pwm_out:pwm_out|LUDIN, pwm_out:pwm_out|LDDIN,          ;
-;                                                                 ;                           ; fiber_tx:fiber_tx|send_moduleinfo[12], work_led:work_led|work_out             ;
-; err_high_detect:bypok_filt|signal_out                           ; Stuck at GND              ; fiber_tx:fiber_tx|send_moduleinfo[13], err_detect:err_detect|byp_err,         ;
-;                                                                 ; due to stuck port clear   ; fiber_tx:fiber_tx|send_moduleinfo[3]                                          ;
-; err_high_detect:bypok_filt|cnt_delay[13]                        ; Stuck at GND              ; err_high_detect:bypok_filt|time_1us_syn[1],                                   ;
-;                                                                 ; due to stuck port clear   ; err_high_detect:bypok_filt|time_1us_syn[0]                                    ;
-; fiber_rx:fiber_rx|divide_cnt[3]                                 ; Stuck at GND              ; fiber_rx:fiber_rx|rx_data_syn[4]                                              ;
-;                                                                 ; due to stuck port clear   ;                                                                               ;
-; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|fiber_delay_err ; Stuck at GND              ; fiber_tx:fiber_tx|send_moduleinfo[2]                                          ;
-;                                                                 ; due to stuck port clear   ;                                                                               ;
-; err_detect:err_detect|BypCon_syn[0]                             ; Stuck at GND              ; err_detect:err_detect|BypCon_syn[1]                                           ;
-;                                                                 ; due to stuck port data_in ;                                                                               ;
-; err_detect:err_detect|err_high_detect:byppowererr|signal_out    ; Stuck at VCC              ; fiber_tx:fiber_tx|send_moduleinfo[11]                                         ;
-;                                                                 ; due to stuck port data_in ;                                                                               ;
-; err_detect:err_detect|err_high_detect:powererr|signal_out       ; Stuck at VCC              ; fiber_tx:fiber_tx|send_moduleinfo[10]                                         ;
-;                                                                 ; due to stuck port data_in ;                                                                               ;
-; err_detect:err_detect|err_high_detect:hot2|signal_out           ; Stuck at VCC              ; fiber_tx:fiber_tx|send_moduleinfo[5]                                          ;
-;                                                                 ; due to stuck port data_in ;                                                                               ;
-; err_detect:err_detect|err_high_detect:soft_low|signal_out       ; Stuck at VCC              ; fiber_tx:fiber_tx|send_moduleinfo[0]                                          ;
-;                                                                 ; due to stuck port data_in ;                                                                               ;
-; err_detect:err_detect|err_high_detect:soft_over|signal_out      ; Stuck at VCC              ; fiber_tx:fiber_tx|send_moduleinfo[1]                                          ;
-;                                                                 ; due to stuck port data_in ;                                                                               ;
-; err_detect:err_detect|err_high_detect:err4|signal_out           ; Stuck at VCC              ; fiber_tx:fiber_tx|send_moduleinfo[9]                                          ;
-;                                                                 ; due to stuck port data_in ;                                                                               ;
-; err_detect:err_detect|err_high_detect:err3|signal_out           ; Stuck at VCC              ; fiber_tx:fiber_tx|send_moduleinfo[8]                                          ;
-;                                                                 ; due to stuck port data_in ;                                                                               ;
-; err_detect:err_detect|err_high_detect:err2|signal_out           ; Stuck at VCC              ; fiber_tx:fiber_tx|send_moduleinfo[7]                                          ;
-;                                                                 ; due to stuck port data_in ;                                                                               ;
-; err_detect:err_detect|err_high_detect:err1|signal_out           ; Stuck at VCC              ; fiber_tx:fiber_tx|send_moduleinfo[6]                                          ;
-;                                                                 ; due to stuck port data_in ;                                                                               ;
-+-----------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                         ;
++-------------------------------------------------------------------+------------------------------------------------------------------------+
+; Register name                                                     ; Reason for Removal                                                     ;
++-------------------------------------------------------------------+------------------------------------------------------------------------+
+; volt_calc:volt_calc|done                                          ; Stuck at VCC due to stuck port data_in                                 ;
+; fiber_rx:fiber_rx|time_1us_syn[0]                                 ; Merged with work_led:work_led|time_1us_syn[0]                          ;
+; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|time_1us_syn[0]   ; Merged with work_led:work_led|time_1us_syn[0]                          ;
+; err_high_detect:bypok_filt|time_1us_syn[0]                        ; Merged with work_led:work_led|time_1us_syn[0]                          ;
+; err_detect:err_detect|time_1us_syn[0]                             ; Merged with work_led:work_led|time_1us_syn[0]                          ;
+; err_detect:err_detect|err_high_detect:err1|time_1us_syn[0]        ; Merged with work_led:work_led|time_1us_syn[0]                          ;
+; err_detect:err_detect|err_high_detect:err2|time_1us_syn[0]        ; Merged with work_led:work_led|time_1us_syn[0]                          ;
+; err_detect:err_detect|err_high_detect:err3|time_1us_syn[0]        ; Merged with work_led:work_led|time_1us_syn[0]                          ;
+; err_detect:err_detect|err_high_detect:err4|time_1us_syn[0]        ; Merged with work_led:work_led|time_1us_syn[0]                          ;
+; err_detect:err_detect|err_high_detect:udc_over|time_1us_syn[0]    ; Merged with work_led:work_led|time_1us_syn[0]                          ;
+; err_detect:err_detect|err_high_detect:udc_low|time_1us_syn[0]     ; Merged with work_led:work_led|time_1us_syn[0]                          ;
+; err_detect:err_detect|err_high_detect:soft_over|time_1us_syn[0]   ; Merged with work_led:work_led|time_1us_syn[0]                          ;
+; err_detect:err_detect|err_high_detect:soft_low|time_1us_syn[0]    ; Merged with work_led:work_led|time_1us_syn[0]                          ;
+; err_detect:err_detect|err_high_detect:powererr|time_1us_syn[0]    ; Merged with work_led:work_led|time_1us_syn[0]                          ;
+; err_detect:err_detect|err_high_detect:byppowererr|time_1us_syn[0] ; Merged with work_led:work_led|time_1us_syn[0]                          ;
+; fiber_rx:fiber_rx|time_1us_syn[1]                                 ; Merged with work_led:work_led|time_1us_syn[1]                          ;
+; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|time_1us_syn[1]   ; Merged with work_led:work_led|time_1us_syn[1]                          ;
+; err_high_detect:bypok_filt|time_1us_syn[1]                        ; Merged with work_led:work_led|time_1us_syn[1]                          ;
+; err_detect:err_detect|time_1us_syn[1]                             ; Merged with work_led:work_led|time_1us_syn[1]                          ;
+; err_detect:err_detect|err_high_detect:err1|time_1us_syn[1]        ; Merged with work_led:work_led|time_1us_syn[1]                          ;
+; err_detect:err_detect|err_high_detect:err2|time_1us_syn[1]        ; Merged with work_led:work_led|time_1us_syn[1]                          ;
+; err_detect:err_detect|err_high_detect:err3|time_1us_syn[1]        ; Merged with work_led:work_led|time_1us_syn[1]                          ;
+; err_detect:err_detect|err_high_detect:err4|time_1us_syn[1]        ; Merged with work_led:work_led|time_1us_syn[1]                          ;
+; err_detect:err_detect|err_high_detect:udc_over|time_1us_syn[1]    ; Merged with work_led:work_led|time_1us_syn[1]                          ;
+; err_detect:err_detect|err_high_detect:udc_low|time_1us_syn[1]     ; Merged with work_led:work_led|time_1us_syn[1]                          ;
+; err_detect:err_detect|err_high_detect:soft_over|time_1us_syn[1]   ; Merged with work_led:work_led|time_1us_syn[1]                          ;
+; err_detect:err_detect|err_high_detect:soft_low|time_1us_syn[1]    ; Merged with work_led:work_led|time_1us_syn[1]                          ;
+; err_detect:err_detect|err_high_detect:powererr|time_1us_syn[1]    ; Merged with work_led:work_led|time_1us_syn[1]                          ;
+; err_detect:err_detect|err_high_detect:byppowererr|time_1us_syn[1] ; Merged with work_led:work_led|time_1us_syn[1]                          ;
+; err_detect:err_detect|err_high_detect_unlock:hot1|time_1us_syn[0] ; Merged with err_detect:err_detect|err_high_detect:hot2|time_1us_syn[0] ;
+; err_detect:err_detect|err_high_detect_unlock:hot1|time_1us_syn[1] ; Merged with err_detect:err_detect|err_high_detect:hot2|time_1us_syn[1] ;
+; pwm_out:pwm_out|LDCnt[0]                                          ; Stuck at GND due to stuck port data_in                                 ;
+; pwm_out:pwm_out|RUCnt[0..8]                                       ; Stuck at GND due to stuck port data_in                                 ;
+; pwm_out:pwm_out|RDCnt[0..8]                                       ; Stuck at GND due to stuck port data_in                                 ;
+; pwm_out:pwm_out|LUCnt[0..8]                                       ; Stuck at GND due to stuck port data_in                                 ;
+; pwm_out:pwm_out|LDCnt[1..8]                                       ; Stuck at GND due to stuck port data_in                                 ;
+; div_1us:div_1us|cnt_time[0]                                       ; Merged with fiber_tx:fiber_tx|cnt_4m[0]                                ;
+; Total Number of Removed Registers = 68                            ;                                                                        ;
++-------------------------------------------------------------------+------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -420,28 +316,54 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 125   ;
-; Number of registers using Synchronous Clear  ; 20    ;
-; Number of registers using Synchronous Load   ; 11    ;
+; Total registers                              ; 456   ;
+; Number of registers using Synchronous Clear  ; 226   ;
+; Number of registers using Synchronous Load   ; 33    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 73    ;
+; Number of registers using Clock Enable       ; 331   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |driver_board|ads7822:ads7822|numer_cnt[1]                                   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |driver_board|fiber_tx:fiber_tx|send_nums[6]                                 ;
-; 3:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[5] ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |driver_board|ads7822:ads7822|ad_syn[0]                                      ;
-; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |driver_board|div_1us:div_1us|cnt_time1ms[6]                                 ;
-; 4:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; Yes        ; |driver_board|volt_calc:volt_calc|udc_volt[11]                               ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |driver_board|fiber_rx:fiber_rx|receive_code_cnt[3]                            ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |driver_board|fiber_rx:fiber_rx|divide_cnt[0]                                  ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |driver_board|ads7822:ads7822|numer_cnt[5]                                     ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |driver_board|work_led:work_led|cnt_1ms[9]                                     ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |driver_board|fiber_rx:fiber_rx|cnt_byp[9]                                     ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |driver_board|fiber_rx:fiber_rx|strat_cnt_nums[1]                              ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |driver_board|fiber_rx:fiber_rx|byp_cnt_nums[0]                                ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |driver_board|fiber_rx:fiber_rx|rst_cnt_nums[5]                                ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |driver_board|work_led:work_led|cnt_500ms[5]                                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |driver_board|fiber_tx:fiber_tx|send_nums[1]                                   ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |driver_board|div_1us:div_1us|cnt_time1ms[1]                                   ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |driver_board|ads7822:ads7822|ad_syn[7]                                        ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |driver_board|fiber_rx:fiber_rx|cnt_reset_err[0]                               ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |driver_board|fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[3]         ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |driver_board|fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|delay_err_cnt[4] ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:byppowererr|cnt_delay[2]   ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:powererr|cnt_delay[13]     ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:err4|cnt_delay[5]          ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:err3|cnt_delay[0]          ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:err2|cnt_delay[1]          ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:err1|cnt_delay[6]          ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:hot2|cnt_delay[1]          ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:udc_over|cnt_delay[13]     ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:soft_over|cnt_delay[2]     ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:udc_low|cnt_delay[10]      ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:soft_low|cnt_delay[9]      ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |driver_board|err_detect:err_detect|ByperrDelay[11]                            ;
+; 4:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; Yes        ; |driver_board|volt_calc:volt_calc|udc_volt[1]                                  ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_high_detect:bypok_filt|cnt_delay[8]                          ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[8]   ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; Yes        ; |driver_board|pwm_out:pwm_out|RDDIN                                            ;
+; 6:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |driver_board|fiber_rx:fiber_rx|HighCnt[1]                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------+
@@ -745,6 +667,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port               ; Type  ; Severity ; Details                                                                                                                                                                             ;
 +--------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rst_n              ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts.  ;
+; rst_n[-1]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
 ; delay_tims         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (14 bits) it drives.  The 18 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
 ; delay_tims[9..5]   ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
 ; delay_tims[13..10] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
@@ -780,13 +704,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------+
-; Port Connectivity Checks: "fiber_rx:fiber_rx" ;
-+-------+-------+----------+--------------------+
-; Port  ; Type  ; Severity ; Details            ;
-+-------+-------+----------+--------------------+
-; rst_n ; Input ; Info     ; Stuck at GND       ;
-+-------+-------+----------+--------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fiber_rx:fiber_rx"                                                                                                                                                                     ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rst_n     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rst_n[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -795,7 +720,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Thu Dec 28 10:36:27 2023
+    Info: Processing started: Mon Jan 08 17:24:27 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off driver_board -c driver_board
 Info (11104): Parallel Compilation has detected 20 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 14 of the 14 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file src/work_led.v
@@ -833,11 +758,11 @@ Info (12021): Found 1 design units, including 1 entities, in source file src/byp
     Info (12023): Found entity 1: BypDeal
 Info (12021): Found 1 design units, including 1 entities, in source file src/ads7822.v
     Info (12023): Found entity 1: ads7822
-Warning (10236): Verilog HDL Implicit Net warning at driver_board.v(136): created implicit net for "Bypok_filt"
+Warning (10236): Verilog HDL Implicit Net warning at driver_board.v(150): created implicit net for "Bypok_filt"
 Info (12127): Elaborating entity "driver_board" for the top level hierarchy
-Warning (10858): Verilog HDL warning at driver_board.v(90): object PllLock used but never assigned
-Warning (10030): Net "PllLock" at driver_board.v(90) has no driver or initial value, using a default initial value '0'
-Warning (10034): Output port "test[7..2]" at driver_board.v(71) has no driver
+Warning (10036): Verilog HDL or VHDL warning at driver_board.v(81): object "rst_n" assigned a value but never read
+Warning (10858): Verilog HDL warning at driver_board.v(98): object PllLock used but never assigned
+Warning (10034): Output port "test[7..2]" at driver_board.v(79) has no driver
 Info (12128): Elaborating entity "fiber_rx" for hierarchy "fiber_rx:fiber_rx"
 Info (12128): Elaborating entity "verify_rx" for hierarchy "fiber_rx:fiber_rx|verify_rx:verify_rx"
 Info (12128): Elaborating entity "fiber_delay_rx" for hierarchy "fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx"
@@ -853,53 +778,31 @@ Info (12128): Elaborating entity "err_detect" for hierarchy "err_detect:err_dete
 Info (12128): Elaborating entity "err_high_detect_unlock" for hierarchy "err_detect:err_detect|err_high_detect_unlock:hot1"
 Info (12128): Elaborating entity "div_1us" for hierarchy "div_1us:div_1us"
 Info (12128): Elaborating entity "work_led" for hierarchy "work_led:work_led"
-Warning (12241): 21 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 22 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "RUDIN" is stuck at GND
-    Warning (13410): Pin "RDDIN" is stuck at GND
-    Warning (13410): Pin "LUDIN" is stuck at GND
-    Warning (13410): Pin "LDDIN" is stuck at GND
-    Warning (13410): Pin "LED1" is stuck at VCC
-    Warning (13410): Pin "LED2" is stuck at GND
-    Warning (13410): Pin "LED3" is stuck at VCC
-    Warning (13410): Pin "BypCon" is stuck at GND
-    Warning (13410): Pin "test[0]" is stuck at VCC
-    Warning (13410): Pin "test[1]" is stuck at GND
     Warning (13410): Pin "test[2]" is stuck at GND
     Warning (13410): Pin "test[3]" is stuck at GND
     Warning (13410): Pin "test[4]" is stuck at GND
     Warning (13410): Pin "test[5]" is stuck at GND
     Warning (13410): Pin "test[6]" is stuck at GND
     Warning (13410): Pin "test[7]" is stuck at GND
-Info (17049): 72 registers lost all their fanouts during netlist optimizations.
-Warning (21074): Design contains 12 input pin(s) that do not drive logic
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Reset"
-    Warning (15610): No output dependent on input pin "ERR[0]"
-    Warning (15610): No output dependent on input pin "ERR[1]"
-    Warning (15610): No output dependent on input pin "ERR[2]"
-    Warning (15610): No output dependent on input pin "ERR[3]"
-    Warning (15610): No output dependent on input pin "COMM_R"
-    Warning (15610): No output dependent on input pin "DCOV"
-    Warning (15610): No output dependent on input pin "DCUV"
-    Warning (15610): No output dependent on input pin "HOT_2"
-    Warning (15610): No output dependent on input pin "Powerfall"
-    Warning (15610): No output dependent on input pin "BypPowerErr"
-    Warning (15610): No output dependent on input pin "BypOk"
-Info (21057): Implemented 301 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 889 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 21 input pins
-    Info (21059): Implemented 19 output pins
-    Info (21061): Implemented 261 logic cells
-Info (144001): Generated suppressed messages file D:/temp/hff/power_unit_inGRboard/output_files/driver_board.map.smsg
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 40 warnings
-    Info: Peak virtual memory: 4586 megabytes
-    Info: Processing ended: Thu Dec 28 10:36:28 2023
+    Info (21059): Implemented 22 output pins
+    Info (21061): Implemented 846 logic cells
+Info (144001): Generated suppressed messages file D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/output_files/driver_board.map.smsg
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 4587 megabytes
+    Info: Processing ended: Mon Jan 08 17:24:28 2024
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in D:/temp/hff/power_unit_inGRboard/output_files/driver_board.map.smsg.
+The suppressed messages can be found in D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/output_files/driver_board.map.smsg.
 
 

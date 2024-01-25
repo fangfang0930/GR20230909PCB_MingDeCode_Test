@@ -1,11 +1,11 @@
-Fitter Status : Successful - Thu Dec 28 10:36:30 2023
+Fitter Status : Successful - Mon Jan 08 17:23:39 2024
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : driver_board
 Top-level Entity Name : driver_board
 Family : MAX II
 Device : EPM1270T144I5
 Timing Models : Final
-Total logic elements : 241 / 1,270 ( 19 % )
-Total pins : 40 / 116 ( 34 % )
+Total logic elements : 810 / 1,270 ( 64 % )
+Total pins : 43 / 116 ( 37 % )
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )

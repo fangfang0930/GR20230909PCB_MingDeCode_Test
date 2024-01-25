@@ -12,6 +12,9 @@ ERR[3] => _.IN1
 LED1 <= LED1.DB_MAX_OUTPUT_PORT_TYPE
 LED2 <= err_all.DB_MAX_OUTPUT_PORT_TYPE
 LED3 <= reset_unit.DB_MAX_OUTPUT_PORT_TYPE
+LED4 <= fiber_delay_err.DB_MAX_OUTPUT_PORT_TYPE
+LED5 <= fiber_verify_err.DB_MAX_OUTPUT_PORT_TYPE
+LED6 <= err_detect:err_detect.err_unit
 COMM_R => COMM_R.IN1
 COMM_T <= fiber_tx:fiber_tx.COMM_T
 ADclk <= ads7822:ads7822.ad_clk
@@ -130,7 +133,7 @@ COMM_R => delay_err_cnt.OUTPUTSELECT
 
 
 |driver_board|fiber_tx:fiber_tx
-clk => COMM_T~reg0.CLK
+clk => COMM_T_reg.CLK
 clk => send_moduleinfo[0].CLK
 clk => send_moduleinfo[1].CLK
 clk => send_moduleinfo[2].CLK
@@ -205,7 +208,7 @@ rst_n => cnt_4m[0].ACLR
 rst_n => cnt_4m[1].ACLR
 rst_n => cnt_4m[2].ACLR
 rst_n => cnt_4m[3].ACLR
-rst_n => COMM_T~reg0.PRESET
+rst_n => COMM_T_reg.PRESET
 udc_volt[0] => send_volt[0].DATAIN
 udc_volt[1] => send_volt[1].DATAIN
 udc_volt[2] => send_volt[2].DATAIN
@@ -233,7 +236,7 @@ err_info[11] => send_moduleinfo[11].DATAIN
 ModuRun => send_moduleinfo[12].DATAIN
 BypOk => send_moduleinfo[13].DATAIN
 AD_Work <= Equal2.DB_MAX_OUTPUT_PORT_TYPE
-COMM_T <= COMM_T~reg0.DB_MAX_OUTPUT_PORT_TYPE
+COMM_T <= COMM_T_reg.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |driver_board|BypDeal:BypDeal

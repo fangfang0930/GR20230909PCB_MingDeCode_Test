@@ -106,9 +106,9 @@ GND*                         : 39        :        :                   :         
 LED1                         : 40        : output : 3.3-V LVTTL       :         : 4         : Y              
 LED2                         : 41        : output : 3.3-V LVTTL       :         : 4         : Y              
 LED3                         : 42        : output : 3.3-V LVTTL       :         : 4         : Y              
-GND*                         : 43        :        :                   :         : 4         :                
-GND*                         : 44        :        :                   :         : 4         :                
-GND*                         : 45        :        :                   :         : 4         :                
+LED4                         : 43        : output : 3.3-V LVTTL       :         : 4         : Y              
+LED5                         : 44        : output : 3.3-V LVTTL       :         : 4         : Y              
+LED6                         : 45        : output : 3.3-V LVTTL       :         : 4         : Y              
 VCCIO4                       : 46        : power  :                   : 3.3V    : 4         :                
 GNDIO                        : 47        : gnd    :                   :         :           :                
 GND*                         : 48        :        :                   :         : 4         :                

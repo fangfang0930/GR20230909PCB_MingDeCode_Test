@@ -21,7 +21,8 @@ output COMM_T;
 parameter COUNT_4MHZ=9;
 parameter SEND_BITS_NUMS=79;//发送的数据位总数,Erik
 
-reg COMM_T;
+wire COMM_T=~COMM_T_reg;//hff-新电路板和安路板子信号相反reg COMM_T;
+reg COMM_T_reg; //hff-新电路板和安路板子信号相反
 reg [11:0]send_volt;
 reg [13:0]send_moduleinfo;//锁存要发送的单元数据
 //reg AD_Work;AD的采样频率为50K
@@ -74,7 +75,7 @@ end
 always@(posedge clk or negedge rst_n)
 begin 
 	if(!rst_n)
-	COMM_T<=1;
+	COMM_T_reg<=1;
 	else 
 	case(send_nums)//原来数据发送是从高到低，现在修改成通讯协议的方式，Erik
 /*
@@ -106,43 +107,43 @@ begin
 	24:COMM_T<=verify_calc[1];
 	25:COMM_T<=verify_calc[0];
 */
-	1:COMM_T<=0;//发送起始位,状态0用来装载数据,因此数据往后顺延.Erik
-	2:COMM_T<=send_volt[0];
-	3:COMM_T<=send_volt[1];
-	4:COMM_T<=send_volt[2];
-	5:COMM_T<=send_volt[3];
-	6:COMM_T<=send_volt[4];
-	7:COMM_T<=send_volt[5];
-	8:COMM_T<=send_volt[6];
-	9:COMM_T<=send_volt[7];
-	10:COMM_T<=send_volt[8];
-	11:COMM_T<=send_volt[9];
-	12:COMM_T<=send_volt[10];
-	13:COMM_T<=send_volt[11];
+	1:COMM_T_reg<=0;//发送起始位,状态0用来装载数据,因此数据往后顺延.Erik
+	2:COMM_T_reg<=send_volt[0];
+	3:COMM_T_reg<=send_volt[1];
+	4:COMM_T_reg<=send_volt[2];
+	5:COMM_T_reg<=send_volt[3];
+	6:COMM_T_reg<=send_volt[4];
+	7:COMM_T_reg<=send_volt[5];
+	8:COMM_T_reg<=send_volt[6];
+	9:COMM_T_reg<=send_volt[7];
+	10:COMM_T_reg<=send_volt[8];
+	11:COMM_T_reg<=send_volt[9];
+	12:COMM_T_reg<=send_volt[10];
+	13:COMM_T_reg<=send_volt[11];
 	
-	14:COMM_T<=send_moduleinfo[0];
-	15:COMM_T<=send_moduleinfo[1];
-	16:COMM_T<=send_moduleinfo[2];
-	17:COMM_T<=send_moduleinfo[3];
-	18:COMM_T<=send_moduleinfo[4];
-	19:COMM_T<=send_moduleinfo[5];
-	20:COMM_T<=send_moduleinfo[6];
-	21:COMM_T<=send_moduleinfo[7];
-	22:COMM_T<=send_moduleinfo[8];
-	23:COMM_T<=send_moduleinfo[9];
-	24:COMM_T<=send_moduleinfo[10];
-	25:COMM_T<=send_moduleinfo[11];
-	26:COMM_T<=send_moduleinfo[12];
-	27:COMM_T<=send_moduleinfo[13];
+	14:COMM_T_reg<=send_moduleinfo[0];
+	15:COMM_T_reg<=send_moduleinfo[1];
+	16:COMM_T_reg<=send_moduleinfo[2];
+	17:COMM_T_reg<=send_moduleinfo[3];
+	18:COMM_T_reg<=send_moduleinfo[4];
+	19:COMM_T_reg<=send_moduleinfo[5];
+	20:COMM_T_reg<=send_moduleinfo[6];
+	21:COMM_T_reg<=send_moduleinfo[7];
+	22:COMM_T_reg<=send_moduleinfo[8];
+	23:COMM_T_reg<=send_moduleinfo[9];
+	24:COMM_T_reg<=send_moduleinfo[10];
+	25:COMM_T_reg<=send_moduleinfo[11];
+	26:COMM_T_reg<=send_moduleinfo[12];
+	27:COMM_T_reg<=send_moduleinfo[13];
 	
-	28:COMM_T<=verify_calc[0];
-	29:COMM_T<=verify_calc[1];
-	30:COMM_T<=verify_calc[2];
-	31:COMM_T<=verify_calc[3];
-	32:COMM_T<=verify_calc[4];
-	33:COMM_T<=verify_calc[5];
-	34:COMM_T<=verify_calc[6];
-	default:COMM_T<=1;//0位装载数据,也发高电平,Erik
+	28:COMM_T_reg<=verify_calc[0];
+	29:COMM_T_reg<=verify_calc[1];
+	30:COMM_T_reg<=verify_calc[2];
+	31:COMM_T_reg<=verify_calc[3];
+	32:COMM_T_reg<=verify_calc[4];
+	33:COMM_T_reg<=verify_calc[5];
+	34:COMM_T_reg<=verify_calc[6];
+	default:COMM_T_reg<=1;//0位装载数据,也发高电平,Erik
 	endcase
 end 
 

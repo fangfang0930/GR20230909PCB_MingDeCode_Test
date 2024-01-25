@@ -1,5 +1,5 @@
 Assembler report for driver_board
-Thu Dec 28 10:36:31 2023
+Mon Jan 08 17:23:40 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -10,7 +10,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: D:/temp/hff/power_unit_inGRboard/output_files/driver_board.pof
+  5. Assembler Device Options: D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/output_files/driver_board.pof
   6. Assembler Messages
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Dec 28 10:36:31 2023 ;
+; Assembler Status      ; Successful - Mon Jan 08 17:23:40 2024 ;
 ; Revision Name         ; driver_board                          ;
 ; Top-level Entity Name ; driver_board                          ;
 ; Family                ; MAX II                                ;
@@ -75,24 +75,24 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+-----------+---------------+
 
 
-+----------------------------------------------------------------+
-; Assembler Generated Files                                      ;
-+----------------------------------------------------------------+
-; File Name                                                      ;
-+----------------------------------------------------------------+
-; D:/temp/hff/power_unit_inGRboard/output_files/driver_board.pof ;
-+----------------------------------------------------------------+
++--------------------------------------------------------------------------------+
+; Assembler Generated Files                                                      ;
++--------------------------------------------------------------------------------+
+; File Name                                                                      ;
++--------------------------------------------------------------------------------+
+; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/output_files/driver_board.pof ;
++--------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------+
-; Assembler Device Options: D:/temp/hff/power_unit_inGRboard/output_files/driver_board.pof ;
-+----------------+-------------------------------------------------------------------------+
-; Option         ; Setting                                                                 ;
-+----------------+-------------------------------------------------------------------------+
-; Device         ; EPM1270T144I5                                                           ;
-; JTAG usercode  ; 0x0060B5D7                                                              ;
-; Checksum       ; 0x0060B5F0                                                              ;
-+----------------+-------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/output_files/driver_board.pof ;
++----------------+-----------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                 ;
++----------------+-----------------------------------------------------------------------------------------+
+; Device         ; EPM1270T144I5                                                                           ;
+; JTAG usercode  ; 0x005B5D78                                                                              ;
+; Checksum       ; 0x005B5D91                                                                              ;
++----------------+-----------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -101,14 +101,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Thu Dec 28 10:36:30 2023
+    Info: Processing started: Mon Jan 08 17:23:40 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off driver_board -c driver_board
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4541 megabytes
-    Info: Processing ended: Thu Dec 28 10:36:31 2023
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Mon Jan 08 17:23:40 2024
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 
