@@ -29,7 +29,7 @@ reg [8:0]RDCnt;
 reg [8:0]LUCnt;
 reg [8:0]LDCnt;
 
-parameter DeadTime = 0;	
+parameter DeadTime = 280;//hff-死区时间7us;	
 
 always@(posedge clk or negedge rst_n)
 begin 

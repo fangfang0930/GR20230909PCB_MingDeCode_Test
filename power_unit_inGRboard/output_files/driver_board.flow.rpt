@@ -1,5 +1,5 @@
 Flow report for driver_board
-Mon Jan 08 17:24:28 2024
+Fri Jan 26 16:42:15 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,14 +40,14 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +---------------------------+--------------------------------------------------+
-; Flow Status               ; Successful - Mon Jan 08 17:24:28 2024            ;
+; Flow Status               ; Successful - Fri Jan 26 16:42:15 2024            ;
 ; Quartus II 64-Bit Version ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name             ; driver_board                                     ;
 ; Top-level Entity Name     ; driver_board                                     ;
 ; Family                    ; MAX II                                           ;
 ; Device                    ; EPM1270T144I5                                    ;
 ; Timing Models             ; Final                                            ;
-; Total logic elements      ; 846                                              ;
+; Total logic elements      ; 870                                              ;
 ; Total pins                ; 43                                               ;
 ; Total virtual pins        ; 0                                                ;
 ; UFM blocks                ; 0 / 1 ( 0 % )                                    ;
@@ -59,7 +59,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/08/2024 17:24:27 ;
+; Start date & time ; 01/26/2024 16:42:14 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; driver_board        ;
 +-------------------+---------------------+
@@ -70,15 +70,20 @@ applicable agreement for further details.
 +---------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                       ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +---------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                 ; 115287452290268.170470586731656 ; --            ; --          ; --             ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH  ; tb_UNIT_FINAL.V                 ; --            ; --          ; eda_simulation ;
+; COMPILER_SIGNATURE_ID                 ; 115287452290268.170625853407600 ; --            ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME              ; NA                              ; --            ; --          ; tb_ads7822     ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH  ; tb_ads7822                      ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT                ; Verilog Hdl                     ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                   ; ModelSim (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS          ; TEST_BENCH_MODE                 ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                   ; tb_ads7822.v                    ; --            ; --          ; tb_ads7822     ;
+; EDA_TEST_BENCH_MODULE_NAME            ; tb_ads7822                      ; --            ; --          ; tb_ads7822     ;
+; EDA_TEST_BENCH_NAME                   ; tb_ads7822                      ; --            ; --          ; eda_simulation ;
 ; EDA_TIME_SCALE                        ; 1 ns                            ; --            ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP                ; 100                             ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP                ; -40                             ; --            ; --          ; --             ;
 ; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; 3.3V                            ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION         ; No Heat Sink With Still Air     ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY              ; output_files                    ; --            ; --          ; --             ;
 +---------------------------------------+---------------------------------+---------------+-------------+----------------+
 

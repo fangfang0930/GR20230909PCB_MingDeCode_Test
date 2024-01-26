@@ -24,6 +24,7 @@ reg 	 [11:0]udc_volt;
 reg	done;
 reg DCOV;
 reg DCUV;
+
 //计算实际直压值,目前放到阀控板计算,此处先屏蔽,Erik
 /*
 wire done;
@@ -39,6 +40,8 @@ mux12 mux(
 		.done(done)
 		);
 */
+
+
 always@(posedge clk or negedge rst_n)
 begin 
 	if(!rst_n)
@@ -48,7 +51,8 @@ begin
     end
     else if(data_valid == 1'b1)
     begin
-    	real_volt<=sample_data;
+    	real_volt<=sample_data ;//(sample_data<<10-(sample_data*58));//(sample_data*1024-sample_data*(100-943)*1024)>>10;
+		
         done <= 1'b1;
     end
 end
@@ -65,6 +69,7 @@ begin
 	udc_volt<=real_volt + volt_delta;
 	else if(done&&DSW[5]==1'b1&&real_volt>12'd62)//限幅 矫正
 	udc_volt<=real_volt - volt_delta;
+	
 end
 
 always@(posedge clk or negedge rst_n)
@@ -74,15 +79,15 @@ begin
 		DCOV<=0;
 		DCUV<=0;
 	end
-	else if(done&&real_volt>12'd3644)//1150Vdc软件过压
+	else if(done&&real_volt>12'd3644)//real_volt>12'd3644)//1150Vdc软件过压
 	begin
 		DCOV<=1;
 		DCUV<=0;
 	end
-	else if(done&&real_volt<12'd1584)//500Vdc软件欠压
+	else if(done&&real_volt<12'd1584)//real_volt<12'd1584)//500Vdc软件欠压
 	begin
 		DCOV<=0;
-		DCUV<=1;
+		DCUV<=1;//0;
 	end
     else
     begin

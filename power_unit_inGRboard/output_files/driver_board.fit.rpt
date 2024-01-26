@@ -1,5 +1,5 @@
 Fitter report for driver_board
-Mon Jan 08 17:23:39 2024
+Fri Jan 26 16:42:04 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -56,14 +56,14 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Fitter Summary                                                               ;
 +---------------------------+--------------------------------------------------+
-; Fitter Status             ; Successful - Mon Jan 08 17:23:39 2024            ;
+; Fitter Status             ; Successful - Fri Jan 26 16:42:04 2024            ;
 ; Quartus II 64-Bit Version ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name             ; driver_board                                     ;
 ; Top-level Entity Name     ; driver_board                                     ;
 ; Family                    ; MAX II                                           ;
 ; Device                    ; EPM1270T144I5                                    ;
 ; Timing Models             ; Final                                            ;
-; Total logic elements      ; 810 / 1,270 ( 64 % )                             ;
+; Total logic elements      ; 836 / 1,270 ( 66 % )                             ;
 ; Total pins                ; 43 / 116 ( 37 % )                                ;
 ; Total virtual pins        ; 0                                                ;
 ; UFM blocks                ; 0 / 1 ( 0 % )                                    ;
@@ -127,13 +127,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 20          ;
 ; Maximum allowed            ; 14          ;
 ;                            ;             ;
-; Average used               ; 4.50        ;
+; Average used               ; 11.00       ;
 ; Maximum used               ; 14          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;  50.0%      ;
-;     Processors 9-14        ; < 0.1%      ;
+;     Processors 1-8         ; 100.0%      ;
+;     Processors 9-14        ;  50.0%      ;
 ;     Processors 15-20       ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -149,29 +148,29 @@ The pin-out file can be found in D:/temp/hff/MingDeCode_TEST/power_unit_inGRboar
 +---------------------------------------------+----------------------+
 ; Resource                                    ; Usage                ;
 +---------------------------------------------+----------------------+
-; Total logic elements                        ; 810 / 1,270 ( 64 % ) ;
-;     -- Combinational with no register       ; 354                  ;
-;     -- Register only                        ; 32                   ;
-;     -- Combinational with a register        ; 424                  ;
+; Total logic elements                        ; 836 / 1,270 ( 66 % ) ;
+;     -- Combinational with no register       ; 350                  ;
+;     -- Register only                        ; 46                   ;
+;     -- Combinational with a register        ; 440                  ;
 ;                                             ;                      ;
 ; Logic element usage by number of LUT inputs ;                      ;
-;     -- 4 input functions                    ; 308                  ;
-;     -- 3 input functions                    ; 73                   ;
+;     -- 4 input functions                    ; 313                  ;
+;     -- 3 input functions                    ; 74                   ;
 ;     -- 2 input functions                    ; 361                  ;
-;     -- 1 input functions                    ; 35                   ;
+;     -- 1 input functions                    ; 41                   ;
 ;     -- 0 input functions                    ; 1                    ;
 ;                                             ;                      ;
 ; Logic elements by mode                      ;                      ;
-;     -- normal mode                          ; 473                  ;
-;     -- arithmetic mode                      ; 337                  ;
-;     -- qfbk mode                            ; 35                   ;
+;     -- normal mode                          ; 503                  ;
+;     -- arithmetic mode                      ; 333                  ;
+;     -- qfbk mode                            ; 33                   ;
 ;     -- register cascade mode                ; 0                    ;
-;     -- synchronous clear/load mode          ; 315                  ;
+;     -- synchronous clear/load mode          ; 317                  ;
 ;     -- asynchronous clear/load mode         ; 0                    ;
 ;                                             ;                      ;
-; Total registers                             ; 456 / 1,270 ( 36 % ) ;
-; Total LABs                                  ; 95 / 127 ( 75 % )    ;
-; Logic elements in carry chains              ; 375                  ;
+; Total registers                             ; 486 / 1,270 ( 38 % ) ;
+; Total LABs                                  ; 99 / 127 ( 78 % )    ;
+; Logic elements in carry chains              ; 371                  ;
 ; Virtual pins                                ; 0                    ;
 ; I/O pins                                    ; 43 / 116 ( 37 % )    ;
 ;     -- Clock pins                           ; 2 / 4 ( 50 % )       ;
@@ -180,12 +179,12 @@ The pin-out file can be found in D:/temp/hff/MingDeCode_TEST/power_unit_inGRboar
 ; UFM blocks                                  ; 0 / 1 ( 0 % )        ;
 ; Global clocks                               ; 1 / 4 ( 25 % )       ;
 ; JTAGs                                       ; 0 / 1 ( 0 % )        ;
-; Average interconnect usage (total/H/V)      ; 14% / 15% / 12%      ;
-; Peak interconnect usage (total/H/V)         ; 19% / 22% / 16%      ;
-; Maximum fan-out                             ; 456                  ;
+; Average interconnect usage (total/H/V)      ; 13% / 12% / 14%      ;
+; Peak interconnect usage (total/H/V)         ; 15% / 14% / 17%      ;
+; Maximum fan-out                             ; 486                  ;
 ; Highest non-global fan-out                  ; 39                   ;
-; Total fan-out                               ; 3481                 ;
-; Average fan-out                             ; 4.08                 ;
+; Total fan-out                               ; 3574                 ;
+; Average fan-out                             ; 4.07                 ;
 +---------------------------------------------+----------------------+
 
 
@@ -200,21 +199,21 @@ The pin-out file can be found in D:/temp/hff/MingDeCode_TEST/power_unit_inGRboar
 ; COMM_R      ; 37    ; 4        ; 1            ; 3            ; 0           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
 ; DCOV        ; 66    ; 4        ; 12           ; 0            ; 1           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
 ; DCUV        ; 70    ; 4        ; 15           ; 0            ; 2           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
-; DSW[0]      ; 103   ; 3        ; 17           ; 8            ; 5           ; 3                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
-; DSW[1]      ; 104   ; 3        ; 17           ; 8            ; 1           ; 3                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
-; DSW[2]      ; 105   ; 3        ; 17           ; 8            ; 0           ; 3                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
-; DSW[3]      ; 106   ; 3        ; 17           ; 9            ; 3           ; 3                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
-; DSW[4]      ; 107   ; 3        ; 17           ; 9            ; 1           ; 3                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
-; DSW[5]      ; 108   ; 3        ; 17           ; 10           ; 4           ; 4                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
+; DSW[0]      ; 103   ; 3        ; 17           ; 8            ; 5           ; 0                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
+; DSW[1]      ; 104   ; 3        ; 17           ; 8            ; 1           ; 0                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
+; DSW[2]      ; 105   ; 3        ; 17           ; 8            ; 0           ; 0                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
+; DSW[3]      ; 106   ; 3        ; 17           ; 9            ; 3           ; 0                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
+; DSW[4]      ; 107   ; 3        ; 17           ; 9            ; 1           ; 0                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
+; DSW[5]      ; 108   ; 3        ; 17           ; 10           ; 4           ; 0                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
 ; ERR[0]      ; 137   ; 2        ; 6            ; 11           ; 3           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
 ; ERR[1]      ; 138   ; 2        ; 5            ; 11           ; 0           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
 ; ERR[2]      ; 139   ; 2        ; 5            ; 11           ; 1           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
 ; ERR[3]      ; 140   ; 2        ; 4            ; 11           ; 1           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
 ; HOT_1       ; 72    ; 4        ; 16           ; 0            ; 0           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
 ; HOT_2       ; 78    ; 3        ; 17           ; 3            ; 2           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
-; Powerfall   ; 71    ; 4        ; 16           ; 0            ; 3           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
+; Powerfall   ; 71    ; 4        ; 16           ; 0            ; 3           ; 2                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
 ; Reset       ; 67    ; 4        ; 12           ; 0            ; 0           ; 0                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
-; clk         ; 18    ; 1        ; 0            ; 7            ; 5           ; 456                   ; 0                  ; yes    ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
+; clk         ; 18    ; 1        ; 0            ; 7            ; 5           ; 486                   ; 0                  ; yes    ; no              ; no       ; Off          ; 3.3-V LVTTL  ; User                 ;
 +-------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+
 
 
@@ -435,29 +434,29 @@ Note: User assignments will override these defaults. The user specified values a
 +---------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node            ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                             ; Library Name ;
 +---------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------+--------------+
-; |driver_board                         ; 810 (4)     ; 456          ; 0          ; 43   ; 0            ; 354 (4)      ; 32 (0)            ; 424 (0)          ; 375 (0)         ; 35 (0)     ; |driver_board                                                   ; work         ;
-;    |ads7822:ads7822|                  ; 62 (62)     ; 43           ; 0          ; 0    ; 0            ; 19 (19)      ; 14 (14)           ; 29 (29)          ; 12 (12)         ; 0 (0)      ; |driver_board|ads7822:ads7822                                   ; work         ;
+; |driver_board                         ; 836 (4)     ; 486          ; 0          ; 43   ; 0            ; 350 (4)      ; 46 (0)            ; 440 (0)          ; 371 (0)         ; 33 (0)     ; |driver_board                                                   ; work         ;
+;    |ads7822:ads7822|                  ; 63 (63)     ; 43           ; 0          ; 0    ; 0            ; 20 (20)      ; 14 (14)           ; 29 (29)          ; 12 (12)         ; 0 (0)      ; |driver_board|ads7822:ads7822                                   ; work         ;
 ;    |div_1us:div_1us|                  ; 37 (37)     ; 16           ; 0          ; 0    ; 0            ; 21 (21)      ; 1 (1)             ; 15 (15)          ; 16 (16)         ; 2 (2)      ; |driver_board|div_1us:div_1us                                   ; work         ;
-;    |err_detect:err_detect|            ; 356 (62)    ; 212          ; 0          ; 0    ; 0            ; 144 (32)     ; 0 (0)             ; 212 (30)         ; 194 (26)        ; 2 (1)      ; |driver_board|err_detect:err_detect                             ; work         ;
+;    |err_detect:err_detect|            ; 360 (65)    ; 212          ; 0          ; 0    ; 0            ; 148 (35)     ; 0 (0)             ; 212 (30)         ; 194 (26)        ; 2 (1)      ; |driver_board|err_detect:err_detect                             ; work         ;
 ;       |err_high_detect:byppowererr|   ; 25 (25)     ; 15           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:byppowererr ; work         ;
 ;       |err_high_detect:err1|          ; 25 (25)     ; 15           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:err1        ; work         ;
 ;       |err_high_detect:err2|          ; 25 (25)     ; 15           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:err2        ; work         ;
 ;       |err_high_detect:err3|          ; 25 (25)     ; 15           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:err3        ; work         ;
 ;       |err_high_detect:err4|          ; 25 (25)     ; 15           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:err4        ; work         ;
-;       |err_high_detect:hot2|          ; 26 (26)     ; 17           ; 0          ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 17 (17)          ; 14 (14)         ; 1 (1)      ; |driver_board|err_detect:err_detect|err_high_detect:hot2        ; work         ;
-;       |err_high_detect:powererr|      ; 24 (24)     ; 15           ; 0          ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:powererr    ; work         ;
+;       |err_high_detect:hot2|          ; 27 (27)     ; 17           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 17 (17)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:hot2        ; work         ;
+;       |err_high_detect:powererr|      ; 25 (25)     ; 15           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:powererr    ; work         ;
 ;       |err_high_detect:soft_low|      ; 23 (23)     ; 15           ; 0          ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:soft_low    ; work         ;
 ;       |err_high_detect:soft_over|     ; 23 (23)     ; 15           ; 0          ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:soft_over   ; work         ;
 ;       |err_high_detect:udc_low|       ; 24 (24)     ; 15           ; 0          ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:udc_low     ; work         ;
 ;       |err_high_detect:udc_over|      ; 24 (24)     ; 15           ; 0          ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:udc_over    ; work         ;
-;       |err_high_detect_unlock:hot1|   ; 25 (25)     ; 15           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect_unlock:hot1 ; work         ;
+;       |err_high_detect_unlock:hot1|   ; 24 (24)     ; 15           ; 0          ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 1 (1)      ; |driver_board|err_detect:err_detect|err_high_detect_unlock:hot1 ; work         ;
 ;    |err_high_detect:bypok_filt|       ; 23 (23)     ; 15           ; 0          ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_high_detect:bypok_filt                        ; work         ;
-;    |fiber_rx:fiber_rx|                ; 131 (107)   ; 80           ; 0          ; 0    ; 0            ; 51 (42)      ; 5 (3)             ; 75 (62)          ; 57 (52)         ; 6 (3)      ; |driver_board|fiber_rx:fiber_rx                                 ; work         ;
+;    |fiber_rx:fiber_rx|                ; 131 (107)   ; 80           ; 0          ; 0    ; 0            ; 51 (42)      ; 3 (3)             ; 77 (62)          ; 57 (52)         ; 6 (3)      ; |driver_board|fiber_rx:fiber_rx                                 ; work         ;
 ;       |fiber_delay_rx:fiber_delay_rx| ; 9 (9)       ; 6            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 6 (6)            ; 5 (5)           ; 1 (1)      ; |driver_board|fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx   ; work         ;
-;       |verify_rx:verify_rx|           ; 15 (15)     ; 9            ; 0          ; 0    ; 0            ; 6 (6)        ; 2 (2)             ; 7 (7)            ; 0 (0)           ; 2 (2)      ; |driver_board|fiber_rx:fiber_rx|verify_rx:verify_rx             ; work         ;
+;       |verify_rx:verify_rx|           ; 15 (15)     ; 9            ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 9 (9)            ; 0 (0)           ; 2 (2)      ; |driver_board|fiber_rx:fiber_rx|verify_rx:verify_rx             ; work         ;
 ;    |fiber_tx:fiber_tx|                ; 92 (92)     ; 38           ; 0          ; 0    ; 0            ; 54 (54)      ; 9 (9)             ; 29 (29)          ; 41 (41)         ; 15 (15)    ; |driver_board|fiber_tx:fiber_tx                                 ; work         ;
-;    |pwm_out:pwm_out|                  ; 4 (4)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |driver_board|pwm_out:pwm_out                                   ; work         ;
-;    |volt_calc:volt_calc|              ; 54 (54)     ; 26           ; 0          ; 0    ; 0            ; 28 (28)      ; 3 (3)             ; 23 (23)          ; 22 (22)         ; 9 (9)      ; |driver_board|volt_calc:volt_calc                               ; work         ;
+;    |pwm_out:pwm_out|                  ; 53 (53)     ; 34           ; 0          ; 0    ; 0            ; 19 (19)      ; 0 (0)             ; 34 (34)          ; 18 (18)         ; 2 (2)      ; |driver_board|pwm_out:pwm_out                                   ; work         ;
+;    |volt_calc:volt_calc|              ; 26 (26)     ; 26           ; 0          ; 0    ; 0            ; 0 (0)        ; 19 (19)           ; 7 (7)            ; 0 (0)           ; 5 (5)      ; |driver_board|volt_calc:volt_calc                               ; work         ;
 ;    |work_led:work_led|                ; 47 (47)     ; 22           ; 0          ; 0    ; 0            ; 25 (25)      ; 0 (0)             ; 22 (22)          ; 19 (19)         ; 1 (1)      ; |driver_board|work_led:work_led                                 ; work         ;
 +---------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -469,6 +468,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name        ; Pin Type ; Pad to Core 0 ;
 +-------------+----------+---------------+
 ; Reset       ; Input    ; (0)           ;
+; DSW[0]      ; Input    ; (0)           ;
+; DSW[1]      ; Input    ; (0)           ;
+; DSW[2]      ; Input    ; (0)           ;
+; DSW[3]      ; Input    ; (0)           ;
+; DSW[4]      ; Input    ; (0)           ;
+; DSW[5]      ; Input    ; (0)           ;
 ; clk         ; Input    ; (0)           ;
 ; DCOV        ; Input    ; (1)           ;
 ; DCUV        ; Input    ; (1)           ;
@@ -479,12 +484,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ERR[3]      ; Input    ; (1)           ;
 ; HOT_2       ; Input    ; (1)           ;
 ; Powerfall   ; Input    ; (1)           ;
-; DSW[5]      ; Input    ; (1)           ;
-; DSW[0]      ; Input    ; (1)           ;
-; DSW[1]      ; Input    ; (1)           ;
-; DSW[2]      ; Input    ; (1)           ;
-; DSW[3]      ; Input    ; (1)           ;
-; DSW[4]      ; Input    ; (1)           ;
 ; COMM_R      ; Input    ; (1)           ;
 ; BypOk       ; Input    ; (1)           ;
 ; HOT_1       ; Input    ; (1)           ;
@@ -514,67 +513,70 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------+----------+---------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                 ;
-+---------------------------------------------------------------------+---------------+---------+--------------+--------+----------------------+------------------+
-; Name                                                                ; Location      ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ;
-+---------------------------------------------------------------------+---------------+---------+--------------+--------+----------------------+------------------+
-; ads7822:ads7822|Equal5~0                                            ; LC_X11_Y9_N3  ; 12      ; Clock enable ; no     ; --                   ; --               ;
-; ads7822:ads7822|ad_syn[7]~1                                         ; LC_X12_Y9_N8  ; 12      ; Clock enable ; no     ; --                   ; --               ;
-; ads7822:ads7822|always2~0                                           ; LC_X12_Y10_N9 ; 6       ; Sync. clear  ; no     ; --                   ; --               ;
-; ads7822:ads7822|data_valid                                          ; LC_X11_Y9_N5  ; 13      ; Clock enable ; no     ; --                   ; --               ;
-; clk                                                                 ; PIN_18        ; 456     ; Clock        ; yes    ; Global Clock         ; GCLK0            ;
-; err_detect:err_detect|ByperrDelay[11]~3                             ; LC_X7_Y4_N7   ; 16      ; Clock enable ; no     ; --                   ; --               ;
-; err_detect:err_detect|LessThan0~1                                   ; LC_X8_Y4_N4   ; 10      ; Sync. clear  ; no     ; --                   ; --               ;
-; err_detect:err_detect|err_high_detect:byppowererr|cnt_delay[2]~28   ; LC_X9_Y5_N0   ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
-; err_detect:err_detect|err_high_detect:byppowererr|cnt_delay[2]~32   ; LC_X12_Y6_N0  ; 14      ; Clock enable ; no     ; --                   ; --               ;
-; err_detect:err_detect|err_high_detect:err1|cnt_delay[6]~26          ; LC_X6_Y6_N9   ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
-; err_detect:err_detect|err_high_detect:err1|cnt_delay[6]~33          ; LC_X3_Y7_N4   ; 14      ; Clock enable ; no     ; --                   ; --               ;
-; err_detect:err_detect|err_high_detect:err2|cnt_delay[1]~26          ; LC_X6_Y6_N6   ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
-; err_detect:err_detect|err_high_detect:err2|cnt_delay[1]~33          ; LC_X4_Y5_N0   ; 14      ; Clock enable ; no     ; --                   ; --               ;
-; err_detect:err_detect|err_high_detect:err3|cnt_delay[0]~26          ; LC_X6_Y6_N4   ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
-; err_detect:err_detect|err_high_detect:err3|cnt_delay[0]~33          ; LC_X4_Y5_N7   ; 14      ; Clock enable ; no     ; --                   ; --               ;
-; err_detect:err_detect|err_high_detect:err4|cnt_delay[5]~26          ; LC_X6_Y6_N5   ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
-; err_detect:err_detect|err_high_detect:err4|cnt_delay[5]~33          ; LC_X3_Y9_N2   ; 14      ; Clock enable ; no     ; --                   ; --               ;
-; err_detect:err_detect|err_high_detect:hot2|cnt_delay[1]~24          ; LC_X9_Y5_N6   ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
-; err_detect:err_detect|err_high_detect:hot2|cnt_delay[1]~33          ; LC_X9_Y7_N8   ; 14      ; Clock enable ; no     ; --                   ; --               ;
-; err_detect:err_detect|err_high_detect:powererr|cnt_delay[13]~28     ; LC_X6_Y6_N3   ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
-; err_detect:err_detect|err_high_detect:powererr|cnt_delay[13]~32     ; LC_X4_Y6_N2   ; 14      ; Clock enable ; no     ; --                   ; --               ;
-; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[9]~23      ; LC_X6_Y6_N7   ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
-; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[9]~33      ; LC_X1_Y5_N2   ; 14      ; Clock enable ; no     ; --                   ; --               ;
-; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[2]~23     ; LC_X6_Y6_N8   ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
-; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[2]~33     ; LC_X1_Y5_N0   ; 14      ; Clock enable ; no     ; --                   ; --               ;
-; err_detect:err_detect|err_high_detect:udc_low|cnt_delay[10]~28      ; LC_X6_Y6_N1   ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
-; err_detect:err_detect|err_high_detect:udc_low|cnt_delay[10]~32      ; LC_X4_Y7_N1   ; 14      ; Clock enable ; no     ; --                   ; --               ;
-; err_detect:err_detect|err_high_detect:udc_over|cnt_delay[13]~28     ; LC_X6_Y6_N2   ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
-; err_detect:err_detect|err_high_detect:udc_over|cnt_delay[13]~32     ; LC_X4_Y10_N1  ; 14      ; Clock enable ; no     ; --                   ; --               ;
-; err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[8]~24   ; LC_X9_Y5_N1   ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
-; err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[8]~33   ; LC_X9_Y7_N7   ; 14      ; Clock enable ; no     ; --                   ; --               ;
-; err_high_detect:bypok_filt|cnt_delay[8]~23                          ; LC_X6_Y6_N0   ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
-; err_high_detect:bypok_filt|cnt_delay[8]~33                          ; LC_X9_Y6_N8   ; 14      ; Clock enable ; no     ; --                   ; --               ;
-; fiber_rx:fiber_rx|Equal7~0                                          ; LC_X13_Y5_N6  ; 7       ; Sync. clear  ; no     ; --                   ; --               ;
-; fiber_rx:fiber_rx|Equal7~1                                          ; LC_X13_Y5_N5  ; 7       ; Sync. clear  ; no     ; --                   ; --               ;
-; fiber_rx:fiber_rx|Equal7~2                                          ; LC_X13_Y4_N3  ; 7       ; Sync. clear  ; no     ; --                   ; --               ;
-; fiber_rx:fiber_rx|HighCnt[1]~2                                      ; LC_X13_Y4_N6  ; 7       ; Clock enable ; no     ; --                   ; --               ;
-; fiber_rx:fiber_rx|always10~0                                        ; LC_X11_Y4_N0  ; 6       ; Sync. load   ; no     ; --                   ; --               ;
-; fiber_rx:fiber_rx|always11~0                                        ; LC_X13_Y5_N7  ; 16      ; Sync. load   ; no     ; --                   ; --               ;
-; fiber_rx:fiber_rx|always5~0                                         ; LC_X14_Y5_N5  ; 5       ; Clock enable ; no     ; --                   ; --               ;
-; fiber_rx:fiber_rx|byp_cnt_nums[0]~12                                ; LC_X12_Y3_N0  ; 6       ; Clock enable ; no     ; --                   ; --               ;
-; fiber_rx:fiber_rx|cnt_byp[9]~32                                     ; LC_X13_Y5_N1  ; 16      ; Clock enable ; no     ; --                   ; --               ;
-; fiber_rx:fiber_rx|cnt_reset_err[0]~12                               ; LC_X11_Y4_N8  ; 6       ; Clock enable ; no     ; --                   ; --               ;
-; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|delay_err_cnt[4]~12 ; LC_X10_Y6_N0  ; 5       ; Clock enable ; no     ; --                   ; --               ;
-; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|delay_err_cnt[4]~6  ; LC_X9_Y5_N7   ; 6       ; Sync. clear  ; no     ; --                   ; --               ;
-; fiber_rx:fiber_rx|receive_code_cnt[3]~10                            ; LC_X15_Y5_N6  ; 6       ; Clock enable ; no     ; --                   ; --               ;
-; fiber_rx:fiber_rx|receive_flag                                      ; LC_X13_Y4_N9  ; 10      ; Sync. clear  ; no     ; --                   ; --               ;
-; fiber_rx:fiber_rx|rst_cnt_nums[5]~13                                ; LC_X12_Y3_N8  ; 6       ; Clock enable ; no     ; --                   ; --               ;
-; fiber_rx:fiber_rx|strat_cnt_nums[1]~12                              ; LC_X13_Y3_N0  ; 6       ; Clock enable ; no     ; --                   ; --               ;
-; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[3]~2          ; LC_X12_Y5_N5  ; 4       ; Clock enable ; no     ; --                   ; --               ;
-; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_flag_out               ; LC_X13_Y5_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ;
-; fiber_tx:fiber_tx|Equal3~0                                          ; LC_X9_Y9_N4   ; 12      ; Clock enable ; no     ; --                   ; --               ;
-; volt_calc:volt_calc|Equal0~1                                        ; LC_X6_Y10_N3  ; 13      ; Sync. load   ; no     ; --                   ; --               ;
-; volt_calc:volt_calc|udc_volt[1]~0                                   ; LC_X8_Y10_N3  ; 11      ; Clock enable ; no     ; --                   ; --               ;
-; work_led:work_led|Equal1~0                                          ; LC_X13_Y7_N7  ; 22      ; Clock enable ; no     ; --                   ; --               ;
-+---------------------------------------------------------------------+---------------+---------+--------------+--------+----------------------+------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                ;
++---------------------------------------------------------------------+--------------+---------+--------------+--------+----------------------+------------------+
+; Name                                                                ; Location     ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ;
++---------------------------------------------------------------------+--------------+---------+--------------+--------+----------------------+------------------+
+; ads7822:ads7822|Equal5~0                                            ; LC_X16_Y4_N4 ; 12      ; Clock enable ; no     ; --                   ; --               ;
+; ads7822:ads7822|ad_syn[4]~1                                         ; LC_X15_Y3_N2 ; 12      ; Clock enable ; no     ; --                   ; --               ;
+; ads7822:ads7822|always2~0                                           ; LC_X15_Y2_N8 ; 6       ; Sync. clear  ; no     ; --                   ; --               ;
+; ads7822:ads7822|data_valid                                          ; LC_X16_Y4_N2 ; 13      ; Clock enable ; no     ; --                   ; --               ;
+; clk                                                                 ; PIN_18       ; 486     ; Clock        ; yes    ; Global Clock         ; GCLK0            ;
+; err_detect:err_detect|ByperrDelay[0]~2                              ; LC_X14_Y4_N9 ; 16      ; Clock enable ; no     ; --                   ; --               ;
+; err_detect:err_detect|LessThan0~1                                   ; LC_X10_Y5_N6 ; 10      ; Sync. clear  ; no     ; --                   ; --               ;
+; err_detect:err_detect|err_high_detect:byppowererr|cnt_delay[7]~28   ; LC_X9_Y8_N4  ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
+; err_detect:err_detect|err_high_detect:byppowererr|cnt_delay[7]~32   ; LC_X14_Y9_N2 ; 14      ; Clock enable ; no     ; --                   ; --               ;
+; err_detect:err_detect|err_high_detect:err1|cnt_delay[0]~26          ; LC_X6_Y7_N7  ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
+; err_detect:err_detect|err_high_detect:err1|cnt_delay[0]~33          ; LC_X5_Y7_N7  ; 14      ; Clock enable ; no     ; --                   ; --               ;
+; err_detect:err_detect|err_high_detect:err2|cnt_delay[4]~26          ; LC_X9_Y8_N9  ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
+; err_detect:err_detect|err_high_detect:err2|cnt_delay[4]~33          ; LC_X14_Y9_N6 ; 14      ; Clock enable ; no     ; --                   ; --               ;
+; err_detect:err_detect|err_high_detect:err3|cnt_delay[3]~26          ; LC_X6_Y7_N1  ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
+; err_detect:err_detect|err_high_detect:err3|cnt_delay[3]~33          ; LC_X5_Y7_N4  ; 14      ; Clock enable ; no     ; --                   ; --               ;
+; err_detect:err_detect|err_high_detect:err4|cnt_delay[12]~26         ; LC_X9_Y8_N0  ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
+; err_detect:err_detect|err_high_detect:err4|cnt_delay[12]~33         ; LC_X12_Y9_N5 ; 14      ; Clock enable ; no     ; --                   ; --               ;
+; err_detect:err_detect|err_high_detect:hot2|cnt_delay[4]~24          ; LC_X9_Y8_N7  ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
+; err_detect:err_detect|err_high_detect:hot2|cnt_delay[4]~33          ; LC_X9_Y9_N8  ; 14      ; Clock enable ; no     ; --                   ; --               ;
+; err_detect:err_detect|err_high_detect:powererr|cnt_delay[4]~28      ; LC_X9_Y8_N2  ; 14      ; Sync. clear  ; no     ; --                   ; --               ;
+; err_detect:err_detect|err_high_detect:powererr|cnt_delay[4]~33      ; LC_X11_Y7_N8 ; 14      ; Clock enable ; no     ; --                   ; --               ;
+; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[0]~23      ; LC_X12_Y5_N4 ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
+; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[0]~33      ; LC_X10_Y4_N2 ; 14      ; Clock enable ; no     ; --                   ; --               ;
+; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[13]~23    ; LC_X12_Y5_N6 ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
+; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[13]~33    ; LC_X12_Y5_N8 ; 14      ; Clock enable ; no     ; --                   ; --               ;
+; err_detect:err_detect|err_high_detect:udc_low|cnt_delay[3]~28       ; LC_X12_Y5_N2 ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
+; err_detect:err_detect|err_high_detect:udc_low|cnt_delay[3]~32       ; LC_X12_Y9_N6 ; 14      ; Clock enable ; no     ; --                   ; --               ;
+; err_detect:err_detect|err_high_detect:udc_over|cnt_delay[13]~28     ; LC_X12_Y5_N9 ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
+; err_detect:err_detect|err_high_detect:udc_over|cnt_delay[13]~32     ; LC_X9_Y7_N2  ; 14      ; Clock enable ; no     ; --                   ; --               ;
+; err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[8]~24   ; LC_X9_Y8_N5  ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
+; err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[8]~33   ; LC_X8_Y10_N5 ; 14      ; Clock enable ; no     ; --                   ; --               ;
+; err_high_detect:bypok_filt|cnt_delay[7]~23                          ; LC_X9_Y8_N8  ; 15      ; Sync. clear  ; no     ; --                   ; --               ;
+; err_high_detect:bypok_filt|cnt_delay[7]~33                          ; LC_X14_Y8_N0 ; 14      ; Clock enable ; no     ; --                   ; --               ;
+; fiber_rx:fiber_rx|Equal7~0                                          ; LC_X6_Y8_N6  ; 7       ; Sync. clear  ; no     ; --                   ; --               ;
+; fiber_rx:fiber_rx|Equal7~1                                          ; LC_X6_Y8_N0  ; 6       ; Sync. clear  ; no     ; --                   ; --               ;
+; fiber_rx:fiber_rx|Equal7~2                                          ; LC_X6_Y8_N2  ; 7       ; Sync. clear  ; no     ; --                   ; --               ;
+; fiber_rx:fiber_rx|HighCnt[6]~2                                      ; LC_X6_Y5_N7  ; 7       ; Clock enable ; no     ; --                   ; --               ;
+; fiber_rx:fiber_rx|always10~0                                        ; LC_X8_Y7_N8  ; 6       ; Sync. load   ; no     ; --                   ; --               ;
+; fiber_rx:fiber_rx|always11~0                                        ; LC_X7_Y7_N2  ; 16      ; Sync. load   ; no     ; --                   ; --               ;
+; fiber_rx:fiber_rx|always5~0                                         ; LC_X7_Y5_N9  ; 5       ; Clock enable ; no     ; --                   ; --               ;
+; fiber_rx:fiber_rx|byp_cnt_nums[5]~12                                ; LC_X6_Y9_N9  ; 6       ; Clock enable ; no     ; --                   ; --               ;
+; fiber_rx:fiber_rx|cnt_byp[11]~32                                    ; LC_X7_Y7_N7  ; 16      ; Clock enable ; no     ; --                   ; --               ;
+; fiber_rx:fiber_rx|cnt_reset_err[5]~12                               ; LC_X8_Y7_N0  ; 6       ; Clock enable ; no     ; --                   ; --               ;
+; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|delay_err_cnt[3]~12 ; LC_X6_Y6_N9  ; 5       ; Clock enable ; no     ; --                   ; --               ;
+; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|delay_err_cnt[3]~6  ; LC_X6_Y7_N5  ; 6       ; Sync. clear  ; no     ; --                   ; --               ;
+; fiber_rx:fiber_rx|receive_code_cnt[0]~10                            ; LC_X7_Y4_N3  ; 6       ; Clock enable ; no     ; --                   ; --               ;
+; fiber_rx:fiber_rx|receive_flag                                      ; LC_X6_Y5_N2  ; 10      ; Sync. clear  ; no     ; --                   ; --               ;
+; fiber_rx:fiber_rx|rst_cnt_nums[2]~13                                ; LC_X6_Y9_N7  ; 6       ; Clock enable ; no     ; --                   ; --               ;
+; fiber_rx:fiber_rx|strat_cnt_nums[3]~12                              ; LC_X6_Y10_N9 ; 6       ; Clock enable ; no     ; --                   ; --               ;
+; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[1]~2          ; LC_X7_Y6_N1  ; 4       ; Clock enable ; no     ; --                   ; --               ;
+; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_flag_out               ; LC_X7_Y7_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ;
+; fiber_tx:fiber_tx|Equal3~0                                          ; LC_X13_Y7_N3 ; 12      ; Clock enable ; no     ; --                   ; --               ;
+; pwm_out:pwm_out|LDDIN~1                                             ; LC_X5_Y9_N6  ; 7       ; Clock enable ; no     ; --                   ; --               ;
+; pwm_out:pwm_out|LUCnt~2                                             ; LC_X5_Y9_N4  ; 10      ; Sync. clear  ; no     ; --                   ; --               ;
+; pwm_out:pwm_out|LUDIN~1                                             ; LC_X3_Y9_N2  ; 10      ; Clock enable ; no     ; --                   ; --               ;
+; pwm_out:pwm_out|RDDIN~1                                             ; LC_X5_Y10_N5 ; 10      ; Clock enable ; no     ; --                   ; --               ;
+; pwm_out:pwm_out|RUDIN~1                                             ; LC_X5_Y10_N9 ; 7       ; Clock enable ; no     ; --                   ; --               ;
+; work_led:work_led|Equal1~0                                          ; LC_X5_Y5_N7  ; 22      ; Clock enable ; no     ; --                   ; --               ;
++---------------------------------------------------------------------+--------------+---------+--------------+--------+----------------------+------------------+
 
 
 +---------------------------------------------------------------------+
@@ -582,7 +584,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+----------------------+------------------+
 ; Name ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ;
 +------+----------+---------+----------------------+------------------+
-; clk  ; PIN_18   ; 456     ; Global Clock         ; GCLK0            ;
+; clk  ; PIN_18   ; 486     ; Global Clock         ; GCLK0            ;
 +------+----------+---------+----------------------+------------------+
 
 
@@ -592,101 +594,96 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                                       ; Fan-Out ;
 +----------------------------------------------------------------------------+---------+
 ; fiber_rx:fiber_rx|LessThan9~1                                              ; 39      ;
+; LED1~0                                                                     ; 27      ;
 ; work_led:work_led|Equal1~0                                                 ; 22      ;
 ; work_led:work_led|Equal0~2                                                 ; 19      ;
 ; err_detect:err_detect|BypCon_syn[0]                                        ; 18      ;
+; fiber_rx:fiber_rx|cnt_reset_err[5]                                         ; 17      ;
+; fiber_rx:fiber_rx|cnt_reset_err[4]                                         ; 17      ;
+; err_detect:err_detect|ByperrDelay[0]~2                                     ; 16      ;
 ; err_detect:err_detect|BypCon_syn[1]                                        ; 16      ;
-; err_detect:err_detect|ByperrDelay[11]~3                                    ; 16      ;
 ; ads7822:ads7822|AD_Work                                                    ; 16      ;
-; fiber_rx:fiber_rx|cnt_byp[9]~32                                            ; 16      ;
+; fiber_rx:fiber_rx|cnt_byp[11]~32                                           ; 16      ;
 ; fiber_rx:fiber_rx|always11~0                                               ; 16      ;
-; fiber_rx:fiber_rx|cnt_reset_err[5]                                         ; 16      ;
-; fiber_rx:fiber_rx|cnt_reset_err[4]                                         ; 16      ;
+; fiber_rx:fiber_rx|verify_rx:verify_rx|rx_data[2]                           ; 16      ;
+; fiber_rx:fiber_rx|LessThan9~0                                              ; 16      ;
 ; err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[8]~24          ; 15      ;
-; err_high_detect:bypok_filt|cnt_delay[8]~23                                 ; 15      ;
-; err_detect:err_detect|err_high_detect:powererr|cnt_delay[13]~28            ; 15      ;
-; err_detect:err_detect|err_high_detect:hot2|cnt_delay[1]~24                 ; 15      ;
-; err_detect:err_detect|err_high_detect:err4|cnt_delay[5]~26                 ; 15      ;
-; err_detect:err_detect|err_high_detect:err3|cnt_delay[0]~26                 ; 15      ;
-; err_detect:err_detect|err_high_detect:byppowererr|cnt_delay[2]~28          ; 15      ;
-; err_detect:err_detect|err_high_detect:err2|cnt_delay[1]~26                 ; 15      ;
-; err_detect:err_detect|err_high_detect:err1|cnt_delay[6]~26                 ; 15      ;
-; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[9]~23             ; 15      ;
-; err_detect:err_detect|err_high_detect:udc_low|cnt_delay[10]~28             ; 15      ;
-; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[2]~23            ; 15      ;
+; err_high_detect:bypok_filt|cnt_delay[7]~23                                 ; 15      ;
+; err_detect:err_detect|err_high_detect:hot2|cnt_delay[4]~24                 ; 15      ;
+; err_detect:err_detect|err_high_detect:err4|cnt_delay[12]~26                ; 15      ;
+; err_detect:err_detect|err_high_detect:err3|cnt_delay[3]~26                 ; 15      ;
+; err_detect:err_detect|err_high_detect:byppowererr|cnt_delay[7]~28          ; 15      ;
+; err_detect:err_detect|err_high_detect:err2|cnt_delay[4]~26                 ; 15      ;
+; err_detect:err_detect|err_high_detect:err1|cnt_delay[0]~26                 ; 15      ;
+; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[0]~23             ; 15      ;
+; err_detect:err_detect|err_high_detect:udc_low|cnt_delay[3]~28              ; 15      ;
+; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[13]~23           ; 15      ;
 ; err_detect:err_detect|err_high_detect:udc_over|cnt_delay[13]~28            ; 15      ;
-; fiber_rx:fiber_rx|LessThan9~0                                              ; 15      ;
 ; err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[8]~33          ; 14      ;
-; err_high_detect:bypok_filt|cnt_delay[8]~33                                 ; 14      ;
-; err_detect:err_detect|err_high_detect:powererr|cnt_delay[13]~32            ; 14      ;
-; err_detect:err_detect|err_high_detect:hot2|cnt_delay[1]~33                 ; 14      ;
-; err_detect:err_detect|err_high_detect:err4|cnt_delay[5]~33                 ; 14      ;
-; err_detect:err_detect|err_high_detect:err3|cnt_delay[0]~33                 ; 14      ;
-; err_detect:err_detect|err_high_detect:byppowererr|cnt_delay[2]~32          ; 14      ;
-; err_detect:err_detect|err_high_detect:err2|cnt_delay[1]~33                 ; 14      ;
-; err_detect:err_detect|err_high_detect:err1|cnt_delay[6]~33                 ; 14      ;
-; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[9]~33             ; 14      ;
-; err_detect:err_detect|err_high_detect:udc_low|cnt_delay[10]~32             ; 14      ;
-; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[2]~33            ; 14      ;
+; err_high_detect:bypok_filt|cnt_delay[7]~33                                 ; 14      ;
+; err_detect:err_detect|err_high_detect:powererr|cnt_delay[4]~33             ; 14      ;
+; err_detect:err_detect|err_high_detect:powererr|cnt_delay[4]~28             ; 14      ;
+; err_detect:err_detect|err_high_detect:hot2|cnt_delay[4]~33                 ; 14      ;
+; err_detect:err_detect|err_high_detect:err4|cnt_delay[12]~33                ; 14      ;
+; err_detect:err_detect|err_high_detect:err3|cnt_delay[3]~33                 ; 14      ;
+; err_detect:err_detect|err_high_detect:byppowererr|cnt_delay[7]~32          ; 14      ;
+; err_detect:err_detect|err_high_detect:err2|cnt_delay[4]~33                 ; 14      ;
+; err_detect:err_detect|err_high_detect:err1|cnt_delay[0]~33                 ; 14      ;
+; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[0]~33             ; 14      ;
+; err_detect:err_detect|err_high_detect:udc_low|cnt_delay[3]~32              ; 14      ;
+; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[13]~33           ; 14      ;
 ; err_detect:err_detect|err_high_detect:udc_over|cnt_delay[13]~32            ; 14      ;
 ; fiber_tx:fiber_tx|send_nums[3]                                             ; 14      ;
 ; ~GND                                                                       ; 13      ;
 ; ads7822:ads7822|data_valid                                                 ; 13      ;
-; volt_calc:volt_calc|Equal0~1                                               ; 13      ;
 ; fiber_tx:fiber_tx|send_nums[0]                                             ; 13      ;
 ; fiber_tx:fiber_tx|send_nums[2]                                             ; 13      ;
-; ads7822:ads7822|ad_syn[7]~1                                                ; 12      ;
+; ads7822:ads7822|ad_syn[4]~1                                                ; 12      ;
 ; ads7822:ads7822|Equal5~0                                                   ; 12      ;
 ; fiber_tx:fiber_tx|Equal3~0                                                 ; 12      ;
 ; err_detect:err_detect|err_high_detect:byppowererr|Equal0~0                 ; 12      ;
 ; fiber_tx:fiber_tx|send_nums[1]                                             ; 12      ;
 ; div_1us:div_1us|Equal1~3                                                   ; 11      ;
 ; div_1us:div_1us|Equal0~1                                                   ; 11      ;
-; volt_calc:volt_calc|udc_volt[1]~0                                          ; 11      ;
-; volt_calc:volt_calc|always1~0                                              ; 11      ;
 ; err_detect:err_detect|LessThan0~1                                          ; 10      ;
 ; fiber_rx:fiber_rx|receive_flag                                             ; 10      ;
+; pwm_out:pwm_out|LUDIN~1                                                    ; 10      ;
+; pwm_out:pwm_out|LUCnt~2                                                    ; 10      ;
+; pwm_out:pwm_out|RDDIN~1                                                    ; 10      ;
 ; fiber_rx:fiber_rx|rx_syn[1]                                                ; 9       ;
 ; work_led:work_led|Equal2~2                                                 ; 9       ;
 ; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_flag_out                      ; 8       ;
+; ads7822:ads7822|numer_cnt[0]                                               ; 8       ;
+; ads7822:ads7822|numer_cnt[4]                                               ; 8       ;
 ; fiber_rx:fiber_rx|end_flag~2                                               ; 8       ;
-; fiber_rx:fiber_rx|HighCnt[1]~2                                             ; 7       ;
+; fiber_rx:fiber_rx|HighCnt[6]~2                                             ; 7       ;
 ; fiber_rx:fiber_rx|LessThan0~1                                              ; 7       ;
 ; ads7822:ads7822|numer_cnt[5]~0                                             ; 7       ;
 ; fiber_tx:fiber_tx|always1~1                                                ; 7       ;
 ; fiber_tx:fiber_tx|Equal0~0                                                 ; 7       ;
 ; fiber_tx:fiber_tx|cnt_4m[0]                                                ; 7       ;
 ; fiber_rx:fiber_rx|Equal7~2                                                 ; 7       ;
-; fiber_rx:fiber_rx|Equal7~1                                                 ; 7       ;
 ; fiber_rx:fiber_rx|Equal7~0                                                 ; 7       ;
-; ads7822:ads7822|numer_cnt[4]                                               ; 7       ;
 ; ads7822:ads7822|Equal2~1                                                   ; 7       ;
 ; fiber_rx:fiber_rx|verify_rx:verify_rx|comb~1                               ; 7       ;
-; volt_calc:volt_calc|real_volt[9]                                           ; 6       ;
+; pwm_out:pwm_out|LDDIN~1                                                    ; 7       ;
+; fiber_rx:fiber_rx|verify_rx:verify_rx|rx_data[3]                           ; 7       ;
+; pwm_out:pwm_out|RUDIN~1                                                    ; 7       ;
 ; ads7822:ads7822|always2~0                                                  ; 6       ;
-; fiber_rx:fiber_rx|receive_code_cnt[3]~10                                   ; 6       ;
-; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|delay_err_cnt[4]~6         ; 6       ;
-; fiber_rx:fiber_rx|byp_cnt_nums[0]~12                                       ; 6       ;
-; fiber_rx:fiber_rx|rst_cnt_nums[5]~13                                       ; 6       ;
-; fiber_rx:fiber_rx|strat_cnt_nums[1]~12                                     ; 6       ;
+; fiber_rx:fiber_rx|receive_code_cnt[0]~10                                   ; 6       ;
+; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|delay_err_cnt[3]~6         ; 6       ;
+; fiber_rx:fiber_rx|byp_cnt_nums[5]~12                                       ; 6       ;
+; fiber_rx:fiber_rx|rst_cnt_nums[2]~13                                       ; 6       ;
+; fiber_rx:fiber_rx|Equal7~1                                                 ; 6       ;
+; fiber_rx:fiber_rx|strat_cnt_nums[3]~12                                     ; 6       ;
 ; fiber_tx:fiber_tx|send_nums[5]                                             ; 6       ;
 ; fiber_tx:fiber_tx|send_nums[4]                                             ; 6       ;
 ; fiber_tx:fiber_tx|send_nums[6]                                             ; 6       ;
-; fiber_rx:fiber_rx|cnt_reset_err[0]~12                                      ; 6       ;
+; fiber_rx:fiber_rx|cnt_reset_err[5]~12                                      ; 6       ;
 ; fiber_rx:fiber_rx|always10~0                                               ; 6       ;
-; LED1~0                                                                     ; 6       ;
 ; div_1us:div_1us|Add1~32                                                    ; 5       ;
 ; err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[1]~28          ; 5       ;
 ; err_high_detect:bypok_filt|cnt_delay[1]~27                                 ; 5       ;
-; volt_calc:volt_calc|real_volt[4]                                           ; 5       ;
-; volt_calc:volt_calc|Add1~37                                                ; 5       ;
-; volt_calc:volt_calc|Add0~37                                                ; 5       ;
-; volt_calc:volt_calc|real_volt[5]                                           ; 5       ;
-; volt_calc:volt_calc|real_volt[10]                                          ; 5       ;
-; volt_calc:volt_calc|real_volt[2]                                           ; 5       ;
-; volt_calc:volt_calc|real_volt[1]                                           ; 5       ;
-; volt_calc:volt_calc|real_volt[6]                                           ; 5       ;
-; volt_calc:volt_calc|real_volt[11]                                          ; 5       ;
 ; err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[6]~3           ; 5       ;
 ; err_detect:err_detect|err_high_detect:hot2|cnt_delay[1]~28                 ; 5       ;
 ; err_high_detect:bypok_filt|cnt_delay[6]~7                                  ; 5       ;
@@ -716,14 +713,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[6]~7             ; 5       ;
 ; err_detect:err_detect|err_high_detect:udc_over|cnt_delay[6]~13             ; 5       ;
 ; err_detect:err_detect|err_high_detect:udc_over|cnt_delay[1]~3              ; 5       ;
-; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|delay_err_cnt[4]~12        ; 5       ;
+; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|delay_err_cnt[3]~12        ; 5       ;
+; ads7822:ads7822|numer_cnt[1]                                               ; 5       ;
+; ads7822:ads7822|numer_cnt[2]                                               ; 5       ;
+; ads7822:ads7822|numer_cnt[3]                                               ; 5       ;
+; ads7822:ads7822|numer_cnt[5]                                               ; 5       ;
 ; fiber_rx:fiber_rx|divide_cnt[0]                                            ; 5       ;
 ; fiber_rx:fiber_rx|cnt_byp[7]~15                                            ; 5       ;
 ; fiber_rx:fiber_rx|cnt_byp[2]~5                                             ; 5       ;
 ; err_detect:err_detect|err_unit                                             ; 5       ;
 ; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|fiber_delay_err            ; 5       ;
 ; fiber_rx:fiber_rx|verify_rx:verify_rx|fiber_verify_err                     ; 5       ;
-; DSW[5]                                                                     ; 4       ;
 ; div_1us:div_1us|cnt_time[2]                                                ; 4       ;
 ; div_1us:div_1us|cnt_time1ms[2]                                             ; 4       ;
 ; div_1us:div_1us|cnt_time1ms[3]                                             ; 4       ;
@@ -731,22 +731,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; div_1us:div_1us|cnt_time1ms[9]                                             ; 4       ;
 ; div_1us:div_1us|cnt_time1ms[10]                                            ; 4       ;
 ; div_1us:div_1us|cnt_time[1]                                                ; 4       ;
-; volt_calc:volt_calc|real_volt[7]                                           ; 4       ;
-; volt_calc:volt_calc|real_volt[3]                                           ; 4       ;
-; volt_calc:volt_calc|real_volt[8]                                           ; 4       ;
 ; fiber_tx:fiber_tx|cnt_4m[1]                                                ; 4       ;
 ; fiber_tx:fiber_tx|cnt_4m[2]                                                ; 4       ;
 ; err_high_detect:bypok_filt|signal_out                                      ; 4       ;
-; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[3]~2                 ; 4       ;
+; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[1]~2                 ; 4       ;
+; fiber_rx:fiber_rx|verify_rx:verify_rx|rx_data[1]                           ; 4       ;
+; fiber_rx:fiber_rx|verify_rx:verify_rx|rx_data[0]                           ; 4       ;
 ; work_led:work_led|Add1~27                                                  ; 4       ;
+; pwm_out:pwm_out|Add0~22                                                    ; 4       ;
 ; ads7822:ads7822|Equal1~0                                                   ; 4       ;
-; ads7822:ads7822|numer_cnt[5]                                               ; 4       ;
-; ads7822:ads7822|numer_cnt[1]                                               ; 4       ;
-; ads7822:ads7822|numer_cnt[0]                                               ; 4       ;
-; ads7822:ads7822|div_cnt[5]                                                 ; 4       ;
 ; ads7822:ads7822|div_cnt[2]                                                 ; 4       ;
-; ads7822:ads7822|div_cnt[0]                                                 ; 4       ;
+; ads7822:ads7822|div_cnt[5]                                                 ; 4       ;
 ; ads7822:ads7822|div_cnt[4]                                                 ; 4       ;
+; ads7822:ads7822|div_cnt[0]                                                 ; 4       ;
 ; fiber_rx:fiber_rx|receive_code_cnt[0]                                      ; 4       ;
 ; fiber_rx:fiber_rx|receive_code_cnt[2]                                      ; 4       ;
 ; fiber_rx:fiber_rx|end_flag~0                                               ; 4       ;
@@ -755,11 +752,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[0]                   ; 4       ;
 ; fiber_rx:fiber_rx|strat_cnt_nums[5]                                        ; 4       ;
 ; work_led:work_led|cnt_500ms[0]                                             ; 4       ;
-; DSW[4]                                                                     ; 3       ;
-; DSW[3]                                                                     ; 3       ;
-; DSW[2]                                                                     ; 3       ;
-; DSW[1]                                                                     ; 3       ;
-; DSW[0]                                                                     ; 3       ;
+; pwm_out:pwm_out|LUCnt[4]~12                                                ; 4       ;
 ; div_1us:div_1us|cnt_time1ms[1]                                             ; 3       ;
 ; div_1us:div_1us|cnt_time1ms[0]                                             ; 3       ;
 ; fiber_rx:fiber_rx|Add0~31                                                  ; 3       ;
@@ -769,9 +762,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; div_1us:div_1us|cnt_time1ms[7]                                             ; 3       ;
 ; div_1us:div_1us|cnt_time1ms[8]                                             ; 3       ;
 ; div_1us:div_1us|Equal0~0                                                   ; 3       ;
-; volt_calc:volt_calc|real_volt[0]                                           ; 3       ;
-; volt_calc:volt_calc|DCUV~0                                                 ; 3       ;
-; volt_calc:volt_calc|LessThan0~2                                            ; 3       ;
+; volt_calc:volt_calc|real_volt[11]                                          ; 3       ;
 ; err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[13]            ; 3       ;
 ; err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[12]            ; 3       ;
 ; err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[11]            ; 3       ;
@@ -797,7 +788,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; err_detect:err_detect|Cnt_1ms[9]                                           ; 3       ;
 ; div_1us:div_1us|cnt_time[3]                                                ; 3       ;
 ; div_1us:div_1us|cnt_time[5]                                                ; 3       ;
-; fiber_tx:fiber_tx|Add4~7                                                   ; 3       ;
+; ads7822:ads7822|Add1~22                                                    ; 3       ;
 ; fiber_tx:fiber_tx|Add7~7                                                   ; 3       ;
 ; fiber_tx:fiber_tx|cnt_4m[3]                                                ; 3       ;
 ; err_detect:err_detect|err_high_detect:powererr|cnt_delay[13]               ; 3       ;
@@ -919,8 +910,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; err_detect:err_detect|err_high_detect:udc_over|cnt_delay[5]                ; 3       ;
 ; err_detect:err_detect|err_high_detect:udc_over|cnt_delay[4]                ; 3       ;
 ; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums~0                    ; 3       ;
-; fiber_rx:fiber_rx|verify_rx:verify_rx|rx_data[1]                           ; 3       ;
-; fiber_rx:fiber_rx|verify_rx:verify_rx|rx_data[0]                           ; 3       ;
 ; work_led:work_led|cnt_1ms[0]                                               ; 3       ;
 ; work_led:work_led|cnt_1ms[1]                                               ; 3       ;
 ; work_led:work_led|cnt_1ms[3]                                               ; 3       ;
@@ -931,12 +920,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; work_led:work_led|cnt_1ms[7]                                               ; 3       ;
 ; work_led:work_led|cnt_1ms[8]                                               ; 3       ;
 ; work_led:work_led|cnt_1ms[9]                                               ; 3       ;
+; pwm_out:pwm_out|Add0~25                                                    ; 3       ;
+; pwm_out:pwm_out|Add0~20                                                    ; 3       ;
+; pwm_out:pwm_out|Add0~15                                                    ; 3       ;
+; pwm_out:pwm_out|Add0~10                                                    ; 3       ;
+; pwm_out:pwm_out|Add0~5                                                     ; 3       ;
+; pwm_out:pwm_out|Add0~0                                                     ; 3       ;
 ; work_led:work_led|time_1us_syn[0]                                          ; 3       ;
-; ads7822:ads7822|always7~0                                                  ; 3       ;
-; ads7822:ads7822|numer_cnt[2]                                               ; 3       ;
-; ads7822:ads7822|numer_cnt[3]                                               ; 3       ;
-; ads7822:ads7822|div_cnt[1]                                                 ; 3       ;
 ; ads7822:ads7822|div_cnt[3]                                                 ; 3       ;
+; ads7822:ads7822|div_cnt[1]                                                 ; 3       ;
 ; fiber_tx:fiber_tx|verify_calc[3]~17                                        ; 3       ;
 ; fiber_rx:fiber_rx|rx_data_syn[1]                                           ; 3       ;
 ; fiber_rx:fiber_rx|rx_data_syn[2]                                           ; 3       ;
@@ -963,7 +955,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; fiber_rx:fiber_rx|rst_cnt_nums[5]                                          ; 3       ;
 ; fiber_rx:fiber_rx|rst_cnt_nums[4]                                          ; 3       ;
 ; fiber_rx:fiber_rx|rst_cnt_nums[3]                                          ; 3       ;
-; fiber_rx:fiber_rx|start_stop~0                                             ; 3       ;
+; fiber_rx:fiber_rx|strat_cnt_nums[4]                                        ; 3       ;
+; fiber_rx:fiber_rx|strat_cnt_nums[3]                                        ; 3       ;
 ; work_led:work_led|cnt_500ms[1]                                             ; 3       ;
 ; work_led:work_led|cnt_500ms[3]                                             ; 3       ;
 ; work_led:work_led|cnt_500ms[2]                                             ; 3       ;
@@ -974,15 +967,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; work_led:work_led|cnt_500ms[8]                                             ; 3       ;
 ; fiber_rx:fiber_rx|cnt_byp[12]~25                                           ; 3       ;
 ; fiber_rx:fiber_rx|start_stop                                               ; 3       ;
+; Powerfall                                                                  ; 2       ;
+; ads7822:ads7822|ad_syn[10]                                                 ; 2       ;
+; ads7822:ads7822|ad_syn[0]                                                  ; 2       ;
+; ads7822:ads7822|ad_syn[1]                                                  ; 2       ;
+; ads7822:ads7822|ad_syn[5]                                                  ; 2       ;
 ; ads7822:ads7822|ad_syn[2]                                                  ; 2       ;
 ; ads7822:ads7822|ad_syn[3]                                                  ; 2       ;
 ; ads7822:ads7822|ad_syn[4]                                                  ; 2       ;
-; ads7822:ads7822|ad_syn[5]                                                  ; 2       ;
-; ads7822:ads7822|ad_syn[0]                                                  ; 2       ;
-; ads7822:ads7822|ad_syn[1]                                                  ; 2       ;
-; ads7822:ads7822|ad_syn[6]                                                  ; 2       ;
 ; ads7822:ads7822|ad_syn[9]                                                  ; 2       ;
-; ads7822:ads7822|ad_syn[10]                                                 ; 2       ;
+; ads7822:ads7822|ad_syn[6]                                                  ; 2       ;
 ; ads7822:ads7822|ad_syn[8]                                                  ; 2       ;
 ; ads7822:ads7822|ad_syn[7]                                                  ; 2       ;
 ; err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[1]             ; 2       ;
@@ -992,11 +986,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; err_high_detect:bypok_filt|cnt_delay[2]                                    ; 2       ;
 ; err_high_detect:bypok_filt|cnt_delay[1]                                    ; 2       ;
 ; err_high_detect:bypok_filt|cnt_delay[0]                                    ; 2       ;
+; volt_calc:volt_calc|DCUV~0                                                 ; 2       ;
+; volt_calc:volt_calc|LessThan2~2                                            ; 2       ;
+; volt_calc:volt_calc|LessThan2~0                                            ; 2       ;
 ; div_1us:div_1us|cnt_time[4]                                                ; 2       ;
 ; ads7822:ads7822|ad_trig_syn                                                ; 2       ;
-; volt_calc:volt_calc|LessThan1~2                                            ; 2       ;
-; volt_calc:volt_calc|LessThan1~1                                            ; 2       ;
-; volt_calc:volt_calc|LessThan2~0                                            ; 2       ;
+; volt_calc:volt_calc|real_volt[10]                                          ; 2       ;
+; volt_calc:volt_calc|real_volt[0]                                           ; 2       ;
+; volt_calc:volt_calc|real_volt[5]                                           ; 2       ;
+; volt_calc:volt_calc|real_volt[2]                                           ; 2       ;
+; volt_calc:volt_calc|real_volt[6]                                           ; 2       ;
+; volt_calc:volt_calc|real_volt[8]                                           ; 2       ;
 ; err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[11]~19         ; 2       ;
 ; err_detect:err_detect|err_high_detect_unlock:hot1|LessThan1~0              ; 2       ;
 ; err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[6]             ; 2       ;
@@ -1013,7 +1013,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; err_detect:err_detect|err_high_detect:err2|cnt_delay[0]                    ; 2       ;
 ; err_detect:err_detect|err_high_detect:err1|cnt_delay[0]                    ; 2       ;
 ; err_high_detect:bypok_filt|cnt_delay[11]~20                                ; 2       ;
-; err_high_detect:bypok_filt|cnt_delay[8]~12                                 ; 2       ;
+; err_high_detect:bypok_filt|cnt_delay[7]~12                                 ; 2       ;
 ; err_high_detect:bypok_filt|cnt_delay[8]                                    ; 2       ;
 ; err_high_detect:bypok_filt|cnt_delay[7]                                    ; 2       ;
 ; err_high_detect:bypok_filt|cnt_delay[6]                                    ; 2       ;
@@ -1036,10 +1036,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[2]               ; 2       ;
 ; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[1]               ; 2       ;
 ; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[0]               ; 2       ;
-; ads7822:ads7822|Add1~2                                                     ; 2       ;
-; volt_calc:volt_calc|udc_volt[0]                                            ; 2       ;
 ; fiber_tx:fiber_tx|Equal2~0                                                 ; 2       ;
 ; fiber_tx:fiber_tx|Add2~17                                                  ; 2       ;
+; fiber_tx:fiber_tx|Add4~17                                                  ; 2       ;
 ; fiber_rx:fiber_rx|Equal0~0                                                 ; 2       ;
 ; fiber_rx:fiber_rx|Add1~0                                                   ; 2       ;
 ; err_detect:err_detect|err_high_detect:powererr|cnt_delay[11]~23            ; 2       ;
@@ -1062,24 +1061,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; err_detect:err_detect|err_high_detect:byppowererr|cnt_delay[0]             ; 2       ;
 ; err_detect:err_detect|err_high_detect:err2|cnt_delay[11]~21                ; 2       ;
 ; err_detect:err_detect|err_high_detect:err1|cnt_delay[11]~21                ; 2       ;
-; err_detect:err_detect|LessThan1~0                                          ; 2       ;
+; err_detect:err_detect|LessThan1~2                                          ; 2       ;
 ; err_detect:err_detect|ByperrDelay[15]                                      ; 2       ;
 ; err_detect:err_detect|ByperrDelay[14]                                      ; 2       ;
 ; err_detect:err_detect|ByperrDelay[13]                                      ; 2       ;
 ; err_detect:err_detect|ByperrDelay[12]                                      ; 2       ;
-; err_detect:err_detect|byp_err~2                                            ; 2       ;
+; err_detect:err_detect|LessThan1~0                                          ; 2       ;
+; err_detect:err_detect|byp_err~4                                            ; 2       ;
 ; err_detect:err_detect|ByperrDelay[11]                                      ; 2       ;
 ; err_detect:err_detect|ByperrDelay[10]                                      ; 2       ;
+; err_detect:err_detect|byp_err~3                                            ; 2       ;
 ; err_detect:err_detect|ByperrDelay[9]                                       ; 2       ;
 ; err_detect:err_detect|ByperrDelay[8]                                       ; 2       ;
 ; err_detect:err_detect|ByperrDelay[7]                                       ; 2       ;
 ; err_detect:err_detect|ByperrDelay[6]                                       ; 2       ;
+; err_detect:err_detect|byp_err~2                                            ; 2       ;
 ; err_detect:err_detect|ByperrDelay[5]                                       ; 2       ;
 ; err_detect:err_detect|ByperrDelay[4]                                       ; 2       ;
 ; err_detect:err_detect|ByperrDelay[3]                                       ; 2       ;
 ; err_detect:err_detect|ByperrDelay[2]                                       ; 2       ;
 ; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[11]~20            ; 2       ;
-; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[9]~12             ; 2       ;
+; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[0]~12             ; 2       ;
 ; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[8]                ; 2       ;
 ; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[7]                ; 2       ;
 ; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[6]                ; 2       ;
@@ -1091,7 +1093,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; err_detect:err_detect|err_high_detect:udc_low|cnt_delay[1]                 ; 2       ;
 ; err_detect:err_detect|err_high_detect:udc_low|cnt_delay[0]                 ; 2       ;
 ; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[11]~20           ; 2       ;
-; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[2]~12            ; 2       ;
+; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[13]~12           ; 2       ;
 ; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[8]               ; 2       ;
 ; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[7]               ; 2       ;
 ; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[6]               ; 2       ;
@@ -1104,10 +1106,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; err_detect:err_detect|err_high_detect:udc_over|cnt_delay[0]                ; 2       ;
 ; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|delay_err_cnt[1]           ; 2       ;
 ; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|delay_err_cnt[0]           ; 2       ;
-; ads7822:ads7822|always7~1                                                  ; 2       ;
-; ads7822:ads7822|always6~0                                                  ; 2       ;
+; fiber_rx:fiber_rx|start_stop~7                                             ; 2       ;
 ; ads7822:ads7822|Equal2~0                                                   ; 2       ;
-; ads7822:ads7822|div_cnt[3]~3                                               ; 2       ;
+; ads7822:ads7822|always6~1                                                  ; 2       ;
+; ads7822:ads7822|LessThan0~0                                                ; 2       ;
+; ads7822:ads7822|always6~0                                                  ; 2       ;
+; ads7822:ads7822|div_cnt[3]~7                                               ; 2       ;
 ; fiber_tx:fiber_tx|send_volt[10]                                            ; 2       ;
 ; fiber_tx:fiber_tx|send_moduleinfo[0]                                       ; 2       ;
 ; fiber_tx:fiber_tx|send_volt[0]                                             ; 2       ;
@@ -1139,16 +1143,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; fiber_rx:fiber_rx|byp_cnt_nums[2]                                          ; 2       ;
 ; fiber_rx:fiber_rx|rst_cnt_nums[2]                                          ; 2       ;
 ; fiber_rx:fiber_rx|rst_cnt_nums[3]~1                                        ; 2       ;
-; fiber_rx:fiber_rx|strat_cnt_nums[4]                                        ; 2       ;
-; fiber_rx:fiber_rx|strat_cnt_nums[3]~9                                      ; 2       ;
-; fiber_rx:fiber_rx|strat_cnt_nums[3]                                        ; 2       ;
 ; fiber_rx:fiber_rx|strat_cnt_nums[2]                                        ; 2       ;
 ; fiber_rx:fiber_rx|strat_cnt_nums[1]                                        ; 2       ;
 ; fiber_rx:fiber_rx|strat_cnt_nums[0]                                        ; 2       ;
+; fiber_rx:fiber_rx|strat_cnt_nums[3]~1                                      ; 2       ;
 ; work_led:work_led|Equal2~1                                                 ; 2       ;
 ; work_led:work_led|Equal2~0                                                 ; 2       ;
-; fiber_rx:fiber_rx|verify_rx:verify_rx|rx_data[3]                           ; 2       ;
-; fiber_rx:fiber_rx|verify_rx:verify_rx|rx_data[2]                           ; 2       ;
+; pwm_out:pwm_out|LUCnt[4]                                                   ; 2       ;
+; pwm_out:pwm_out|LUCnt[3]                                                   ; 2       ;
+; pwm_out:pwm_out|LUCnt[6]                                                   ; 2       ;
+; pwm_out:pwm_out|LUCnt[5]                                                   ; 2       ;
+; pwm_out:pwm_out|LUCnt[7]                                                   ; 2       ;
+; pwm_out:pwm_out|LUCnt[8]                                                   ; 2       ;
+; pwm_out:pwm_out|RDCnt[3]                                                   ; 2       ;
+; pwm_out:pwm_out|RDCnt[4]                                                   ; 2       ;
+; pwm_out:pwm_out|RDCnt[6]                                                   ; 2       ;
+; pwm_out:pwm_out|RDCnt[7]                                                   ; 2       ;
+; pwm_out:pwm_out|RDCnt[5]                                                   ; 2       ;
+; pwm_out:pwm_out|RDCnt[8]                                                   ; 2       ;
 ; fiber_rx:fiber_rx|LessThan10~4                                             ; 2       ;
 ; fiber_rx:fiber_rx|cnt_byp[15]                                              ; 2       ;
 ; fiber_rx:fiber_rx|cnt_byp[14]                                              ; 2       ;
@@ -1178,7 +1190,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HOT_1                                                                      ; 1       ;
 ; BypOk                                                                      ; 1       ;
 ; COMM_R                                                                     ; 1       ;
-; Powerfall                                                                  ; 1       ;
 ; HOT_2                                                                      ; 1       ;
 ; ERR[3]                                                                     ; 1       ;
 ; ERR[2]                                                                     ; 1       ;
@@ -1187,14 +1198,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ERR[0]                                                                     ; 1       ;
 ; DCUV                                                                       ; 1       ;
 ; DCOV                                                                       ; 1       ;
+; err_detect:err_detect|byp_err~7                                            ; 1       ;
 ; ads7822:ads7822|ad_dout_syn                                                ; 1       ;
-; ads7822:ads7822|always7~2                                                  ; 1       ;
+; ads7822:ads7822|always7~1                                                  ; 1       ;
+; ads7822:ads7822|always7~0                                                  ; 1       ;
+; ads7822:ads7822|LessThan2~0                                                ; 1       ;
 ; div_1us:div_1us|Add1~52COUT1_67                                            ; 1       ;
 ; div_1us:div_1us|Add1~52                                                    ; 1       ;
 ; div_1us:div_1us|Add1~50                                                    ; 1       ;
 ; div_1us:div_1us|Add1~47COUT1_65                                            ; 1       ;
 ; div_1us:div_1us|Add1~47                                                    ; 1       ;
 ; div_1us:div_1us|Add1~45                                                    ; 1       ;
+; pwm_out:pwm_out|RDCnt[0]                                                   ; 1       ;
 ; ads7822:ads7822|ad_syn[11]                                                 ; 1       ;
 ; div_1us:div_1us|Add1~42COUT1_69                                            ; 1       ;
 ; div_1us:div_1us|Add1~42                                                    ; 1       ;
@@ -1220,21 +1235,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; div_1us:div_1us|Equal1~2                                                   ; 1       ;
 ; div_1us:div_1us|Equal1~1                                                   ; 1       ;
 ; div_1us:div_1us|Add1~0                                                     ; 1       ;
+; pwm_out:pwm_out|Add0~42COUT1_54                                            ; 1       ;
+; pwm_out:pwm_out|Add0~42                                                    ; 1       ;
+; pwm_out:pwm_out|Add0~40                                                    ; 1       ;
+; pwm_out:pwm_out|RDCnt[1]                                                   ; 1       ;
 ; div_1us:div_1us|Add0~22COUT1_31                                            ; 1       ;
 ; div_1us:div_1us|Add0~22                                                    ; 1       ;
 ; div_1us:div_1us|Add0~20                                                    ; 1       ;
+; ads7822:ads7822|sample_data[10]                                            ; 1       ;
+; ads7822:ads7822|sample_data[11]                                            ; 1       ;
+; ads7822:ads7822|sample_data[0]                                             ; 1       ;
+; ads7822:ads7822|sample_data[1]                                             ; 1       ;
+; ads7822:ads7822|sample_data[5]                                             ; 1       ;
 ; ads7822:ads7822|sample_data[2]                                             ; 1       ;
 ; ads7822:ads7822|sample_data[3]                                             ; 1       ;
 ; ads7822:ads7822|sample_data[4]                                             ; 1       ;
-; ads7822:ads7822|sample_data[5]                                             ; 1       ;
-; ads7822:ads7822|sample_data[0]                                             ; 1       ;
-; ads7822:ads7822|sample_data[1]                                             ; 1       ;
-; ads7822:ads7822|sample_data[6]                                             ; 1       ;
 ; ads7822:ads7822|sample_data[9]                                             ; 1       ;
-; ads7822:ads7822|sample_data[10]                                            ; 1       ;
-; ads7822:ads7822|sample_data[11]                                            ; 1       ;
+; ads7822:ads7822|sample_data[6]                                             ; 1       ;
 ; ads7822:ads7822|sample_data[8]                                             ; 1       ;
 ; ads7822:ads7822|sample_data[7]                                             ; 1       ;
+; err_detect:err_detect|err_high_detect:hot2|time_1us_syn[1]                 ; 1       ;
 ; err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[8]~32          ; 1       ;
 ; err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[8]~31          ; 1       ;
 ; err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[8]~30          ; 1       ;
@@ -1259,15 +1279,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; fiber_rx:fiber_rx|Add0~2                                                   ; 1       ;
 ; fiber_rx:fiber_rx|Add0~0                                                   ; 1       ;
 ; div_1us:div_1us|LessThan1~0                                                ; 1       ;
-; err_high_detect:bypok_filt|cnt_delay[8]~32                                 ; 1       ;
-; err_high_detect:bypok_filt|cnt_delay[8]~31                                 ; 1       ;
-; err_high_detect:bypok_filt|cnt_delay[8]~30                                 ; 1       ;
+; err_high_detect:bypok_filt|cnt_delay[7]~32                                 ; 1       ;
+; err_high_detect:bypok_filt|cnt_delay[7]~31                                 ; 1       ;
+; err_high_detect:bypok_filt|cnt_delay[7]~30                                 ; 1       ;
 ; err_high_detect:bypok_filt|cnt_delay[2]~29COUT1_48                         ; 1       ;
 ; err_high_detect:bypok_filt|cnt_delay[2]~29                                 ; 1       ;
 ; err_high_detect:bypok_filt|cnt_delay[0]~25COUT1_46                         ; 1       ;
 ; err_high_detect:bypok_filt|cnt_delay[0]~25                                 ; 1       ;
-; volt_calc:volt_calc|DCUV~1                                                 ; 1       ;
-; volt_calc:volt_calc|LessThan0~3                                            ; 1       ;
+; volt_calc:volt_calc|real_volt[7]                                           ; 1       ;
+; volt_calc:volt_calc|real_volt[3]                                           ; 1       ;
+; volt_calc:volt_calc|LessThan2~3                                            ; 1       ;
+; volt_calc:volt_calc|real_volt[4]                                           ; 1       ;
+; volt_calc:volt_calc|real_volt[1]                                           ; 1       ;
+; volt_calc:volt_calc|LessThan2~1                                            ; 1       ;
+; volt_calc:volt_calc|real_volt[9]                                           ; 1       ;
+; pwm_out:pwm_out|LUCnt[0]~18COUT1_28                                        ; 1       ;
+; pwm_out:pwm_out|LUCnt[0]~18                                                ; 1       ;
+; pwm_out:pwm_out|LUCnt[0]                                                   ; 1       ;
+; pwm_out:pwm_out|Add0~37COUT1_56                                            ; 1       ;
+; pwm_out:pwm_out|Add0~37                                                    ; 1       ;
+; pwm_out:pwm_out|Add0~35                                                    ; 1       ;
+; pwm_out:pwm_out|RDCnt[2]                                                   ; 1       ;
 ; div_1us:div_1us|Add0~17COUT1_33                                            ; 1       ;
 ; div_1us:div_1us|Add0~17                                                    ; 1       ;
 ; div_1us:div_1us|Add0~15                                                    ; 1       ;
@@ -1282,67 +1314,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; fiber_tx:fiber_tx|Add1~20                                                  ; 1       ;
 ; fiber_tx:fiber_tx|Add0~20                                                  ; 1       ;
 ; fiber_tx:fiber_tx|Add3~20                                                  ; 1       ;
-; volt_calc:volt_calc|Add1~52                                                ; 1       ;
-; volt_calc:volt_calc|Add1~50                                                ; 1       ;
-; volt_calc:volt_calc|Add0~52                                                ; 1       ;
-; volt_calc:volt_calc|Add0~50                                                ; 1       ;
-; volt_calc:volt_calc|Add1~45                                                ; 1       ;
-; volt_calc:volt_calc|Add0~45                                                ; 1       ;
-; volt_calc:volt_calc|udc_volt~1                                             ; 1       ;
-; volt_calc:volt_calc|Add1~42COUT1_65                                        ; 1       ;
-; volt_calc:volt_calc|Add1~42                                                ; 1       ;
-; volt_calc:volt_calc|Add1~40                                                ; 1       ;
-; volt_calc:volt_calc|Add0~42COUT1_65                                        ; 1       ;
-; volt_calc:volt_calc|Add0~42                                                ; 1       ;
-; volt_calc:volt_calc|Add0~40                                                ; 1       ;
-; volt_calc:volt_calc|Add1~35                                                ; 1       ;
-; volt_calc:volt_calc|Add0~35                                                ; 1       ;
-; volt_calc:volt_calc|Add1~32COUT1_67                                        ; 1       ;
-; volt_calc:volt_calc|Add1~32                                                ; 1       ;
-; volt_calc:volt_calc|Add1~30                                                ; 1       ;
-; volt_calc:volt_calc|Add0~32COUT1_67                                        ; 1       ;
-; volt_calc:volt_calc|Add0~32                                                ; 1       ;
-; volt_calc:volt_calc|Add0~30                                                ; 1       ;
-; volt_calc:volt_calc|Add1~27COUT1_69                                        ; 1       ;
-; volt_calc:volt_calc|Add1~27                                                ; 1       ;
-; volt_calc:volt_calc|Add1~25                                                ; 1       ;
-; volt_calc:volt_calc|Add0~27COUT1_69                                        ; 1       ;
-; volt_calc:volt_calc|Add0~27                                                ; 1       ;
-; volt_calc:volt_calc|Add0~25                                                ; 1       ;
-; volt_calc:volt_calc|Add1~22COUT1_71                                        ; 1       ;
-; volt_calc:volt_calc|Add1~22                                                ; 1       ;
-; volt_calc:volt_calc|Add1~20                                                ; 1       ;
-; volt_calc:volt_calc|Add0~22COUT1_71                                        ; 1       ;
-; volt_calc:volt_calc|Add0~22                                                ; 1       ;
-; volt_calc:volt_calc|Add0~20                                                ; 1       ;
-; volt_calc:volt_calc|Add1~17COUT1_79                                        ; 1       ;
-; volt_calc:volt_calc|Add1~17                                                ; 1       ;
-; volt_calc:volt_calc|Add1~15                                                ; 1       ;
-; volt_calc:volt_calc|Add0~17COUT1_79                                        ; 1       ;
-; volt_calc:volt_calc|Add0~17                                                ; 1       ;
-; volt_calc:volt_calc|Add0~15                                                ; 1       ;
-; volt_calc:volt_calc|Add1~12COUT1_73                                        ; 1       ;
-; volt_calc:volt_calc|Add1~12                                                ; 1       ;
-; volt_calc:volt_calc|Add1~10                                                ; 1       ;
-; volt_calc:volt_calc|Add0~12COUT1_73                                        ; 1       ;
-; volt_calc:volt_calc|Add0~12                                                ; 1       ;
-; volt_calc:volt_calc|Add0~10                                                ; 1       ;
-; volt_calc:volt_calc|Add1~7COUT1_77                                         ; 1       ;
-; volt_calc:volt_calc|Add1~7                                                 ; 1       ;
-; volt_calc:volt_calc|Add1~5                                                 ; 1       ;
-; volt_calc:volt_calc|Add0~7COUT1_77                                         ; 1       ;
-; volt_calc:volt_calc|Add0~7                                                 ; 1       ;
-; volt_calc:volt_calc|Add0~5                                                 ; 1       ;
-; volt_calc:volt_calc|LessThan1~0                                            ; 1       ;
-; volt_calc:volt_calc|Equal0~0                                               ; 1       ;
-; volt_calc:volt_calc|LessThan0~1                                            ; 1       ;
-; volt_calc:volt_calc|LessThan0~0                                            ; 1       ;
-; volt_calc:volt_calc|Add1~2COUT1_75                                         ; 1       ;
-; volt_calc:volt_calc|Add1~2                                                 ; 1       ;
-; volt_calc:volt_calc|Add1~0                                                 ; 1       ;
-; volt_calc:volt_calc|Add0~2COUT1_75                                         ; 1       ;
-; volt_calc:volt_calc|Add0~2                                                 ; 1       ;
-; volt_calc:volt_calc|Add0~0                                                 ; 1       ;
 ; fiber_tx:fiber_tx|Add1~17COUT1_37                                          ; 1       ;
 ; fiber_tx:fiber_tx|Add1~17                                                  ; 1       ;
 ; fiber_tx:fiber_tx|Add1~15                                                  ; 1       ;
@@ -1403,43 +1374,43 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; fiber_rx:fiber_rx|LessThan0~0                                              ; 1       ;
 ; fiber_rx:fiber_rx|always2~0                                                ; 1       ;
 ; fiber_rx:fiber_rx|receive_flag~0                                           ; 1       ;
-; err_detect:err_detect|err_high_detect:powererr|cnt_delay[13]~31            ; 1       ;
-; err_detect:err_detect|err_high_detect:powererr|cnt_delay[13]~30            ; 1       ;
-; err_detect:err_detect|err_high_detect:powererr|cnt_delay[13]~29            ; 1       ;
-; err_detect:err_detect|err_high_detect:hot2|time_1us_syn[1]                 ; 1       ;
-; err_detect:err_detect|err_high_detect:hot2|cnt_delay[1]~32                 ; 1       ;
-; err_detect:err_detect|err_high_detect:hot2|cnt_delay[1]~31                 ; 1       ;
-; err_detect:err_detect|err_high_detect:hot2|cnt_delay[1]~30                 ; 1       ;
-; err_detect:err_detect|err_high_detect:hot2|cnt_delay[1]~29                 ; 1       ;
+; err_detect:err_detect|err_high_detect:powererr|cnt_delay[4]~32             ; 1       ;
+; err_detect:err_detect|err_high_detect:powererr|cnt_delay[4]~31             ; 1       ;
+; err_detect:err_detect|err_high_detect:powererr|cnt_delay[4]~30             ; 1       ;
+; err_detect:err_detect|err_high_detect:powererr|cnt_delay[4]~29             ; 1       ;
+; err_detect:err_detect|err_high_detect:hot2|cnt_delay[4]~32                 ; 1       ;
+; err_detect:err_detect|err_high_detect:hot2|cnt_delay[4]~31                 ; 1       ;
+; err_detect:err_detect|err_high_detect:hot2|cnt_delay[4]~30                 ; 1       ;
+; err_detect:err_detect|err_high_detect:hot2|cnt_delay[4]~29                 ; 1       ;
 ; err_detect:err_detect|err_high_detect:hot2|cnt_delay[0]~26COUT1_46         ; 1       ;
 ; err_detect:err_detect|err_high_detect:hot2|cnt_delay[0]~26                 ; 1       ;
-; err_detect:err_detect|err_high_detect:err4|cnt_delay[5]~32                 ; 1       ;
-; err_detect:err_detect|err_high_detect:err4|cnt_delay[5]~31                 ; 1       ;
-; err_detect:err_detect|err_high_detect:err4|cnt_delay[5]~30                 ; 1       ;
+; err_detect:err_detect|err_high_detect:err4|cnt_delay[12]~32                ; 1       ;
+; err_detect:err_detect|err_high_detect:err4|cnt_delay[12]~31                ; 1       ;
+; err_detect:err_detect|err_high_detect:err4|cnt_delay[12]~30                ; 1       ;
 ; err_detect:err_detect|err_high_detect:err4|cnt_delay[0]~29COUT1_46         ; 1       ;
 ; err_detect:err_detect|err_high_detect:err4|cnt_delay[0]~29                 ; 1       ;
-; err_detect:err_detect|err_high_detect:err4|cnt_delay[5]~27                 ; 1       ;
-; err_detect:err_detect|err_high_detect:err3|cnt_delay[0]~32                 ; 1       ;
-; err_detect:err_detect|err_high_detect:err3|cnt_delay[0]~31                 ; 1       ;
-; err_detect:err_detect|err_high_detect:err3|cnt_delay[0]~30                 ; 1       ;
+; err_detect:err_detect|err_high_detect:err4|cnt_delay[12]~27                ; 1       ;
+; err_detect:err_detect|err_high_detect:err3|cnt_delay[3]~32                 ; 1       ;
+; err_detect:err_detect|err_high_detect:err3|cnt_delay[3]~31                 ; 1       ;
+; err_detect:err_detect|err_high_detect:err3|cnt_delay[3]~30                 ; 1       ;
 ; err_detect:err_detect|err_high_detect:err3|cnt_delay[0]~29COUT1_46         ; 1       ;
 ; err_detect:err_detect|err_high_detect:err3|cnt_delay[0]~29                 ; 1       ;
-; err_detect:err_detect|err_high_detect:err3|cnt_delay[0]~27                 ; 1       ;
-; err_detect:err_detect|err_high_detect:byppowererr|cnt_delay[2]~31          ; 1       ;
-; err_detect:err_detect|err_high_detect:byppowererr|cnt_delay[2]~30          ; 1       ;
-; err_detect:err_detect|err_high_detect:byppowererr|cnt_delay[2]~29          ; 1       ;
-; err_detect:err_detect|err_high_detect:err2|cnt_delay[1]~32                 ; 1       ;
-; err_detect:err_detect|err_high_detect:err2|cnt_delay[1]~31                 ; 1       ;
-; err_detect:err_detect|err_high_detect:err2|cnt_delay[1]~30                 ; 1       ;
+; err_detect:err_detect|err_high_detect:err3|cnt_delay[3]~27                 ; 1       ;
+; err_detect:err_detect|err_high_detect:byppowererr|cnt_delay[7]~31          ; 1       ;
+; err_detect:err_detect|err_high_detect:byppowererr|cnt_delay[7]~30          ; 1       ;
+; err_detect:err_detect|err_high_detect:byppowererr|cnt_delay[7]~29          ; 1       ;
+; err_detect:err_detect|err_high_detect:err2|cnt_delay[4]~32                 ; 1       ;
+; err_detect:err_detect|err_high_detect:err2|cnt_delay[4]~31                 ; 1       ;
+; err_detect:err_detect|err_high_detect:err2|cnt_delay[4]~30                 ; 1       ;
 ; err_detect:err_detect|err_high_detect:err2|cnt_delay[0]~29COUT1_46         ; 1       ;
 ; err_detect:err_detect|err_high_detect:err2|cnt_delay[0]~29                 ; 1       ;
-; err_detect:err_detect|err_high_detect:err2|cnt_delay[1]~27                 ; 1       ;
-; err_detect:err_detect|err_high_detect:err1|cnt_delay[6]~32                 ; 1       ;
-; err_detect:err_detect|err_high_detect:err1|cnt_delay[6]~31                 ; 1       ;
-; err_detect:err_detect|err_high_detect:err1|cnt_delay[6]~30                 ; 1       ;
+; err_detect:err_detect|err_high_detect:err2|cnt_delay[4]~27                 ; 1       ;
+; err_detect:err_detect|err_high_detect:err1|cnt_delay[0]~32                 ; 1       ;
+; err_detect:err_detect|err_high_detect:err1|cnt_delay[0]~31                 ; 1       ;
+; err_detect:err_detect|err_high_detect:err1|cnt_delay[0]~30                 ; 1       ;
 ; err_detect:err_detect|err_high_detect:err1|cnt_delay[0]~29COUT1_46         ; 1       ;
 ; err_detect:err_detect|err_high_detect:err1|cnt_delay[0]~29                 ; 1       ;
-; err_detect:err_detect|err_high_detect:err1|cnt_delay[6]~27                 ; 1       ;
+; err_detect:err_detect|err_high_detect:err1|cnt_delay[0]~27                 ; 1       ;
 ; err_high_detect:bypok_filt|signal_out~1                                    ; 1       ;
 ; err_high_detect:bypok_filt|cnt_delay[12]~22COUT1_64                        ; 1       ;
 ; err_high_detect:bypok_filt|cnt_delay[12]~22                                ; 1       ;
@@ -1497,8 +1468,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; err_detect:err_detect|Add1~7COUT1_98                                       ; 1       ;
 ; err_detect:err_detect|Add1~7                                               ; 1       ;
 ; err_detect:err_detect|Add1~5                                               ; 1       ;
-; err_detect:err_detect|ByperrDelay[11]~2                                    ; 1       ;
-; err_detect:err_detect|ByperrDelay[11]~1                                    ; 1       ;
+; err_detect:err_detect|ByperrDelay[0]~1                                     ; 1       ;
+; err_detect:err_detect|always1~3                                            ; 1       ;
 ; err_detect:err_detect|Cnt_1ms[8]~19COUT1_44                                ; 1       ;
 ; err_detect:err_detect|Cnt_1ms[8]~19                                        ; 1       ;
 ; err_detect:err_detect|Cnt_1ms[7]~17COUT1_42                                ; 1       ;
@@ -1517,20 +1488,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; err_detect:err_detect|Cnt_1ms[0]~1COUT1_30                                 ; 1       ;
 ; err_detect:err_detect|Cnt_1ms[0]~1                                         ; 1       ;
 ; err_detect:err_detect|Add1~0                                               ; 1       ;
-; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[9]~32             ; 1       ;
-; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[9]~31             ; 1       ;
-; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[9]~30             ; 1       ;
+; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[0]~32             ; 1       ;
+; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[0]~31             ; 1       ;
+; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[0]~30             ; 1       ;
 ; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[2]~29COUT1_48     ; 1       ;
 ; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[2]~29             ; 1       ;
 ; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[0]~25COUT1_46     ; 1       ;
 ; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[0]~25             ; 1       ;
 ; volt_calc:volt_calc|DCUV                                                   ; 1       ;
-; err_detect:err_detect|err_high_detect:udc_low|cnt_delay[10]~31             ; 1       ;
-; err_detect:err_detect|err_high_detect:udc_low|cnt_delay[10]~30             ; 1       ;
-; err_detect:err_detect|err_high_detect:udc_low|cnt_delay[10]~29             ; 1       ;
-; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[2]~32            ; 1       ;
-; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[2]~31            ; 1       ;
-; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[2]~30            ; 1       ;
+; err_detect:err_detect|err_high_detect:udc_low|cnt_delay[3]~31              ; 1       ;
+; err_detect:err_detect|err_high_detect:udc_low|cnt_delay[3]~30              ; 1       ;
+; err_detect:err_detect|err_high_detect:udc_low|cnt_delay[3]~29              ; 1       ;
+; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[13]~32           ; 1       ;
+; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[13]~31           ; 1       ;
+; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[13]~30           ; 1       ;
 ; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[2]~29COUT1_48    ; 1       ;
 ; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[2]~29            ; 1       ;
 ; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[0]~25COUT1_46    ; 1       ;
@@ -1565,17 +1536,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; work_led:work_led|Add0~7                                                   ; 1       ;
 ; work_led:work_led|Add0~5                                                   ; 1       ;
 ; work_led:work_led|Add0~0                                                   ; 1       ;
-; ads7822:ads7822|Add1~27COUT1_42                                            ; 1       ;
+; pwm_out:pwm_out|LUCnt[1]~16COUT1_30                                        ; 1       ;
+; pwm_out:pwm_out|LUCnt[1]~16                                                ; 1       ;
+; pwm_out:pwm_out|LUCnt[1]                                                   ; 1       ;
+; pwm_out:pwm_out|Add0~32COUT1_58                                            ; 1       ;
+; pwm_out:pwm_out|Add0~32                                                    ; 1       ;
+; pwm_out:pwm_out|Add0~30                                                    ; 1       ;
+; ads7822:ads7822|Add1~27COUT1_38                                            ; 1       ;
 ; ads7822:ads7822|Add1~27                                                    ; 1       ;
 ; ads7822:ads7822|Add1~25                                                    ; 1       ;
 ; ads7822:ads7822|Add1~20                                                    ; 1       ;
-; ads7822:ads7822|Add1~17COUT1_38                                            ; 1       ;
+; ads7822:ads7822|Add1~17COUT1_36                                            ; 1       ;
 ; ads7822:ads7822|Add1~17                                                    ; 1       ;
 ; ads7822:ads7822|Add1~15                                                    ; 1       ;
-; ads7822:ads7822|Add1~12COUT1_36                                            ; 1       ;
+; ads7822:ads7822|Add1~12COUT1_40                                            ; 1       ;
 ; ads7822:ads7822|Add1~12                                                    ; 1       ;
 ; ads7822:ads7822|Add1~10                                                    ; 1       ;
-; ads7822:ads7822|Add1~7COUT1_40                                             ; 1       ;
+; ads7822:ads7822|Add1~7COUT1_42                                             ; 1       ;
 ; ads7822:ads7822|Add1~7                                                     ; 1       ;
 ; ads7822:ads7822|Add1~5                                                     ; 1       ;
 ; ads7822:ads7822|Add1~0                                                     ; 1       ;
@@ -1584,13 +1561,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; fiber_tx:fiber_tx|Add2~22COUT1_42                                          ; 1       ;
 ; fiber_tx:fiber_tx|Add2~22                                                  ; 1       ;
 ; fiber_tx:fiber_tx|Add2~20                                                  ; 1       ;
-; fiber_tx:fiber_tx|Add4~22COUT1_40                                          ; 1       ;
+; fiber_tx:fiber_tx|Add4~22COUT1_42                                          ; 1       ;
 ; fiber_tx:fiber_tx|Add4~22                                                  ; 1       ;
 ; fiber_tx:fiber_tx|Add4~20                                                  ; 1       ;
 ; fiber_tx:fiber_tx|Add7~32COUT1_50                                          ; 1       ;
 ; fiber_tx:fiber_tx|Add7~32                                                  ; 1       ;
 ; fiber_tx:fiber_tx|Add7~30                                                  ; 1       ;
 ; volt_calc:volt_calc|udc_volt[10]                                           ; 1       ;
+; volt_calc:volt_calc|udc_volt[11]                                           ; 1       ;
+; volt_calc:volt_calc|udc_volt[0]                                            ; 1       ;
+; volt_calc:volt_calc|udc_volt[1]                                            ; 1       ;
+; volt_calc:volt_calc|udc_volt[5]                                            ; 1       ;
+; volt_calc:volt_calc|udc_volt[2]                                            ; 1       ;
+; volt_calc:volt_calc|udc_volt[3]                                            ; 1       ;
+; volt_calc:volt_calc|udc_volt[4]                                            ; 1       ;
+; volt_calc:volt_calc|udc_volt[9]                                            ; 1       ;
+; volt_calc:volt_calc|udc_volt[6]                                            ; 1       ;
+; volt_calc:volt_calc|udc_volt[8]                                            ; 1       ;
+; volt_calc:volt_calc|udc_volt[7]                                            ; 1       ;
+; fiber_tx:fiber_tx|Add7~27COUT1_48                                          ; 1       ;
+; fiber_tx:fiber_tx|Add7~27                                                  ; 1       ;
+; fiber_tx:fiber_tx|Add7~25                                                  ; 1       ;
+; fiber_tx:fiber_tx|Add2~15                                                  ; 1       ;
+; fiber_tx:fiber_tx|Add4~15                                                  ; 1       ;
+; fiber_tx:fiber_tx|Add2~12COUT1_36                                          ; 1       ;
+; fiber_tx:fiber_tx|Add2~12                                                  ; 1       ;
+; fiber_tx:fiber_tx|Add2~10                                                  ; 1       ;
+; fiber_tx:fiber_tx|Add4~12COUT1_36                                          ; 1       ;
+; fiber_tx:fiber_tx|Add4~12                                                  ; 1       ;
+; fiber_tx:fiber_tx|Add4~10                                                  ; 1       ;
+; fiber_tx:fiber_tx|Add7~22COUT1_44                                          ; 1       ;
+; fiber_tx:fiber_tx|Add7~22                                                  ; 1       ;
+; fiber_tx:fiber_tx|Add7~20                                                  ; 1       ;
 +----------------------------------------------------------------------------+---------+
 
 
@@ -1599,123 +1601,115 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+----------------------+
 ; Other Routing Resource Type ; Usage                ;
 +-----------------------------+----------------------+
-; C4s                         ; 311 / 2,870 ( 11 % ) ;
-; Direct links                ; 244 / 3,938 ( 6 % )  ;
+; C4s                         ; 341 / 2,870 ( 12 % ) ;
+; Direct links                ; 222 / 3,938 ( 6 % )  ;
 ; Global clocks               ; 1 / 4 ( 25 % )       ;
-; LAB clocks                  ; 16 / 72 ( 22 % )     ;
-; LUT chains                  ; 25 / 1,143 ( 2 % )   ;
-; Local interconnects         ; 786 / 3,938 ( 20 % ) ;
-; R4s                         ; 371 / 2,832 ( 13 % ) ;
+; LAB clocks                  ; 15 / 72 ( 21 % )     ;
+; LUT chains                  ; 34 / 1,143 ( 3 % )   ;
+; Local interconnects         ; 769 / 3,938 ( 20 % ) ;
+; R4s                         ; 295 / 2,832 ( 10 % ) ;
 +-----------------------------+----------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +--------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 8.53) ; Number of LABs  (Total = 95) ;
+; Number of Logic Elements  (Average = 8.44) ; Number of LABs  (Total = 99) ;
 +--------------------------------------------+------------------------------+
-; 1                                          ; 4                            ;
-; 2                                          ; 1                            ;
-; 3                                          ; 3                            ;
-; 4                                          ; 3                            ;
-; 5                                          ; 4                            ;
-; 6                                          ; 3                            ;
+; 1                                          ; 2                            ;
+; 2                                          ; 4                            ;
+; 3                                          ; 4                            ;
+; 4                                          ; 1                            ;
+; 5                                          ; 6                            ;
+; 6                                          ; 2                            ;
 ; 7                                          ; 3                            ;
-; 8                                          ; 5                            ;
-; 9                                          ; 6                            ;
-; 10                                         ; 63                           ;
+; 8                                          ; 7                            ;
+; 9                                          ; 9                            ;
+; 10                                         ; 61                           ;
 +--------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 1.78) ; Number of LABs  (Total = 95) ;
+; LAB-wide Signals  (Average = 1.72) ; Number of LABs  (Total = 99) ;
 +------------------------------------+------------------------------+
-; 1 Clock                            ; 89                           ;
-; 1 Clock enable                     ; 40                           ;
-; 1 Sync. clear                      ; 32                           ;
-; 1 Sync. load                       ; 5                            ;
-; 2 Clock enables                    ; 3                            ;
+; 1 Clock                            ; 92                           ;
+; 1 Clock enable                     ; 38                           ;
+; 1 Sync. clear                      ; 33                           ;
+; 1 Sync. load                       ; 2                            ;
+; 2 Clock enables                    ; 5                            ;
 +------------------------------------+------------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 8.91) ; Number of LABs  (Total = 95) ;
+; Number of Signals Sourced  (Average = 8.79) ; Number of LABs  (Total = 99) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
-; 1                                           ; 4                            ;
-; 2                                           ; 1                            ;
-; 3                                           ; 3                            ;
+; 1                                           ; 2                            ;
+; 2                                           ; 4                            ;
+; 3                                           ; 2                            ;
 ; 4                                           ; 3                            ;
-; 5                                           ; 3                            ;
-; 6                                           ; 3                            ;
-; 7                                           ; 2                            ;
-; 8                                           ; 7                            ;
-; 9                                           ; 4                            ;
+; 5                                           ; 4                            ;
+; 6                                           ; 4                            ;
+; 7                                           ; 3                            ;
+; 8                                           ; 5                            ;
+; 9                                           ; 6                            ;
 ; 10                                          ; 54                           ;
-; 11                                          ; 3                            ;
+; 11                                          ; 5                            ;
 ; 12                                          ; 4                            ;
 ; 13                                          ; 2                            ;
 ; 14                                          ; 1                            ;
-; 15                                          ; 0                            ;
-; 16                                          ; 0                            ;
-; 17                                          ; 0                            ;
-; 18                                          ; 0                            ;
-; 19                                          ; 1                            ;
 +---------------------------------------------+------------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 5.31) ; Number of LABs  (Total = 95) ;
+; Number of Signals Sourced Out  (Average = 5.16) ; Number of LABs  (Total = 99) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 7                            ;
+; 1                                               ; 5                            ;
 ; 2                                               ; 10                           ;
-; 3                                               ; 6                            ;
-; 4                                               ; 14                           ;
-; 5                                               ; 24                           ;
-; 6                                               ; 7                            ;
-; 7                                               ; 6                            ;
-; 8                                               ; 7                            ;
-; 9                                               ; 3                            ;
-; 10                                              ; 8                            ;
-; 11                                              ; 1                            ;
-; 12                                              ; 1                            ;
-; 13                                              ; 1                            ;
+; 3                                               ; 14                           ;
+; 4                                               ; 11                           ;
+; 5                                               ; 23                           ;
+; 6                                               ; 8                            ;
+; 7                                               ; 7                            ;
+; 8                                               ; 8                            ;
+; 9                                               ; 6                            ;
+; 10                                              ; 7                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 8.36) ; Number of LABs  (Total = 95) ;
+; Number of Distinct Inputs  (Average = 8.02) ; Number of LABs  (Total = 99) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
 ; 1                                           ; 1                            ;
 ; 2                                           ; 4                            ;
-; 3                                           ; 5                            ;
-; 4                                           ; 15                           ;
-; 5                                           ; 11                           ;
-; 6                                           ; 10                           ;
+; 3                                           ; 6                            ;
+; 4                                           ; 14                           ;
+; 5                                           ; 14                           ;
+; 6                                           ; 8                            ;
 ; 7                                           ; 10                           ;
-; 8                                           ; 0                            ;
-; 9                                           ; 6                            ;
-; 10                                          ; 3                            ;
+; 8                                           ; 2                            ;
+; 9                                           ; 10                           ;
+; 10                                          ; 7                            ;
 ; 11                                          ; 3                            ;
-; 12                                          ; 7                            ;
+; 12                                          ; 4                            ;
 ; 13                                          ; 4                            ;
-; 14                                          ; 2                            ;
-; 15                                          ; 5                            ;
-; 16                                          ; 1                            ;
-; 17                                          ; 1                            ;
-; 18                                          ; 2                            ;
-; 19                                          ; 2                            ;
-; 20                                          ; 1                            ;
+; 14                                          ; 1                            ;
+; 15                                          ; 0                            ;
+; 16                                          ; 2                            ;
+; 17                                          ; 3                            ;
+; 18                                          ; 1                            ;
+; 19                                          ; 3                            ;
+; 20                                          ; 0                            ;
 ; 21                                          ; 2                            ;
 +---------------------------------------------+------------------------------+
 
@@ -1772,19 +1766,19 @@ Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
-Info (170195): Router estimated average interconnect usage is 12% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 16% of the available device resources in the region that extends from location X0_Y0 to location X8_Y11
+Info (170195): Router estimated average interconnect usage is 11% of the available device resources
+    Info (170196): Router estimated peak interconnect usage is 13% of the available device resources in the region that extends from location X9_Y0 to location X17_Y11
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.05 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.02 seconds.
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/output_files/driver_board.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 5657 megabytes
-    Info: Processing ended: Mon Jan 08 17:23:39 2024
-    Info: Elapsed time: 00:00:04
+    Info: Peak virtual memory: 5655 megabytes
+    Info: Processing ended: Fri Jan 26 16:42:04 2024
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

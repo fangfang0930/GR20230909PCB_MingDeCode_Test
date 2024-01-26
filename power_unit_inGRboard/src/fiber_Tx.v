@@ -29,6 +29,11 @@ reg [13:0]send_moduleinfo;//锁存要发送的单元数据
 reg [3:0]cnt_4m;//计数产生4Mhz的时钟延时
 reg [6:0]send_nums;//计数发送数据的个数
 wire [6:0]verify_calc=send_volt[3:0]+send_volt[7:4]+send_volt[11:8]+send_moduleinfo[3:0]+send_moduleinfo[7:4]+send_moduleinfo[11:8]+send_moduleinfo[13:12];
+  initial begin
+  COMM_T_reg=0;
+  end
+
+
 always@(posedge clk or negedge rst_n)
 begin 
 	if(!rst_n)
@@ -75,7 +80,7 @@ end
 always@(posedge clk or negedge rst_n)
 begin 
 	if(!rst_n)
-	COMM_T_reg<=1;
+	COMM_T_reg<=1;//1;
 	else 
 	case(send_nums)//原来数据发送是从高到低，现在修改成通讯协议的方式，Erik
 /*
@@ -107,7 +112,7 @@ begin
 	24:COMM_T<=verify_calc[1];
 	25:COMM_T<=verify_calc[0];
 */
-	1:COMM_T_reg<=0;//发送起始位,状态0用来装载数据,因此数据往后顺延.Erik
+	1:COMM_T_reg<=0;//0;//发送起始位,状态0用来装载数据,因此数据往后顺延.Erik
 	2:COMM_T_reg<=send_volt[0];
 	3:COMM_T_reg<=send_volt[1];
 	4:COMM_T_reg<=send_volt[2];
@@ -143,7 +148,7 @@ begin
 	32:COMM_T_reg<=verify_calc[4];
 	33:COMM_T_reg<=verify_calc[5];
 	34:COMM_T_reg<=verify_calc[6];
-	default:COMM_T_reg<=1;//0位装载数据,也发高电平,Erik
+	default:COMM_T_reg<=1;//1;//0位装载数据,也发高电平,Erik
 	endcase
 end 
 

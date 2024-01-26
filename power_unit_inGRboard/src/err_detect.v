@@ -171,7 +171,7 @@ err_high_detect byppowererr(
 //旁路接触器闭合故障,合闸指令发出后,50ms内没收到合闸成功信号,则报故障
 always@(posedge clk)
 begin
-	BypCon_syn <= {BypCon_syn[0],BypCon};
+	BypCon_syn <= {BypCon_syn[0],BypCon};//hff-[1]-旧状态
 	time_1us_syn <= {time_1us_syn[0],time_1us};
 end
 
@@ -197,7 +197,7 @@ begin
 			end
 		end
 
-		if(BypCon_syn == 2'b01)
+		if(BypCon_syn == 2'b01)//hff-刚接到旁路指令
 		begin
 			ByperrDelay <= 16'd52;
 		end
@@ -218,7 +218,7 @@ begin
 		end
 		else if((ByperrDelay > 16'd0)&&(ByperrDelay <16'd3)&&(BypOK == 1'b0))
 		begin
-			byp_err <= 1;
+			byp_err <= 1;//hff-旁路故障
 		end
 	end
 end

@@ -1,9 +1,9 @@
-Analysis & Synthesis Status : Successful - Mon Jan 08 17:24:28 2024
+Analysis & Synthesis Status : Successful - Fri Jan 26 16:42:15 2024
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : driver_board
 Top-level Entity Name : driver_board
 Family : MAX II
-Total logic elements : 846
+Total logic elements : 870
 Total pins : 43
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )

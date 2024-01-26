@@ -94,9 +94,11 @@ always@(posedge clk or negedge rst_n)
 begin
      if(!rst_n)
         ad_clk<=1'b0;
-     else if((numer_cnt>5'd0)&&(numer_cnt<5'd16)&&(div_cnt==COUNT_1MHZ))
+		else if((numer_cnt>5'd0)&&(numer_cnt<=5'd16)&&(div_cnt==COUNT_1MHZ))
+     //else if((numer_cnt>5'd0)&&(numer_cnt<5'd16)&&(div_cnt==COUNT_1MHZ))
         ad_clk<=1'b0;
-     else if((numer_cnt>5'd0)&&(numer_cnt<5'd16)&&(div_cnt==COUNT_M))
+		else if((numer_cnt>5'd0)&&(numer_cnt<=5'd16)&&(div_cnt==COUNT_M))
+     //else if((numer_cnt>5'd0)&&(numer_cnt<5'd16)&&(div_cnt==COUNT_M))
         ad_clk<=1'b1;
 end     
 reg [11:0]ad_syn;
@@ -106,7 +108,8 @@ begin
         ad_syn<=12'd0;
      else if(!AD_Work)
         ad_syn<=12'd0;
-     else if((numer_cnt>5'd3)&&(numer_cnt<5'd16)&&(div_cnt==(COUNT_M+3)))//2009.12.15  <5'd16 （17）
+	 else if((numer_cnt>5'd4)&&(numer_cnt<5'd17)&&(div_cnt==(COUNT_M+3)))
+     //else if((numer_cnt>5'd3)&&(numer_cnt<5'd16)&&(div_cnt==(COUNT_M+3)))//2009.12.15  <5'd16 （17）
         ad_syn<={ad_syn[10:0],ad_dout_syn}; 
 end
 always@(posedge clk or negedge rst_n)

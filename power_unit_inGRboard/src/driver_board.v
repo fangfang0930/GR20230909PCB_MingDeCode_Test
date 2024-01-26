@@ -194,7 +194,7 @@ volt_calc volt_calc(
 							.sample_data(sample_data),//输入AD采样值
 							.data_valid (data_valid ),
 							.udc_volt 	(udc_volt   ),//计算出的电压值
-							.DSW		(~DSW		), //拨码开关输入
+							.DSW		(~(6'b000000)),//(~(6'b000010)),//(~DSW		), //拨码开关输入
 							.DCOV		(SoftDCOV	),
 							.DCUV		(SoftDCUV	)
 
@@ -220,12 +220,12 @@ err_detect err_detect(
 							.start_stop	(start_stop	),//启动停止
 							.reset_unit	(reset_unit	),//复位故障控制信号			
 							.ERR		(~ERR		),//硬件是低电平报故障，Erik
-							.DCOV		(~DCOV		),//硬件是低电平报故障，Erik
-							.DCUV		(~DCUV		),//硬件是低电平报故障，Erik
+							.DCOV		(DCOV		),//(~DCOV		),//硬件是低电平报故障，Erik
+							.DCUV		(DCUV		),//(~DCUV		),//硬件是低电平报故障，Erik
 							.SoftDCOV	(SoftDCOV	),
 							.SoftDCUV	(SoftDCUV	),
-							.HOT_1		(~HOT_1		),//硬件是低电平报故障，Erik
-							.HOT_2		(~HOT_2		),//硬件是低电平报故障，Erik
+							.HOT_1		(~HOT_1		),//硬件是低电平报故障，Erik//hff-接到故障TEM1
+							.HOT_2		(HOT_2		),//(~HOT_2		),//硬件是低电平报故障，Erik//HFF-硬件接到GND了，
 							.Powerfall	(~Powerfall	),
 							.BypPowerErr(BypPowerErr),
                             .BypCon		(BypCon		),//旁路闭合信号，Erik
