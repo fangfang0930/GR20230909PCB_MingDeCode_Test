@@ -8,45 +8,45 @@ z2
 !i10f 100
 cModel Technology
 Z0 dD:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/simulation/modelsim
-vads7822
+vpwm_out
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 r1
 !s85 0
 31
 !i10b 1
-!s100 ]P;>S]H[ShIWc0;Sbe7fK0
-I0DQ>VMW9R?KZ1K8zCJ4jW1
+!s100 I1R=W7IQ^c]o;CHXFe>bV3
+I;omQOIJnAkDnQNE9LXzKF0
 R0
-w1706247690
-8D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/ads7822.v
-FD:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/ads7822.v
+w1706369402
+8D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/pwm_out.v
+FD:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/pwm_out.v
 L0 2
 Z2 OL;L;10.5;63
-!s108 1706248153.000000
-!s107 D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/ads7822.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src|D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/ads7822.v|
+Z3 !s108 1706369475.000000
+!s107 D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/pwm_out.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src|D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/pwm_out.v|
 !i113 0
-Z3 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z4 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 !s92 -vlog01compat -work work +incdir+D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z4 tCvgOpt 0
-vtb_ads7822
+Z5 tCvgOpt 0
+vtb_pwm_out
 R1
 r1
 !s85 0
 31
 !i10b 1
-!s100 <=NZM:gMC:ChHh?VHV2LC2
-Ikoe9DPJ0Q3aPXL2^cm9aV3
+!s100 n51NSJYo?kMD^AF5?QV_23
+I9=C0UlUM3<BW28FzSHXXa1
 R0
-w1706248119
-8D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/tb_ads7822.v
-FD:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/tb_ads7822.v
+w1706367796
+8D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/tb_pwm_out.v
+FD:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/tb_pwm_out.v
 L0 3
 R2
-!s108 1706248463.000000
-!s107 D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/tb_ads7822.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/tb_ads7822.v|
-!i113 0
 R3
-!s92 -vlog01compat -work work +incdir+D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s107 D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/tb_pwm_out.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard|D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/tb_pwm_out.v|
+!i113 0
 R4
+!s92 -vlog01compat -work work +incdir+D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5

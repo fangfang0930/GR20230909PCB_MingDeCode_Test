@@ -1,5 +1,5 @@
 Analysis & Synthesis report for driver_board
-Sat Jan 27 16:39:31 2024
+Sat Jan 27 23:35:12 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -73,12 +73,12 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                   ;
 +-----------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat Jan 27 16:39:31 2024            ;
+; Analysis & Synthesis Status ; Successful - Sat Jan 27 23:35:12 2024            ;
 ; Quartus II 64-Bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name               ; driver_board                                     ;
 ; Top-level Entity Name       ; driver_board                                     ;
 ; Family                      ; MAX II                                           ;
-; Total logic elements        ; 819                                              ;
+; Total logic elements        ; 867                                              ;
 ; Total pins                  ; 43                                               ;
 ; Total virtual pins          ; 0                                                ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                                    ;
@@ -202,33 +202,33 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 819   ;
-;     -- Combinational with no register       ; 363   ;
+; Total logic elements                        ; 867   ;
+;     -- Combinational with no register       ; 375   ;
 ;     -- Register only                        ; 80    ;
-;     -- Combinational with a register        ; 376   ;
+;     -- Combinational with a register        ; 412   ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 304   ;
-;     -- 3 input functions                    ; 52    ;
-;     -- 2 input functions                    ; 347   ;
-;     -- 1 input functions                    ; 35    ;
+;     -- 4 input functions                    ; 313   ;
+;     -- 3 input functions                    ; 53    ;
+;     -- 2 input functions                    ; 377   ;
+;     -- 1 input functions                    ; 43    ;
 ;     -- 0 input functions                    ; 1     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 502   ;
-;     -- arithmetic mode                      ; 317   ;
+;     -- normal mode                          ; 518   ;
+;     -- arithmetic mode                      ; 349   ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
-;     -- synchronous clear/load mode          ; 248   ;
+;     -- synchronous clear/load mode          ; 284   ;
 ;     -- asynchronous clear/load mode         ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 456   ;
-; Total logic cells in carry chains           ; 353   ;
+; Total registers                             ; 492   ;
+; Total logic cells in carry chains           ; 389   ;
 ; I/O pins                                    ; 43    ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 456   ;
-; Total fan-out                               ; 3234  ;
-; Average fan-out                             ; 3.75  ;
+; Maximum fan-out                             ; 492   ;
+; Total fan-out                               ; 3449  ;
+; Average fan-out                             ; 3.79  ;
 +---------------------------------------------+-------+
 
 
@@ -237,7 +237,7 @@ applicable agreement for further details.
 +---------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node            ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                             ; Library Name ;
 +---------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------+--------------+
-; |driver_board                         ; 819 (4)     ; 456          ; 0          ; 43   ; 0            ; 363 (4)      ; 80 (0)            ; 376 (0)          ; 353 (0)         ; 0 (0)      ; |driver_board                                                   ; work         ;
+; |driver_board                         ; 867 (4)     ; 492          ; 0          ; 43   ; 0            ; 375 (4)      ; 80 (0)            ; 412 (0)          ; 389 (0)         ; 0 (0)      ; |driver_board                                                   ; work         ;
 ;    |ads7822:ads7822|                  ; 63 (63)     ; 43           ; 0          ; 0    ; 0            ; 20 (20)      ; 14 (14)           ; 29 (29)          ; 12 (12)         ; 0 (0)      ; |driver_board|ads7822:ads7822                                   ; work         ;
 ;    |div_1us:div_1us|                  ; 39 (39)     ; 16           ; 0          ; 0    ; 0            ; 23 (23)      ; 3 (3)             ; 13 (13)          ; 16 (16)         ; 0 (0)      ; |driver_board|div_1us:div_1us                                   ; work         ;
 ;    |err_detect:err_detect|            ; 362 (66)    ; 212          ; 0          ; 0    ; 0            ; 150 (36)     ; 3 (2)             ; 209 (28)         ; 194 (26)        ; 0 (0)      ; |driver_board|err_detect:err_detect                             ; work         ;
@@ -247,18 +247,18 @@ applicable agreement for further details.
 ;       |err_high_detect:err3|          ; 25 (25)     ; 15           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:err3        ; work         ;
 ;       |err_high_detect:err4|          ; 25 (25)     ; 15           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:err4        ; work         ;
 ;       |err_high_detect:hot2|          ; 27 (27)     ; 17           ; 0          ; 0    ; 0            ; 10 (10)      ; 1 (1)             ; 16 (16)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:hot2        ; work         ;
-;       |err_high_detect:powererr|      ; 24 (24)     ; 15           ; 0          ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:powererr    ; work         ;
+;       |err_high_detect:powererr|      ; 25 (25)     ; 15           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:powererr    ; work         ;
 ;       |err_high_detect:soft_low|      ; 23 (23)     ; 15           ; 0          ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:soft_low    ; work         ;
 ;       |err_high_detect:soft_over|     ; 23 (23)     ; 15           ; 0          ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:soft_over   ; work         ;
 ;       |err_high_detect:udc_low|       ; 24 (24)     ; 15           ; 0          ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:udc_low     ; work         ;
-;       |err_high_detect:udc_over|      ; 25 (25)     ; 15           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:udc_over    ; work         ;
+;       |err_high_detect:udc_over|      ; 24 (24)     ; 15           ; 0          ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:udc_over    ; work         ;
 ;       |err_high_detect_unlock:hot1|   ; 25 (25)     ; 15           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect_unlock:hot1 ; work         ;
 ;    |err_high_detect:bypok_filt|       ; 23 (23)     ; 15           ; 0          ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_high_detect:bypok_filt                        ; work         ;
 ;    |fiber_rx:fiber_rx|                ; 138 (111)   ; 80           ; 0          ; 0    ; 0            ; 58 (46)      ; 11 (7)            ; 69 (58)          ; 57 (52)         ; 0 (0)      ; |driver_board|fiber_rx:fiber_rx                                 ; work         ;
 ;       |fiber_delay_rx:fiber_delay_rx| ; 10 (10)     ; 6            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 6 (6)            ; 5 (5)           ; 0 (0)      ; |driver_board|fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx   ; work         ;
 ;       |verify_rx:verify_rx|           ; 17 (17)     ; 9            ; 0          ; 0    ; 0            ; 8 (8)        ; 4 (4)             ; 5 (5)            ; 0 (0)           ; 0 (0)      ; |driver_board|fiber_rx:fiber_rx|verify_rx:verify_rx             ; work         ;
 ;    |fiber_tx:fiber_tx|                ; 107 (107)   ; 38           ; 0          ; 0    ; 0            ; 69 (69)      ; 24 (24)           ; 14 (14)          ; 41 (41)         ; 0 (0)      ; |driver_board|fiber_tx:fiber_tx                                 ; work         ;
-;    |pwm_out:pwm_out|                  ; 4 (4)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |driver_board|pwm_out:pwm_out                                   ; work         ;
+;    |pwm_out:pwm_out|                  ; 52 (52)     ; 40           ; 0          ; 0    ; 0            ; 12 (12)      ; 0 (0)             ; 40 (40)          ; 36 (36)         ; 0 (0)      ; |driver_board|pwm_out:pwm_out                                   ; work         ;
 ;    |volt_calc:volt_calc|              ; 31 (31)     ; 26           ; 0          ; 0    ; 0            ; 5 (5)        ; 24 (24)           ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |driver_board|volt_calc:volt_calc                               ; work         ;
 ;    |work_led:work_led|                ; 48 (48)     ; 22           ; 0          ; 0    ; 0            ; 26 (26)      ; 1 (1)             ; 21 (21)          ; 19 (19)         ; 0 (0)      ; |driver_board|work_led:work_led                                 ; work         ;
 +---------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------+--------------+
@@ -301,13 +301,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; err_detect:err_detect|err_high_detect:byppowererr|time_1us_syn[1] ; Merged with work_led:work_led|time_1us_syn[1]                          ;
 ; err_detect:err_detect|err_high_detect_unlock:hot1|time_1us_syn[0] ; Merged with err_detect:err_detect|err_high_detect:hot2|time_1us_syn[0] ;
 ; err_detect:err_detect|err_high_detect_unlock:hot1|time_1us_syn[1] ; Merged with err_detect:err_detect|err_high_detect:hot2|time_1us_syn[1] ;
-; pwm_out:pwm_out|LDCnt[0]                                          ; Stuck at GND due to stuck port data_in                                 ;
-; pwm_out:pwm_out|RUCnt[0..8]                                       ; Stuck at GND due to stuck port data_in                                 ;
-; pwm_out:pwm_out|RDCnt[0..8]                                       ; Stuck at GND due to stuck port data_in                                 ;
-; pwm_out:pwm_out|LUCnt[0..8]                                       ; Stuck at GND due to stuck port data_in                                 ;
-; pwm_out:pwm_out|LDCnt[1..8]                                       ; Stuck at GND due to stuck port data_in                                 ;
 ; div_1us:div_1us|cnt_time[0]                                       ; Merged with fiber_tx:fiber_tx|cnt_4m[0]                                ;
-; Total Number of Removed Registers = 68                            ;                                                                        ;
+; Total Number of Removed Registers = 32                            ;                                                                        ;
 +-------------------------------------------------------------------+------------------------------------------------------------------------+
 
 
@@ -316,12 +311,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 456   ;
-; Number of registers using Synchronous Clear  ; 226   ;
+; Total registers                              ; 492   ;
+; Number of registers using Synchronous Clear  ; 262   ;
 ; Number of registers using Synchronous Load   ; 22    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 320   ;
+; Number of registers using Clock Enable       ; 356   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -331,37 +326,40 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |driver_board|fiber_rx:fiber_rx|receive_code_cnt[0]                            ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |driver_board|fiber_rx:fiber_rx|divide_cnt[2]                                  ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |driver_board|ads7822:ads7822|numer_cnt[0]                                     ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |driver_board|work_led:work_led|cnt_1ms[1]                                     ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |driver_board|fiber_rx:fiber_rx|cnt_byp[6]                                     ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |driver_board|fiber_rx:fiber_rx|strat_cnt_nums[4]                              ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |driver_board|fiber_rx:fiber_rx|byp_cnt_nums[5]                                ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |driver_board|fiber_rx:fiber_rx|rst_cnt_nums[5]                                ;
-; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |driver_board|work_led:work_led|cnt_500ms[4]                                   ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |driver_board|fiber_rx:fiber_rx|receive_code_cnt[2]                            ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |driver_board|fiber_rx:fiber_rx|divide_cnt[1]                                  ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |driver_board|ads7822:ads7822|numer_cnt[2]                                     ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |driver_board|work_led:work_led|cnt_1ms[4]                                     ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |driver_board|fiber_rx:fiber_rx|cnt_byp[14]                                    ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |driver_board|fiber_rx:fiber_rx|strat_cnt_nums[1]                              ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |driver_board|fiber_rx:fiber_rx|byp_cnt_nums[2]                                ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |driver_board|fiber_rx:fiber_rx|rst_cnt_nums[0]                                ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |driver_board|work_led:work_led|cnt_500ms[5]                                   ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |driver_board|fiber_tx:fiber_tx|send_nums[2]                                   ;
-; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |driver_board|div_1us:div_1us|cnt_time1ms[7]                                   ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |driver_board|ads7822:ads7822|ad_syn[11]                                       ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |driver_board|div_1us:div_1us|cnt_time1ms[6]                                   ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |driver_board|ads7822:ads7822|ad_syn[2]                                        ;
 ; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |driver_board|fiber_rx:fiber_rx|cnt_reset_err[0]                               ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |driver_board|fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[3]         ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |driver_board|fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|delay_err_cnt[3] ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:byppowererr|cnt_delay[1]   ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:powererr|cnt_delay[5]      ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:err4|cnt_delay[11]         ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:err3|cnt_delay[4]          ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:err2|cnt_delay[2]          ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:err1|cnt_delay[5]          ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:hot2|cnt_delay[7]          ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:udc_over|cnt_delay[7]      ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:soft_over|cnt_delay[11]    ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:udc_low|cnt_delay[0]       ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:soft_low|cnt_delay[5]      ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |driver_board|fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[0]         ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |driver_board|fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|delay_err_cnt[2] ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:byppowererr|cnt_delay[3]   ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:powererr|cnt_delay[10]     ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:err4|cnt_delay[12]         ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:err3|cnt_delay[9]          ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:err2|cnt_delay[10]         ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:err1|cnt_delay[0]          ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:hot2|cnt_delay[10]         ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:udc_over|cnt_delay[13]     ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:soft_over|cnt_delay[7]     ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:udc_low|cnt_delay[10]      ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect:soft_low|cnt_delay[12]     ;
 ; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |driver_board|err_detect:err_detect|ByperrDelay[13]                            ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_high_detect:bypok_filt|cnt_delay[13]                         ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[5]   ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; Yes        ; |driver_board|pwm_out:pwm_out|LDDIN                                            ;
-; 6:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |driver_board|fiber_rx:fiber_rx|HighCnt[5]                                     ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_high_detect:bypok_filt|cnt_delay[1]                          ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |driver_board|err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[1]   ;
+; 6:1                ; 7 bits    ; 28 LEs        ; 7 LEs                ; 21 LEs                 ; Yes        ; |driver_board|fiber_rx:fiber_rx|HighCnt[0]                                     ;
+; 6:1                ; 9 bits    ; 36 LEs        ; 9 LEs                ; 27 LEs                 ; Yes        ; |driver_board|pwm_out:pwm_out|RUCnt[1]                                         ;
+; 6:1                ; 9 bits    ; 36 LEs        ; 9 LEs                ; 27 LEs                 ; Yes        ; |driver_board|pwm_out:pwm_out|RDCnt[0]                                         ;
+; 6:1                ; 9 bits    ; 36 LEs        ; 9 LEs                ; 27 LEs                 ; Yes        ; |driver_board|pwm_out:pwm_out|LUCnt[4]                                         ;
+; 6:1                ; 9 bits    ; 36 LEs        ; 9 LEs                ; 27 LEs                 ; Yes        ; |driver_board|pwm_out:pwm_out|LDCnt[3]                                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
 
 
@@ -427,7 +425,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------+
 ; Parameter Name ; Value ; Type                                ;
 +----------------+-------+-------------------------------------+
-; DeadTime       ; 0     ; Signed Integer                      ;
+; DeadTime       ; 280   ; Signed Integer                      ;
 +----------------+-------+-------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -720,9 +718,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Sat Jan 27 16:39:29 2024
+    Info: Processing started: Sat Jan 27 23:35:11 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off driver_board -c driver_board
 Info (11104): Parallel Compilation has detected 20 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 14 of the 14 physical processors detected instead.
+Info (12021): Found 1 design units, including 1 entities, in source file tb_pwm_out.v
+    Info (12023): Found entity 1: tb_pwm_out
 Info (12021): Found 1 design units, including 1 entities, in source file tb_ads7822.v
     Info (12023): Found entity 1: tb_ads7822
 Info (12021): Found 1 design units, including 1 entities, in source file src/work_led.v
@@ -796,15 +796,15 @@ Warning (21074): Design contains 7 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "DSW[3]"
     Warning (15610): No output dependent on input pin "DSW[4]"
     Warning (15610): No output dependent on input pin "DSW[5]"
-Info (21057): Implemented 862 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 910 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 21 input pins
     Info (21059): Implemented 22 output pins
-    Info (21061): Implemented 819 logic cells
+    Info (21061): Implemented 867 logic cells
 Info (144001): Generated suppressed messages file D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/output_files/driver_board.map.smsg
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 25 warnings
-    Info: Peak virtual memory: 4587 megabytes
-    Info: Processing ended: Sat Jan 27 16:39:31 2024
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 4586 megabytes
+    Info: Processing ended: Sat Jan 27 23:35:12 2024
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

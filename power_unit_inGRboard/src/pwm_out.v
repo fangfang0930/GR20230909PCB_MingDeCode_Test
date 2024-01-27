@@ -29,7 +29,7 @@ reg [8:0]RDCnt;
 reg [8:0]LUCnt;
 reg [8:0]LDCnt;
 
-parameter DeadTime =0; //280;//hff-死区时间7us;	
+parameter DeadTime =280; //280;//hff-死区时间7us;	
 
 always@(posedge clk or negedge rst_n)
 begin 
@@ -59,6 +59,7 @@ begin
 	begin 
 		RUDIN<=1'b0;
         RUCnt<=1'b0;
+		
         if(RDCnt >= DeadTime)
         begin
         	RDDIN<=1'b1;
@@ -68,6 +69,7 @@ begin
         	RDDIN<=1'b0;
             RDCnt<=RDCnt + 1'b1;
         end
+		
         LUDIN<=1'b0;
         LUCnt<=1'b0;
         if(LDCnt >= DeadTime)
@@ -77,11 +79,12 @@ begin
         else
         begin
         	LDDIN<=1'b0;
-            LDCnt<=RDCnt + 1'b1;
+            LDCnt<=LDCnt + 1'b1;
         end
 	end 
 	else if(igbt_control==2'b01)//右上管开，左上管关
 	begin
+	   
         if(RUCnt >= DeadTime)
         begin
         	RUDIN<=1'b1;
@@ -89,12 +92,11 @@ begin
         else
         begin
         	RUDIN<=1'b0;
-            RUCnt<=RDCnt + 1'b1;
+            RUCnt<=RUCnt + 1'b1;
         end     
 		RDDIN<=1'b0;
         RDCnt<=1'b0;
-		LUDIN<=1'b0;
-        LUCnt<=1'b0;
+	
         if(LDCnt >= DeadTime)
         begin
         	LDDIN<=1'b1;
@@ -102,22 +104,13 @@ begin
         else
         begin
         	LDDIN<=1'b0;
-            LDCnt<=RDCnt + 1'b1;
+            LDCnt<=LDCnt + 1'b1;
         end
+		LUDIN<=1'b0;
+        LUCnt<=1'b0;
 	end 	
-	else if(igbt_control==2'b10)//左上管开，右上管关
-	begin 
-		RUDIN<=1'b0;
-        RUCnt<=1'b0;
-        if(RDCnt >= DeadTime)
-        begin
-        	RDDIN<=1'b1;
-        end
-        else
-        begin
-        	RDDIN<=1'b0;
-            RDCnt<=RDCnt + 1'b1;
-        end
+	else if(igbt_control==2'b10)//左上管开，右上管关//LUDIN=1 RD=0 LU=0 RD=1
+	begin
         if(LUCnt >= DeadTime)
         begin
         	LUDIN<=1'b1;
@@ -129,6 +122,17 @@ begin
         end
 		LDDIN<=1'b0;
         LDCnt<=1'b0;
+		if(RDCnt >= DeadTime)
+        begin
+        	RDDIN<=1'b1;
+        end
+        else
+        begin
+        	RDDIN<=1'b0;
+            RDCnt<=RDCnt + 1'b1;
+        end
+		RUDIN<=1'b0;
+        RUCnt<=1'b0;
 	end 
 	else if(igbt_control==2'b11)//上管全开
 	begin 
@@ -139,10 +143,11 @@ begin
         else
         begin
         	RUDIN<=1'b0;
-            RUCnt<=RDCnt + 1'b1;
+            RUCnt<=RUCnt + 1'b1;
         end     
 		RDDIN<=1'b0;
         RDCnt<=1'b0;
+
         if(LUCnt >= DeadTime)
         begin
         	LUDIN<=1'b1;

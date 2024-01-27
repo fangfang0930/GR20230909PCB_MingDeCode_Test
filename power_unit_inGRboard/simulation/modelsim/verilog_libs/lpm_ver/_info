@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dD:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/simulation/modelsim
 vlpm_abs
-Z1 !s110 1706248151
+Z1 !s110 1706369471
 !i10b 1
 !s100 F_9e1KM`Tz^fXz3DcKZN:2
 ITnFfO8bJk30JJB[f<hchF1
@@ -23,7 +23,7 @@ Z6 OL;L;10.5;63
 r1
 !s85 0
 31
-Z7 !s108 1706248151.000000
+Z7 !s108 1706369471.000000
 Z8 !s107 d:/program files/altera/quartus/eda/sim_lib/220model.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|lpm_ver|d:/program files/altera/quartus/eda/sim_lib/220model.v|
 !i113 0

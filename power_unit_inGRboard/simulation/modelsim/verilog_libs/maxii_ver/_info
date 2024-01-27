@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dD:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/simulation/modelsim
 vmaxii_and1
-Z1 !s110 1706248153
+Z1 !s110 1706369474
 !i10b 1
 !s100 QQj702:h]2`DElERk_6j^0
 IUfO2YUTDene:jUzd=kFl70
@@ -23,7 +23,7 @@ Z6 OL;L;10.5;63
 r1
 !s85 0
 31
-Z7 !s108 1706248153.000000
+Z7 !s108 1706369474.000000
 Z8 !s107 d:/program files/altera/quartus/eda/sim_lib/maxii_atoms.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|maxii_ver|d:/program files/altera/quartus/eda/sim_lib/maxii_atoms.v|
 !i113 0

@@ -33,11 +33,11 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -vlog01compat -work work +incdir+D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src {D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/ads7822.v}
+vlog -vlog01compat -work work +incdir+D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src {D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/pwm_out.v}
 
-vlog -vlog01compat -work work +incdir+D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard {D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/tb_ads7822.v}
+vlog -vlog01compat -work work +incdir+D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard {D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/tb_pwm_out.v}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxii_ver -L rtl_work -L work -voptargs="+acc"  tb_ads7822
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxii_ver -L rtl_work -L work -voptargs="+acc"  tb_pwm_out.v
 
 add wave *
 view structure
