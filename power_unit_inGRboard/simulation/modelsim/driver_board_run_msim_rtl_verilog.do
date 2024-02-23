@@ -33,9 +33,22 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -vlog01compat -work work +incdir+D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src {D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/pwm_out.v}
+vlog -vlog01compat -work work +incdir+D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src {D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/work_led.v}
+vlog -vlog01compat -work work +incdir+D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src {D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/volt_calc.v}
+vlog -vlog01compat -work work +incdir+D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src {D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/verify_rx.v}
+vlog -vlog01compat -work work +incdir+D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src {D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/pwm_out.v}
+vlog -vlog01compat -work work +incdir+D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src {D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/fiber_Tx.v}
+vlog -vlog01compat -work work +incdir+D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src {D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/fiber_Rx.v}
+vlog -vlog01compat -work work +incdir+D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src {D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/fiber_delay_rx.v}
+vlog -vlog01compat -work work +incdir+D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src {D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/err_high_detect_unlock.v}
+vlog -vlog01compat -work work +incdir+D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src {D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/err_high_detect.v}
+vlog -vlog01compat -work work +incdir+D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src {D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/err_detect.v}
+vlog -vlog01compat -work work +incdir+D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src {D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/driver_board.v}
+vlog -vlog01compat -work work +incdir+D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src {D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/div_1us.v}
+vlog -vlog01compat -work work +incdir+D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src {D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/BypDeal.v}
+vlog -vlog01compat -work work +incdir+D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src {D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/ads7822.v}
 
-vlog -vlog01compat -work work +incdir+D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard {D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/tb_pwm_out.v}
+vlog -vlog01compat -work work +incdir+D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard {D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/tb_pwm_out.v}
 
 vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxii_ver -L rtl_work -L work -voptargs="+acc"  tb_pwm_out.v
 

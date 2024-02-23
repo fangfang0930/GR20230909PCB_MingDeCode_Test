@@ -94,7 +94,7 @@ always@(posedge clk or negedge rst_n)
 begin
      if(!rst_n)
         ad_clk<=1'b0;
-		else if((numer_cnt>5'd0)&&(numer_cnt<=5'd16)&&(div_cnt==COUNT_1MHZ))
+		else if((numer_cnt>5'd0)&&(numer_cnt<=5'd16)&&(div_cnt==COUNT_1MHZ)) //hff-ad芯片不一样，驱动也应改动
      //else if((numer_cnt>5'd0)&&(numer_cnt<5'd16)&&(div_cnt==COUNT_1MHZ))
         ad_clk<=1'b0;
 		else if((numer_cnt>5'd0)&&(numer_cnt<=5'd16)&&(div_cnt==COUNT_M))

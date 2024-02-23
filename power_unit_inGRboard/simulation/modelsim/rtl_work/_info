@@ -7,46 +7,92 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dD:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/simulation/modelsim
+Z0 dD:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/simulation/modelsim
 vpwm_out
-Z1 VDg1SIo80bB@j0V0VzS_@n1
-r1
-!s85 0
-31
+Z1 !s110 1708568424
 !i10b 1
 !s100 I1R=W7IQ^c]o;CHXFe>bV3
-I;omQOIJnAkDnQNE9LXzKF0
+I5kXMC77]a^ZQ]UHQDFOh61
+Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1706369402
-8D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/pwm_out.v
-FD:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/pwm_out.v
+Z3 w1708506022
+8D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/pwm_out.v
+FD:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/pwm_out.v
 L0 2
-Z2 OL;L;10.5;63
-Z3 !s108 1706369475.000000
-!s107 D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/pwm_out.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src|D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/pwm_out.v|
-!i113 0
-Z4 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-!s92 -vlog01compat -work work +incdir+D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z5 tCvgOpt 0
-vtb_pwm_out
-R1
+Z4 OL;L;10.5;63
 r1
 !s85 0
 31
-!i10b 1
-!s100 n51NSJYo?kMD^AF5?QV_23
-I9=C0UlUM3<BW28FzSHXXa1
-R0
-w1706367796
-8D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/tb_pwm_out.v
-FD:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/tb_pwm_out.v
-L0 3
-R2
-R3
-!s107 D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/tb_pwm_out.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard|D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/tb_pwm_out.v|
+Z5 !s108 1708568424.000000
+!s107 D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/pwm_out.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src|D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/pwm_out.v|
 !i113 0
+Z6 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 !s92 -vlog01compat -work work +incdir+D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0
+vverify_rx
+R1
+!i10b 1
+!s100 YzXTXKN`g;XONXKW;BcoF0
+I0_i>3cBj=ISn`@Dg6o_Rk0
+R2
+R0
+R3
+8D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/verify_rx.v
+FD:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/verify_rx.v
+L0 2
 R4
-!s92 -vlog01compat -work work +incdir+D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+r1
+!s85 0
+31
 R5
+!s107 D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/verify_rx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src|D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/verify_rx.v|
+!i113 0
+R6
+R7
+R8
+vvolt_calc
+R1
+!i10b 1
+!s100 CoPfRFE0iIF5JiAFiW7@:0
+IYiW57=[;_cg<dARQc6Z>?2
+R2
+R0
+R3
+8D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/volt_calc.v
+FD:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/volt_calc.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/volt_calc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src|D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/volt_calc.v|
+!i113 0
+R6
+R7
+R8
+vwork_led
+R1
+!i10b 1
+!s100 RcQ_@ZO6SPjA@T1mU8]_h2
+InL^:6K=XJ<8M1[om?VUYL0
+R2
+R0
+R3
+8D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/work_led.v
+FD:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/work_led.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/work_led.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src|D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/work_led.v|
+!i113 0
+R6
+R7
+R8

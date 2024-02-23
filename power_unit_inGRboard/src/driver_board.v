@@ -3,7 +3,7 @@
  module driver_board
 						(
 							clk,///Clk16M,//16Mhz,Erik
-							Reset,
+							//Reset,
 							// 驱动
 							RUDIN,//right up igbt driver in 
 							RDDIN,//right down igbt driver in 
@@ -18,6 +18,11 @@
 							LED4,
 							LED5,
 							LED6,
+							LED7,
+							LED8,
+							LED9,
+							LED10,
+							
 							//光纤通信
 							COMM_R,
 							COMM_T,
@@ -33,14 +38,16 @@
 							Powerfall,
 							BypPowerErr,
 							//AD校对
-							DSW,//拨码开关输入
+							//DSW,//拨码开关输入
 							//旁路控制,Erik
 							BypCon,
 							BypOk,
+							rx2,
+							tx2,
 							test
 							);
 input clk;//Clk16M;//16Mhz,Erik
-input Reset;//上电先高后低,Erik
+//input Reset;//上电先高后低,Erik
 // 驱动
 output RUDIN;//right up igbt driver in 
 output RDDIN;//right down igbt driver in 
@@ -55,6 +62,12 @@ output LED3;
 output LED4;
 output LED5;
 output LED6;
+output LED7;
+output LED8;
+output LED9;
+output LED10;
+output tx2;
+input  rx2;
 //光纤通信
 input  COMM_R;
 output COMM_T;
@@ -70,13 +83,13 @@ input HOT_2;
 input Powerfall;
 input BypPowerErr;//高电平代表电压低于保护值,Erik
 //AD校对
-input [5:0]DSW;
+//input [5:0]DSW;
 //旁路控制
 output BypCon;
 input BypOk;
 
 //其他
-output [7:0]test;
+output [2:0]test;//[7:0]test;
 
 wire rst_n;
 wire start_stop;
@@ -101,7 +114,7 @@ wire PllLock; //Erik
 wire SoftDCOV;
 wire SoftDCUV;
 wire BypConRx;//接收到的旁通闭合信号,Erik
-assign rst_n=((~Reset) && PllLock);//Erik
+//assign rst_n=((~Reset) && PllLock);//Erik
 assign LED1=~(work_out&start_stop&(~err_all));//工作指示灯
 assign LED2=~err_all; 
 assign LED3=~reset_unit;//低电平亮灯，Erik
@@ -224,7 +237,7 @@ err_detect err_detect(
 							.DCUV		(DCUV		),//(~DCUV		),//硬件是低电平报故障，Erik
 							.SoftDCOV	(SoftDCOV	),
 							.SoftDCUV	(SoftDCUV	),
-							.HOT_1		(~HOT_1		),//硬件是低电平报故障，Erik//hff-接到故障TEM1
+							.HOT_1		(HOT_1		),//(~HOT_1		),//硬件是低电平报故障，Erik//hff-接到故障TEM1,ZYHG00与GR2023板子相反
 							.HOT_2		(HOT_2		),//(~HOT_2		),//硬件是低电平报故障，Erik//HFF-硬件接到GND了，
 							.Powerfall	(~Powerfall	),
 							.BypPowerErr(BypPowerErr),

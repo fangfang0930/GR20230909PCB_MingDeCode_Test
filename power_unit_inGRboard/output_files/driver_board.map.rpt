@@ -1,5 +1,5 @@
 Analysis & Synthesis report for driver_board
-Sat Jan 27 23:35:12 2024
+Fri Feb 23 08:31:08 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -73,13 +73,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                   ;
 +-----------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat Jan 27 23:35:12 2024            ;
+; Analysis & Synthesis Status ; Successful - Fri Feb 23 08:31:08 2024            ;
 ; Quartus II 64-Bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name               ; driver_board                                     ;
 ; Top-level Entity Name       ; driver_board                                     ;
 ; Family                      ; MAX II                                           ;
 ; Total logic elements        ; 867                                              ;
-; Total pins                  ; 43                                               ;
+; Total pins                  ; 37                                               ;
 ; Total virtual pins          ; 0                                                ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                                    ;
 +-----------------------------+--------------------------------------------------+
@@ -175,26 +175,26 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                  ; Library ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
-; src/work_led.v                   ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/work_led.v               ;         ;
-; src/volt_calc.v                  ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/volt_calc.v              ;         ;
-; src/verify_rx.v                  ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/verify_rx.v              ;         ;
-; src/pwm_out.v                    ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/pwm_out.v                ;         ;
-; src/fiber_Tx.v                   ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/fiber_Tx.v               ;         ;
-; src/fiber_Rx.v                   ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/fiber_Rx.v               ;         ;
-; src/fiber_delay_rx.v             ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/fiber_delay_rx.v         ;         ;
-; src/err_high_detect_unlock.v     ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/err_high_detect_unlock.v ;         ;
-; src/err_high_detect.v            ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/err_high_detect.v        ;         ;
-; src/err_detect.v                 ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/err_detect.v             ;         ;
-; src/driver_board.v               ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/driver_board.v           ;         ;
-; src/div_1us.v                    ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/div_1us.v                ;         ;
-; src/BypDeal.v                    ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/BypDeal.v                ;         ;
-; src/ads7822.v                    ; yes             ; User Verilog HDL File  ; D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/src/ads7822.v                ;         ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                   ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                                                     ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; src/work_led.v                   ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/work_led.v               ;         ;
+; src/volt_calc.v                  ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/volt_calc.v              ;         ;
+; src/verify_rx.v                  ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/verify_rx.v              ;         ;
+; src/pwm_out.v                    ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/pwm_out.v                ;         ;
+; src/fiber_Tx.v                   ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/fiber_Tx.v               ;         ;
+; src/fiber_Rx.v                   ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/fiber_Rx.v               ;         ;
+; src/fiber_delay_rx.v             ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/fiber_delay_rx.v         ;         ;
+; src/err_high_detect_unlock.v     ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/err_high_detect_unlock.v ;         ;
+; src/err_high_detect.v            ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/err_high_detect.v        ;         ;
+; src/err_detect.v                 ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/err_detect.v             ;         ;
+; src/driver_board.v               ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/driver_board.v           ;         ;
+; src/div_1us.v                    ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/div_1us.v                ;         ;
+; src/BypDeal.v                    ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/BypDeal.v                ;         ;
+; src/ads7822.v                    ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/ads7822.v                ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -224,11 +224,11 @@ applicable agreement for further details.
 ;                                             ;       ;
 ; Total registers                             ; 492   ;
 ; Total logic cells in carry chains           ; 389   ;
-; I/O pins                                    ; 43    ;
+; I/O pins                                    ; 37    ;
 ; Maximum fan-out node                        ; clk   ;
 ; Maximum fan-out                             ; 492   ;
 ; Total fan-out                               ; 3449  ;
-; Average fan-out                             ; 3.79  ;
+; Average fan-out                             ; 3.82  ;
 +---------------------------------------------+-------+
 
 
@@ -237,7 +237,7 @@ applicable agreement for further details.
 +---------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node            ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                             ; Library Name ;
 +---------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------+--------------+
-; |driver_board                         ; 867 (4)     ; 492          ; 0          ; 43   ; 0            ; 375 (4)      ; 80 (0)            ; 412 (0)          ; 389 (0)         ; 0 (0)      ; |driver_board                                                   ; work         ;
+; |driver_board                         ; 867 (4)     ; 492          ; 0          ; 37   ; 0            ; 375 (4)      ; 80 (0)            ; 412 (0)          ; 389 (0)         ; 0 (0)      ; |driver_board                                                   ; work         ;
 ;    |ads7822:ads7822|                  ; 63 (63)     ; 43           ; 0          ; 0    ; 0            ; 20 (20)      ; 14 (14)           ; 29 (29)          ; 12 (12)         ; 0 (0)      ; |driver_board|ads7822:ads7822                                   ; work         ;
 ;    |div_1us:div_1us|                  ; 39 (39)     ; 16           ; 0          ; 0    ; 0            ; 23 (23)      ; 3 (3)             ; 13 (13)          ; 16 (16)         ; 0 (0)      ; |driver_board|div_1us:div_1us                                   ; work         ;
 ;    |err_detect:err_detect|            ; 362 (66)    ; 212          ; 0          ; 0    ; 0            ; 150 (36)     ; 3 (2)             ; 209 (28)         ; 194 (26)        ; 0 (0)      ; |driver_board|err_detect:err_detect                             ; work         ;
@@ -718,7 +718,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Sat Jan 27 23:35:11 2024
+    Info: Processing started: Fri Feb 23 08:31:07 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off driver_board -c driver_board
 Info (11104): Parallel Compilation has detected 20 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 14 of the 14 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file tb_pwm_out.v
@@ -760,11 +760,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file src/byp
     Info (12023): Found entity 1: BypDeal
 Info (12021): Found 1 design units, including 1 entities, in source file src/ads7822.v
     Info (12023): Found entity 1: ads7822
-Warning (10236): Verilog HDL Implicit Net warning at driver_board.v(150): created implicit net for "Bypok_filt"
+Warning (10236): Verilog HDL Implicit Net warning at driver_board.v(163): created implicit net for "Bypok_filt"
 Info (12127): Elaborating entity "driver_board" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at driver_board.v(81): object "rst_n" assigned a value but never read
-Warning (10858): Verilog HDL warning at driver_board.v(98): object PllLock used but never assigned
-Warning (10034): Output port "test[7..2]" at driver_board.v(79) has no driver
+Warning (10034): Output port "test[2]" at driver_board.v(92) has no driver
+Warning (10034): Output port "LED7" at driver_board.v(65) has no driver
+Warning (10034): Output port "LED8" at driver_board.v(66) has no driver
+Warning (10034): Output port "LED9" at driver_board.v(67) has no driver
+Warning (10034): Output port "LED10" at driver_board.v(68) has no driver
+Warning (10034): Output port "tx2" at driver_board.v(69) has no driver
 Info (12128): Elaborating entity "fiber_rx" for hierarchy "fiber_rx:fiber_rx"
 Info (12128): Elaborating entity "verify_rx" for hierarchy "fiber_rx:fiber_rx|verify_rx:verify_rx"
 Info (12128): Elaborating entity "fiber_delay_rx" for hierarchy "fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx"
@@ -782,28 +785,22 @@ Info (12128): Elaborating entity "div_1us" for hierarchy "div_1us:div_1us"
 Info (12128): Elaborating entity "work_led" for hierarchy "work_led:work_led"
 Warning (12241): 22 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LED7" is stuck at GND
+    Warning (13410): Pin "LED8" is stuck at GND
+    Warning (13410): Pin "LED9" is stuck at GND
+    Warning (13410): Pin "LED10" is stuck at GND
+    Warning (13410): Pin "tx2" is stuck at GND
     Warning (13410): Pin "test[2]" is stuck at GND
-    Warning (13410): Pin "test[3]" is stuck at GND
-    Warning (13410): Pin "test[4]" is stuck at GND
-    Warning (13410): Pin "test[5]" is stuck at GND
-    Warning (13410): Pin "test[6]" is stuck at GND
-    Warning (13410): Pin "test[7]" is stuck at GND
-Warning (21074): Design contains 7 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "Reset"
-    Warning (15610): No output dependent on input pin "DSW[0]"
-    Warning (15610): No output dependent on input pin "DSW[1]"
-    Warning (15610): No output dependent on input pin "DSW[2]"
-    Warning (15610): No output dependent on input pin "DSW[3]"
-    Warning (15610): No output dependent on input pin "DSW[4]"
-    Warning (15610): No output dependent on input pin "DSW[5]"
-Info (21057): Implemented 910 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 21 input pins
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "rx2"
+Info (21057): Implemented 904 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 15 input pins
     Info (21059): Implemented 22 output pins
     Info (21061): Implemented 867 logic cells
-Info (144001): Generated suppressed messages file D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/output_files/driver_board.map.smsg
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 25 warnings
-    Info: Peak virtual memory: 4586 megabytes
-    Info: Processing ended: Sat Jan 27 23:35:12 2024
+Info (144001): Generated suppressed messages file D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/output_files/driver_board.map.smsg
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 22 warnings
+    Info: Peak virtual memory: 4587 megabytes
+    Info: Processing ended: Fri Feb 23 08:31:08 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -811,6 +808,6 @@ Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 25 warnin
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in D:/temp/hff/MingDeCode_TEST/power_unit_inGRboard/output_files/driver_board.map.smsg.
+The suppressed messages can be found in D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/git_GR20230909/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/output_files/driver_board.map.smsg.
 
 
