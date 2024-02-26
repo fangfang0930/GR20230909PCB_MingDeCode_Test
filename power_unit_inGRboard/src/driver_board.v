@@ -240,7 +240,7 @@ err_detect err_detect(
 							.HOT_1		(HOT_1		),//(~HOT_1		),//硬件是低电平报故障，Erik//hff-接到故障TEM1,ZYHG00与GR2023板子相反
 							.HOT_2		(HOT_2		),//(~HOT_2		),//硬件是低电平报故障，Erik//HFF-硬件接到GND了，
 							.Powerfall	(~Powerfall	),
-							.BypPowerErr(BypPowerErr),
+							.BypPowerErr(0),//.BypPowerErr(BypPowerErr),//HFF-2024-2-23
                             .BypCon		(BypCon		),//旁路闭合信号，Erik
                             .BypOK		(Bypok_filt	),//旁路成功信号，Erik
 							.err_info	(err_info	),
