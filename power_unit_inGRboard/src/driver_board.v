@@ -35,8 +35,8 @@
 							DCUV,//Erik
 							HOT_1,//过温告警,V1.01新增,Erik
 							HOT_2,//过热保护,Erik  
-							Powerfall,
-							BypPowerErr,
+							Powerfall,//hff-ZYHG003没有这个口
+							BypPowerErr,//hff-ZYHG003没有这个口
 							//AD校对
 							//DSW,//拨码开关输入
 							//旁路控制,Erik
@@ -239,7 +239,7 @@ err_detect err_detect(
 							.SoftDCUV	(SoftDCUV	),
 							.HOT_1		(HOT_1		),//(~HOT_1		),//硬件是低电平报故障，Erik//hff-接到故障TEM1,ZYHG00与GR2023板子相反
 							.HOT_2		(HOT_2		),//(~HOT_2		),//硬件是低电平报故障，Erik//HFF-硬件接到GND了，
-							.Powerfall	(~Powerfall	),
+							.Powerfall	(0),//Powerfall	),hff-ZYHG003没有这个口
 							.BypPowerErr(0),//.BypPowerErr(BypPowerErr),//HFF-2024-2-23
                             .BypCon		(BypCon		),//旁路闭合信号，Erik
                             .BypOK		(Bypok_filt	),//旁路成功信号，Erik
