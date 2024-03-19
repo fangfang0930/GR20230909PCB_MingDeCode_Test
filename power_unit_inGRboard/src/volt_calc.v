@@ -78,14 +78,14 @@ begin
 	begin
 		DCOV<=0;
 		DCUV<=0;
-	end
-	else if(done&&real_volt>12'd3644)//real_volt>12'd3644)//1150Vdc软件过压
-	begin
+	end                           
+	else if(done&&real_volt>12'd3834)//real_volt>12'd3644)//软件1150Vdc软件过压 硬件为1105v
+	begin                             //3834=4095*1150/1228.26      
 		DCOV<=1;
 		DCUV<=0;
 	end
-	else if(done&&real_volt<12'd1584)//real_volt<12'd1584)//500Vdc软件欠压
-	begin
+	else if(done&&real_volt<12'd1667)//real_volt<12'd1584)//500Vdc软件欠压 硬件565v
+	begin								//1667=4095*500/1228.26      
 		DCOV<=0;
 		DCUV<=1;//0;
 	end
