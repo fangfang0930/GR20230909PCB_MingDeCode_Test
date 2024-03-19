@@ -1,5 +1,5 @@
 Analysis & Synthesis report for driver_board
-Tue Feb 27 09:54:45 2024
+Tue Mar 19 16:23:48 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -74,12 +74,12 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                   ;
 +-----------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Tue Feb 27 09:54:45 2024            ;
+; Analysis & Synthesis Status ; Successful - Tue Mar 19 16:23:48 2024            ;
 ; Quartus II 64-Bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name               ; driver_board                                     ;
 ; Top-level Entity Name       ; driver_board                                     ;
 ; Family                      ; MAX II                                           ;
-; Total logic elements        ; 815                                              ;
+; Total logic elements        ; 816                                              ;
 ; Total pins                  ; 37                                               ;
 ; Total virtual pins          ; 0                                                ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                                    ;
@@ -176,26 +176,26 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                     ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                       ; Library ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------------------+---------+
-; src/work_led.v                   ; yes             ; User Verilog HDL File  ; D:/temp/hff/GIT_GB2024/MINGDE_CODE/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/work_led.v               ;         ;
-; src/volt_calc.v                  ; yes             ; User Verilog HDL File  ; D:/temp/hff/GIT_GB2024/MINGDE_CODE/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/volt_calc.v              ;         ;
-; src/verify_rx.v                  ; yes             ; User Verilog HDL File  ; D:/temp/hff/GIT_GB2024/MINGDE_CODE/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/verify_rx.v              ;         ;
-; src/pwm_out.v                    ; yes             ; User Verilog HDL File  ; D:/temp/hff/GIT_GB2024/MINGDE_CODE/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/pwm_out.v                ;         ;
-; src/fiber_Tx.v                   ; yes             ; User Verilog HDL File  ; D:/temp/hff/GIT_GB2024/MINGDE_CODE/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/fiber_Tx.v               ;         ;
-; src/fiber_Rx.v                   ; yes             ; User Verilog HDL File  ; D:/temp/hff/GIT_GB2024/MINGDE_CODE/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/fiber_Rx.v               ;         ;
-; src/fiber_delay_rx.v             ; yes             ; User Verilog HDL File  ; D:/temp/hff/GIT_GB2024/MINGDE_CODE/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/fiber_delay_rx.v         ;         ;
-; src/err_high_detect_unlock.v     ; yes             ; User Verilog HDL File  ; D:/temp/hff/GIT_GB2024/MINGDE_CODE/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/err_high_detect_unlock.v ;         ;
-; src/err_high_detect.v            ; yes             ; User Verilog HDL File  ; D:/temp/hff/GIT_GB2024/MINGDE_CODE/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/err_high_detect.v        ;         ;
-; src/err_detect.v                 ; yes             ; User Verilog HDL File  ; D:/temp/hff/GIT_GB2024/MINGDE_CODE/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/err_detect.v             ;         ;
-; src/driver_board.v               ; yes             ; User Verilog HDL File  ; D:/temp/hff/GIT_GB2024/MINGDE_CODE/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/driver_board.v           ;         ;
-; src/div_1us.v                    ; yes             ; User Verilog HDL File  ; D:/temp/hff/GIT_GB2024/MINGDE_CODE/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/div_1us.v                ;         ;
-; src/BypDeal.v                    ; yes             ; User Verilog HDL File  ; D:/temp/hff/GIT_GB2024/MINGDE_CODE/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/BypDeal.v                ;         ;
-; src/ads7822.v                    ; yes             ; User Verilog HDL File  ; D:/temp/hff/GIT_GB2024/MINGDE_CODE/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/ads7822.v                ;         ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                    ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                                      ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------------------------------+---------+
+; src/work_led.v                   ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/work_led.v               ;         ;
+; src/volt_calc.v                  ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/volt_calc.v              ;         ;
+; src/verify_rx.v                  ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/verify_rx.v              ;         ;
+; src/pwm_out.v                    ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/pwm_out.v                ;         ;
+; src/fiber_Tx.v                   ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/fiber_Tx.v               ;         ;
+; src/fiber_Rx.v                   ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/fiber_Rx.v               ;         ;
+; src/fiber_delay_rx.v             ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/fiber_delay_rx.v         ;         ;
+; src/err_high_detect_unlock.v     ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/err_high_detect_unlock.v ;         ;
+; src/err_high_detect.v            ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/err_high_detect.v        ;         ;
+; src/err_detect.v                 ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/err_detect.v             ;         ;
+; src/driver_board.v               ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/driver_board.v           ;         ;
+; src/div_1us.v                    ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/div_1us.v                ;         ;
+; src/BypDeal.v                    ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/BypDeal.v                ;         ;
+; src/ads7822.v                    ; yes             ; User Verilog HDL File  ; D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/src/ads7822.v                ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -203,20 +203,20 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 815   ;
-;     -- Combinational with no register       ; 355   ;
+; Total logic elements                        ; 816   ;
+;     -- Combinational with no register       ; 356   ;
 ;     -- Register only                        ; 79    ;
 ;     -- Combinational with a register        ; 381   ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 292   ;
-;     -- 3 input functions                    ; 49    ;
-;     -- 2 input functions                    ; 354   ;
+;     -- 4 input functions                    ; 293   ;
+;     -- 3 input functions                    ; 50    ;
+;     -- 2 input functions                    ; 353   ;
 ;     -- 1 input functions                    ; 40    ;
 ;     -- 0 input functions                    ; 1     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 493   ;
+;     -- normal mode                          ; 494   ;
 ;     -- arithmetic mode                      ; 322   ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
@@ -228,7 +228,7 @@ applicable agreement for further details.
 ; I/O pins                                    ; 37    ;
 ; Maximum fan-out node                        ; clk   ;
 ; Maximum fan-out                             ; 460   ;
-; Total fan-out                               ; 3215  ;
+; Total fan-out                               ; 3220  ;
 ; Average fan-out                             ; 3.77  ;
 +---------------------------------------------+-------+
 
@@ -238,7 +238,7 @@ applicable agreement for further details.
 +---------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node            ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                             ; Library Name ;
 +---------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------+--------------+
-; |driver_board                         ; 815 (4)     ; 460          ; 0          ; 37   ; 0            ; 355 (4)      ; 79 (0)            ; 381 (0)          ; 360 (0)         ; 0 (0)      ; |driver_board                                                   ; work         ;
+; |driver_board                         ; 816 (4)     ; 460          ; 0          ; 37   ; 0            ; 356 (4)      ; 79 (0)            ; 381 (0)          ; 360 (0)         ; 0 (0)      ; |driver_board                                                   ; work         ;
 ;    |ads7822:ads7822|                  ; 63 (63)     ; 43           ; 0          ; 0    ; 0            ; 20 (20)      ; 14 (14)           ; 29 (29)          ; 12 (12)         ; 0 (0)      ; |driver_board|ads7822:ads7822                                   ; work         ;
 ;    |div_1us:div_1us|                  ; 39 (39)     ; 16           ; 0          ; 0    ; 0            ; 23 (23)      ; 3 (3)             ; 13 (13)          ; 16 (16)         ; 0 (0)      ; |driver_board|div_1us:div_1us                                   ; work         ;
 ;    |err_detect:err_detect|            ; 314 (66)    ; 182          ; 0          ; 0    ; 0            ; 132 (36)     ; 3 (2)             ; 179 (28)         ; 166 (26)        ; 0 (0)      ; |driver_board|err_detect:err_detect                             ; work         ;
@@ -258,7 +258,7 @@ applicable agreement for further details.
 ;       |verify_rx:verify_rx|           ; 17 (17)     ; 9            ; 0          ; 0    ; 0            ; 8 (8)        ; 4 (4)             ; 5 (5)            ; 0 (0)           ; 0 (0)      ; |driver_board|fiber_rx:fiber_rx|verify_rx:verify_rx             ; work         ;
 ;    |fiber_tx:fiber_tx|                ; 103 (103)   ; 36           ; 0          ; 0    ; 0            ; 67 (67)      ; 23 (23)           ; 13 (13)          ; 40 (40)         ; 0 (0)      ; |driver_board|fiber_tx:fiber_tx                                 ; work         ;
 ;    |pwm_out:pwm_out|                  ; 52 (52)     ; 40           ; 0          ; 0    ; 0            ; 12 (12)      ; 0 (0)             ; 40 (40)          ; 36 (36)         ; 0 (0)      ; |driver_board|pwm_out:pwm_out                                   ; work         ;
-;    |volt_calc:volt_calc|              ; 31 (31)     ; 26           ; 0          ; 0    ; 0            ; 5 (5)        ; 24 (24)           ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |driver_board|volt_calc:volt_calc                               ; work         ;
+;    |volt_calc:volt_calc|              ; 32 (32)     ; 26           ; 0          ; 0    ; 0            ; 6 (6)        ; 24 (24)           ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |driver_board|volt_calc:volt_calc                               ; work         ;
 ;    |work_led:work_led|                ; 48 (48)     ; 22           ; 0          ; 0    ; 0            ; 26 (26)      ; 1 (1)             ; 21 (21)          ; 19 (19)         ; 0 (0)      ; |driver_board|work_led:work_led                                 ; work         ;
 +---------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -735,7 +735,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Tue Feb 27 09:54:44 2024
+    Info: Processing started: Tue Mar 19 16:23:47 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off driver_board -c driver_board
 Info (11104): Parallel Compilation has detected 20 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 14 of the 14 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file tb_pwm_out.v
@@ -813,21 +813,21 @@ Warning (21074): Design contains 3 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Powerfall"
     Warning (15610): No output dependent on input pin "BypPowerErr"
     Warning (15610): No output dependent on input pin "rx2"
-Info (21057): Implemented 852 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 853 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 22 output pins
-    Info (21061): Implemented 815 logic cells
-Info (144001): Generated suppressed messages file D:/temp/hff/GIT_GB2024/MINGDE_CODE/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/output_files/driver_board.map.smsg
+    Info (21061): Implemented 816 logic cells
+Info (144001): Generated suppressed messages file D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/output_files/driver_board.map.smsg
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 24 warnings
     Info: Peak virtual memory: 4587 megabytes
-    Info: Processing ended: Tue Feb 27 09:54:45 2024
+    Info: Processing ended: Tue Mar 19 16:23:48 2024
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in D:/temp/hff/GIT_GB2024/MINGDE_CODE/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/output_files/driver_board.map.smsg.
+The suppressed messages can be found in D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/output_files/driver_board.map.smsg.
 
 

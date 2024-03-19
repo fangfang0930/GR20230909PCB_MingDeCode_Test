@@ -1,5 +1,5 @@
 Flow report for driver_board
-Tue Feb 27 09:54:45 2024
+Tue Mar 19 16:23:48 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,14 +40,14 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +---------------------------+--------------------------------------------------+
-; Flow Status               ; Successful - Tue Feb 27 09:54:45 2024            ;
+; Flow Status               ; Successful - Tue Mar 19 16:23:48 2024            ;
 ; Quartus II 64-Bit Version ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name             ; driver_board                                     ;
 ; Top-level Entity Name     ; driver_board                                     ;
 ; Family                    ; MAX II                                           ;
 ; Device                    ; EPM1270T144I5                                    ;
 ; Timing Models             ; Final                                            ;
-; Total logic elements      ; 815                                              ;
+; Total logic elements      ; 816                                              ;
 ; Total pins                ; 37                                               ;
 ; Total virtual pins        ; 0                                                ;
 ; UFM blocks                ; 0 / 1 ( 0 % )                                    ;
@@ -59,7 +59,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/27/2024 09:54:44 ;
+; Start date & time ; 03/19/2024 16:23:48 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; driver_board        ;
 +-------------------+---------------------+
@@ -70,7 +70,7 @@ applicable agreement for further details.
 +---------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                       ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +---------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                 ; 189225761358118.170899888416600 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                 ; 115287452290268.171083662720484 ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME              ; NA                              ; --            ; --          ; tb_pwm_out.v   ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH  ; tb_pwm_out.v                    ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT                ; Verilog Hdl                     ; --            ; --          ; eda_simulation ;
@@ -93,8 +93,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 4587 MB             ; 00:00:01                           ;
-; Total                ; 00:00:01     ; --                      ; --                  ; 00:00:01                           ;
+; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 4587 MB             ; 00:00:00                           ;
+; Total                ; 00:00:01     ; --                      ; --                  ; 00:00:00                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
