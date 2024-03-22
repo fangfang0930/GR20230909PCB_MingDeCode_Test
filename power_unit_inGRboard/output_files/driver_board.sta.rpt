@@ -1,6 +1,6 @@
 TimeQuest Timing Analyzer report for driver_board
-Tue Mar 19 16:23:43 2024
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+Thu Mar 21 16:08:42 2024
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
 ---------------------
@@ -51,17 +51,17 @@ applicable agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------------------+
-; TimeQuest Timing Analyzer Summary                                                       ;
-+--------------------+--------------------------------------------------------------------+
-; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version ;
-; Revision Name      ; driver_board                                                       ;
-; Device Family      ; MAX II                                                             ;
-; Device Name        ; EPM1270T144I5                                                      ;
-; Timing Models      ; Final                                                              ;
-; Delay Model        ; Slow Model                                                         ;
-; Rise/Fall Delays   ; Unavailable                                                        ;
-+--------------------+--------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                        ;
++--------------------+-----------------------------------------------------+
+; Quartus II Version ; Version 13.1.0 Build 162 10/23/2013 SJ Full Version ;
+; Revision Name      ; driver_board                                        ;
+; Device Family      ; MAX II                                              ;
+; Device Name        ; EPM1270T144I5                                       ;
+; Timing Models      ; Final                                               ;
+; Delay Model        ; Slow Model                                          ;
+; Rise/Fall Delays   ; Unavailable                                         ;
++--------------------+-----------------------------------------------------+
 
 
 +------------------------------------------+
@@ -95,7 +95,7 @@ applicable agreement for further details.
 +-----------+-----------------+------------+------+
 ; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
 +-----------+-----------------+------------+------+
-; 67.98 MHz ; 67.98 MHz       ; clk        ;      ;
+; 66.54 MHz ; 66.54 MHz       ; clk        ;      ;
 +-----------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -105,7 +105,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+---------+---------------+
 ; Clock ; Slack   ; End Point TNS ;
 +-------+---------+---------------+
-; clk   ; -13.711 ; -3543.379     ;
+; clk   ; -14.028 ; -3477.895     ;
 +-------+---------+---------------+
 
 
@@ -144,215 +144,215 @@ No paths to report.
 +---------+---------------------------------------+---------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack   ; From Node                             ; To Node                                                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +---------+---------------------------------------+---------------------------------------------------------+--------------+-------------+--------------+------------+------------+
-; -13.711 ; fiber_tx:fiber_tx|send_moduleinfo[0]  ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 14.378     ;
-; -13.665 ; fiber_tx:fiber_tx|send_volt[4]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 14.332     ;
-; -13.542 ; fiber_tx:fiber_tx|send_volt[1]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 14.209     ;
-; -13.450 ; fiber_tx:fiber_tx|send_volt[0]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 14.117     ;
-; -13.314 ; fiber_tx:fiber_tx|send_volt[5]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 13.981     ;
-; -13.150 ; fiber_tx:fiber_tx|send_moduleinfo[8]  ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 13.817     ;
-; -13.129 ; fiber_tx:fiber_tx|send_moduleinfo[5]  ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 13.796     ;
-; -12.956 ; fiber_tx:fiber_tx|send_moduleinfo[4]  ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 13.623     ;
-; -12.911 ; fiber_tx:fiber_tx|send_volt[2]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 13.578     ;
-; -12.744 ; fiber_tx:fiber_tx|send_moduleinfo[9]  ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 13.411     ;
-; -12.708 ; fiber_tx:fiber_tx|send_volt[7]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 13.375     ;
-; -12.649 ; fiber_tx:fiber_tx|send_volt[6]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 13.316     ;
-; -12.529 ; fiber_tx:fiber_tx|send_volt[3]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 13.196     ;
-; -12.498 ; fiber_tx:fiber_tx|send_volt[8]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 13.165     ;
-; -12.044 ; fiber_tx:fiber_tx|send_moduleinfo[1]  ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 12.711     ;
-; -12.014 ; fiber_tx:fiber_tx|send_moduleinfo[6]  ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 12.681     ;
-; -12.003 ; fiber_tx:fiber_tx|send_moduleinfo[3]  ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 12.670     ;
-; -11.863 ; fiber_tx:fiber_tx|send_volt[9]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 12.530     ;
-; -11.857 ; fiber_tx:fiber_tx|send_nums[3]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 12.524     ;
-; -11.847 ; fiber_tx:fiber_tx|send_volt[11]       ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 12.514     ;
-; -11.827 ; fiber_tx:fiber_tx|send_moduleinfo[7]  ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 12.494     ;
-; -11.762 ; fiber_tx:fiber_tx|send_volt[10]       ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 12.429     ;
-; -11.531 ; fiber_tx:fiber_tx|send_moduleinfo[2]  ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 12.198     ;
-; -11.440 ; fiber_tx:fiber_tx|send_nums[1]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 12.107     ;
-; -11.388 ; fiber_tx:fiber_tx|send_nums[0]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 12.055     ;
-; -11.235 ; fiber_tx:fiber_tx|send_moduleinfo[12] ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 11.902     ;
-; -10.734 ; fiber_tx:fiber_tx|send_nums[4]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 11.401     ;
-; -10.606 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|ByperrDelay[10]                   ; clk          ; clk         ; 1.000        ; 0.000      ; 11.273     ;
-; -10.606 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|ByperrDelay[11]                   ; clk          ; clk         ; 1.000        ; 0.000      ; 11.273     ;
-; -10.555 ; work_led:work_led|time_1us_syn[0]     ; err_detect:err_detect|ByperrDelay[10]                   ; clk          ; clk         ; 1.000        ; 0.000      ; 11.222     ;
-; -10.555 ; work_led:work_led|time_1us_syn[0]     ; err_detect:err_detect|ByperrDelay[11]                   ; clk          ; clk         ; 1.000        ; 0.000      ; 11.222     ;
-; -10.489 ; fiber_tx:fiber_tx|send_moduleinfo[13] ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 11.156     ;
-; -10.464 ; fiber_rx:fiber_rx|cnt_reset_err[1]    ; err_detect:err_detect|ByperrDelay[10]                   ; clk          ; clk         ; 1.000        ; 0.000      ; 11.131     ;
-; -10.464 ; fiber_rx:fiber_rx|cnt_reset_err[1]    ; err_detect:err_detect|ByperrDelay[11]                   ; clk          ; clk         ; 1.000        ; 0.000      ; 11.131     ;
-; -10.316 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|err_high_detect:err1|cnt_delay[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 10.983     ;
-; -10.316 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|err_high_detect:err1|cnt_delay[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 10.983     ;
-; -10.316 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|err_high_detect:err1|cnt_delay[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 10.983     ;
-; -10.316 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|err_high_detect:err1|cnt_delay[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 10.983     ;
-; -10.316 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|err_high_detect:err1|cnt_delay[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 10.983     ;
-; -10.316 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|err_high_detect:err1|cnt_delay[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 10.983     ;
-; -10.316 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|err_high_detect:err1|cnt_delay[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 10.983     ;
-; -10.278 ; fiber_rx:fiber_rx|cnt_reset_err[3]    ; err_detect:err_detect|ByperrDelay[10]                   ; clk          ; clk         ; 1.000        ; 0.000      ; 10.945     ;
-; -10.278 ; fiber_rx:fiber_rx|cnt_reset_err[3]    ; err_detect:err_detect|ByperrDelay[11]                   ; clk          ; clk         ; 1.000        ; 0.000      ; 10.945     ;
-; -10.250 ; err_detect:err_detect|ByperrDelay[1]  ; err_detect:err_detect|ByperrDelay[10]                   ; clk          ; clk         ; 1.000        ; 0.000      ; 10.917     ;
-; -10.250 ; err_detect:err_detect|ByperrDelay[1]  ; err_detect:err_detect|ByperrDelay[11]                   ; clk          ; clk         ; 1.000        ; 0.000      ; 10.917     ;
-; -10.232 ; fiber_rx:fiber_rx|divide_cnt[2]       ; fiber_rx:fiber_rx|rst_cnt_nums[3]                       ; clk          ; clk         ; 1.000        ; 0.000      ; 10.899     ;
-; -10.232 ; fiber_rx:fiber_rx|divide_cnt[2]       ; fiber_rx:fiber_rx|rst_cnt_nums[4]                       ; clk          ; clk         ; 1.000        ; 0.000      ; 10.899     ;
-; -10.232 ; fiber_rx:fiber_rx|divide_cnt[2]       ; fiber_rx:fiber_rx|rst_cnt_nums[2]                       ; clk          ; clk         ; 1.000        ; 0.000      ; 10.899     ;
-; -10.232 ; fiber_rx:fiber_rx|divide_cnt[2]       ; fiber_rx:fiber_rx|rst_cnt_nums[5]                       ; clk          ; clk         ; 1.000        ; 0.000      ; 10.899     ;
-; -10.232 ; fiber_rx:fiber_rx|divide_cnt[2]       ; fiber_rx:fiber_rx|rst_cnt_nums[0]                       ; clk          ; clk         ; 1.000        ; 0.000      ; 10.899     ;
-; -10.232 ; fiber_rx:fiber_rx|divide_cnt[2]       ; fiber_rx:fiber_rx|rst_cnt_nums[1]                       ; clk          ; clk         ; 1.000        ; 0.000      ; 10.899     ;
-; -10.210 ; fiber_rx:fiber_rx|cnt_byp[2]          ; fiber_rx:fiber_rx|cnt_byp[8]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 10.877     ;
-; -10.210 ; fiber_rx:fiber_rx|cnt_byp[2]          ; fiber_rx:fiber_rx|cnt_byp[9]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 10.877     ;
-; -10.210 ; fiber_rx:fiber_rx|cnt_byp[2]          ; fiber_rx:fiber_rx|cnt_byp[10]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.877     ;
-; -10.210 ; fiber_rx:fiber_rx|cnt_byp[2]          ; fiber_rx:fiber_rx|cnt_byp[11]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.877     ;
-; -10.210 ; fiber_rx:fiber_rx|cnt_byp[2]          ; fiber_rx:fiber_rx|cnt_byp[12]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.877     ;
-; -10.210 ; fiber_rx:fiber_rx|cnt_byp[2]          ; fiber_rx:fiber_rx|cnt_byp[13]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.877     ;
-; -10.210 ; fiber_rx:fiber_rx|cnt_byp[2]          ; fiber_rx:fiber_rx|cnt_byp[14]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.877     ;
-; -10.210 ; fiber_rx:fiber_rx|cnt_byp[2]          ; fiber_rx:fiber_rx|cnt_byp[15]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.877     ;
-; -10.177 ; fiber_rx:fiber_rx|cnt_byp[2]          ; fiber_rx:fiber_rx|cnt_byp[0]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 10.844     ;
-; -10.177 ; fiber_rx:fiber_rx|cnt_byp[2]          ; fiber_rx:fiber_rx|cnt_byp[1]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 10.844     ;
-; -10.177 ; fiber_rx:fiber_rx|cnt_byp[2]          ; fiber_rx:fiber_rx|cnt_byp[2]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 10.844     ;
-; -10.177 ; fiber_rx:fiber_rx|cnt_byp[2]          ; fiber_rx:fiber_rx|cnt_byp[3]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 10.844     ;
-; -10.177 ; fiber_rx:fiber_rx|cnt_byp[2]          ; fiber_rx:fiber_rx|cnt_byp[4]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 10.844     ;
-; -10.177 ; fiber_rx:fiber_rx|cnt_byp[2]          ; fiber_rx:fiber_rx|cnt_byp[5]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 10.844     ;
-; -10.177 ; fiber_rx:fiber_rx|cnt_byp[2]          ; fiber_rx:fiber_rx|cnt_byp[6]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 10.844     ;
-; -10.177 ; fiber_rx:fiber_rx|cnt_byp[2]          ; fiber_rx:fiber_rx|cnt_byp[7]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 10.844     ;
-; -10.174 ; fiber_rx:fiber_rx|cnt_reset_err[1]    ; err_detect:err_detect|err_high_detect:err1|cnt_delay[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 10.841     ;
-; -10.174 ; fiber_rx:fiber_rx|cnt_reset_err[1]    ; err_detect:err_detect|err_high_detect:err1|cnt_delay[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 10.841     ;
-; -10.174 ; fiber_rx:fiber_rx|cnt_reset_err[1]    ; err_detect:err_detect|err_high_detect:err1|cnt_delay[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 10.841     ;
-; -10.174 ; fiber_rx:fiber_rx|cnt_reset_err[1]    ; err_detect:err_detect|err_high_detect:err1|cnt_delay[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 10.841     ;
-; -10.174 ; fiber_rx:fiber_rx|cnt_reset_err[1]    ; err_detect:err_detect|err_high_detect:err1|cnt_delay[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 10.841     ;
-; -10.174 ; fiber_rx:fiber_rx|cnt_reset_err[1]    ; err_detect:err_detect|err_high_detect:err1|cnt_delay[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 10.841     ;
-; -10.174 ; fiber_rx:fiber_rx|cnt_reset_err[1]    ; err_detect:err_detect|err_high_detect:err1|cnt_delay[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 10.841     ;
-; -10.141 ; fiber_rx:fiber_rx|cnt_byp[13]         ; fiber_rx:fiber_rx|cnt_byp[8]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 10.808     ;
-; -10.141 ; fiber_rx:fiber_rx|cnt_byp[13]         ; fiber_rx:fiber_rx|cnt_byp[9]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 10.808     ;
-; -10.141 ; fiber_rx:fiber_rx|cnt_byp[13]         ; fiber_rx:fiber_rx|cnt_byp[10]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.808     ;
-; -10.141 ; fiber_rx:fiber_rx|cnt_byp[13]         ; fiber_rx:fiber_rx|cnt_byp[11]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.808     ;
-; -10.141 ; fiber_rx:fiber_rx|cnt_byp[13]         ; fiber_rx:fiber_rx|cnt_byp[12]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.808     ;
-; -10.141 ; fiber_rx:fiber_rx|cnt_byp[13]         ; fiber_rx:fiber_rx|cnt_byp[13]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.808     ;
-; -10.141 ; fiber_rx:fiber_rx|cnt_byp[13]         ; fiber_rx:fiber_rx|cnt_byp[14]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.808     ;
-; -10.141 ; fiber_rx:fiber_rx|cnt_byp[13]         ; fiber_rx:fiber_rx|cnt_byp[15]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.808     ;
-; -10.128 ; fiber_rx:fiber_rx|divide_cnt[0]       ; fiber_rx:fiber_rx|rst_cnt_nums[3]                       ; clk          ; clk         ; 1.000        ; 0.000      ; 10.795     ;
-; -10.128 ; fiber_rx:fiber_rx|divide_cnt[0]       ; fiber_rx:fiber_rx|rst_cnt_nums[4]                       ; clk          ; clk         ; 1.000        ; 0.000      ; 10.795     ;
-; -10.128 ; fiber_rx:fiber_rx|divide_cnt[0]       ; fiber_rx:fiber_rx|rst_cnt_nums[2]                       ; clk          ; clk         ; 1.000        ; 0.000      ; 10.795     ;
-; -10.128 ; fiber_rx:fiber_rx|divide_cnt[0]       ; fiber_rx:fiber_rx|rst_cnt_nums[5]                       ; clk          ; clk         ; 1.000        ; 0.000      ; 10.795     ;
-; -10.128 ; fiber_rx:fiber_rx|divide_cnt[0]       ; fiber_rx:fiber_rx|rst_cnt_nums[0]                       ; clk          ; clk         ; 1.000        ; 0.000      ; 10.795     ;
-; -10.128 ; fiber_rx:fiber_rx|divide_cnt[0]       ; fiber_rx:fiber_rx|rst_cnt_nums[1]                       ; clk          ; clk         ; 1.000        ; 0.000      ; 10.795     ;
-; -10.117 ; fiber_rx:fiber_rx|divide_cnt[2]       ; fiber_rx:fiber_rx|strat_cnt_nums[0]                     ; clk          ; clk         ; 1.000        ; 0.000      ; 10.784     ;
-; -10.117 ; fiber_rx:fiber_rx|divide_cnt[2]       ; fiber_rx:fiber_rx|strat_cnt_nums[1]                     ; clk          ; clk         ; 1.000        ; 0.000      ; 10.784     ;
-; -10.117 ; fiber_rx:fiber_rx|divide_cnt[2]       ; fiber_rx:fiber_rx|strat_cnt_nums[2]                     ; clk          ; clk         ; 1.000        ; 0.000      ; 10.784     ;
-; -10.117 ; fiber_rx:fiber_rx|divide_cnt[2]       ; fiber_rx:fiber_rx|strat_cnt_nums[5]                     ; clk          ; clk         ; 1.000        ; 0.000      ; 10.784     ;
-; -10.117 ; fiber_rx:fiber_rx|divide_cnt[2]       ; fiber_rx:fiber_rx|strat_cnt_nums[3]                     ; clk          ; clk         ; 1.000        ; 0.000      ; 10.784     ;
-; -10.117 ; fiber_rx:fiber_rx|divide_cnt[2]       ; fiber_rx:fiber_rx|strat_cnt_nums[4]                     ; clk          ; clk         ; 1.000        ; 0.000      ; 10.784     ;
-; -10.108 ; fiber_rx:fiber_rx|cnt_byp[13]         ; fiber_rx:fiber_rx|cnt_byp[0]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 10.775     ;
-; -10.108 ; fiber_rx:fiber_rx|cnt_byp[13]         ; fiber_rx:fiber_rx|cnt_byp[1]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 10.775     ;
-; -10.108 ; fiber_rx:fiber_rx|cnt_byp[13]         ; fiber_rx:fiber_rx|cnt_byp[2]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 10.775     ;
-; -10.108 ; fiber_rx:fiber_rx|cnt_byp[13]         ; fiber_rx:fiber_rx|cnt_byp[3]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 10.775     ;
-; -10.108 ; fiber_rx:fiber_rx|cnt_byp[13]         ; fiber_rx:fiber_rx|cnt_byp[4]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 10.775     ;
-; -10.108 ; fiber_rx:fiber_rx|cnt_byp[13]         ; fiber_rx:fiber_rx|cnt_byp[5]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 10.775     ;
+; -14.028 ; fiber_tx:fiber_tx|send_volt[0]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 14.695     ;
+; -14.023 ; fiber_tx:fiber_tx|send_volt[7]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 14.690     ;
+; -13.974 ; fiber_tx:fiber_tx|send_volt[2]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 14.641     ;
+; -13.908 ; fiber_tx:fiber_tx|send_volt[1]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 14.575     ;
+; -13.859 ; fiber_tx:fiber_tx|send_volt[8]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 14.526     ;
+; -13.854 ; fiber_tx:fiber_tx|send_volt[3]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 14.521     ;
+; -13.806 ; fiber_tx:fiber_tx|send_volt[4]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 14.473     ;
+; -13.784 ; fiber_tx:fiber_tx|send_volt[6]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 14.451     ;
+; -13.737 ; fiber_tx:fiber_tx|send_moduleinfo[3]  ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 14.404     ;
+; -13.680 ; fiber_tx:fiber_tx|send_volt[5]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 14.347     ;
+; -13.659 ; fiber_tx:fiber_tx|send_volt[11]       ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 14.326     ;
+; -13.622 ; fiber_tx:fiber_tx|send_moduleinfo[0]  ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 14.289     ;
+; -13.529 ; fiber_tx:fiber_tx|send_moduleinfo[8]  ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 14.196     ;
+; -13.314 ; fiber_tx:fiber_tx|send_volt[9]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 13.981     ;
+; -13.311 ; fiber_tx:fiber_tx|send_moduleinfo[4]  ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 13.978     ;
+; -13.194 ; fiber_tx:fiber_tx|send_moduleinfo[5]  ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 13.861     ;
+; -13.179 ; fiber_tx:fiber_tx|send_volt[10]       ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 13.846     ;
+; -13.082 ; fiber_tx:fiber_tx|send_moduleinfo[1]  ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 13.749     ;
+; -13.063 ; fiber_tx:fiber_tx|send_moduleinfo[6]  ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 13.730     ;
+; -12.971 ; fiber_tx:fiber_tx|send_moduleinfo[9]  ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 13.638     ;
+; -12.956 ; fiber_tx:fiber_tx|send_moduleinfo[2]  ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 13.623     ;
+; -12.203 ; fiber_tx:fiber_tx|send_nums[3]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 12.870     ;
+; -12.063 ; fiber_tx:fiber_tx|send_moduleinfo[12] ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 12.730     ;
+; -12.038 ; fiber_tx:fiber_tx|send_moduleinfo[7]  ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 12.705     ;
+; -11.631 ; fiber_tx:fiber_tx|send_nums[4]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 12.298     ;
+; -11.337 ; fiber_tx:fiber_tx|send_nums[0]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 12.004     ;
+; -11.189 ; fiber_tx:fiber_tx|send_moduleinfo[13] ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 11.856     ;
+; -10.800 ; fiber_tx:fiber_tx|send_nums[1]        ; fiber_tx:fiber_tx|COMM_T_reg                            ; clk          ; clk         ; 1.000        ; 0.000      ; 11.467     ;
+; -10.537 ; fiber_rx:fiber_rx|divide_cnt[0]       ; fiber_rx:fiber_rx|cnt_byp[8]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 11.204     ;
+; -10.537 ; fiber_rx:fiber_rx|divide_cnt[0]       ; fiber_rx:fiber_rx|cnt_byp[9]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 11.204     ;
+; -10.537 ; fiber_rx:fiber_rx|divide_cnt[0]       ; fiber_rx:fiber_rx|cnt_byp[10]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 11.204     ;
+; -10.537 ; fiber_rx:fiber_rx|divide_cnt[0]       ; fiber_rx:fiber_rx|cnt_byp[11]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 11.204     ;
+; -10.537 ; fiber_rx:fiber_rx|divide_cnt[0]       ; fiber_rx:fiber_rx|cnt_byp[12]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 11.204     ;
+; -10.537 ; fiber_rx:fiber_rx|divide_cnt[0]       ; fiber_rx:fiber_rx|cnt_byp[13]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 11.204     ;
+; -10.537 ; fiber_rx:fiber_rx|divide_cnt[0]       ; fiber_rx:fiber_rx|cnt_byp[14]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 11.204     ;
+; -10.537 ; fiber_rx:fiber_rx|divide_cnt[0]       ; fiber_rx:fiber_rx|cnt_byp[15]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 11.204     ;
+; -10.336 ; fiber_rx:fiber_rx|receive_code_cnt[4] ; fiber_rx:fiber_rx|cnt_byp[8]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 11.003     ;
+; -10.336 ; fiber_rx:fiber_rx|receive_code_cnt[4] ; fiber_rx:fiber_rx|cnt_byp[9]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 11.003     ;
+; -10.336 ; fiber_rx:fiber_rx|receive_code_cnt[4] ; fiber_rx:fiber_rx|cnt_byp[10]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 11.003     ;
+; -10.336 ; fiber_rx:fiber_rx|receive_code_cnt[4] ; fiber_rx:fiber_rx|cnt_byp[11]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 11.003     ;
+; -10.336 ; fiber_rx:fiber_rx|receive_code_cnt[4] ; fiber_rx:fiber_rx|cnt_byp[12]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 11.003     ;
+; -10.336 ; fiber_rx:fiber_rx|receive_code_cnt[4] ; fiber_rx:fiber_rx|cnt_byp[13]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 11.003     ;
+; -10.336 ; fiber_rx:fiber_rx|receive_code_cnt[4] ; fiber_rx:fiber_rx|cnt_byp[14]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 11.003     ;
+; -10.336 ; fiber_rx:fiber_rx|receive_code_cnt[4] ; fiber_rx:fiber_rx|cnt_byp[15]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 11.003     ;
+; -10.313 ; fiber_rx:fiber_rx|divide_cnt[3]       ; fiber_rx:fiber_rx|cnt_byp[8]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 10.980     ;
+; -10.313 ; fiber_rx:fiber_rx|divide_cnt[3]       ; fiber_rx:fiber_rx|cnt_byp[9]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 10.980     ;
+; -10.313 ; fiber_rx:fiber_rx|divide_cnt[3]       ; fiber_rx:fiber_rx|cnt_byp[10]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.980     ;
+; -10.313 ; fiber_rx:fiber_rx|divide_cnt[3]       ; fiber_rx:fiber_rx|cnt_byp[11]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.980     ;
+; -10.313 ; fiber_rx:fiber_rx|divide_cnt[3]       ; fiber_rx:fiber_rx|cnt_byp[12]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.980     ;
+; -10.313 ; fiber_rx:fiber_rx|divide_cnt[3]       ; fiber_rx:fiber_rx|cnt_byp[13]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.980     ;
+; -10.313 ; fiber_rx:fiber_rx|divide_cnt[3]       ; fiber_rx:fiber_rx|cnt_byp[14]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.980     ;
+; -10.313 ; fiber_rx:fiber_rx|divide_cnt[3]       ; fiber_rx:fiber_rx|cnt_byp[15]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.980     ;
+; -10.274 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|ByperrDelay[10]                   ; clk          ; clk         ; 1.000        ; 0.000      ; 10.941     ;
+; -10.274 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|ByperrDelay[11]                   ; clk          ; clk         ; 1.000        ; 0.000      ; 10.941     ;
+; -10.274 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|ByperrDelay[12]                   ; clk          ; clk         ; 1.000        ; 0.000      ; 10.941     ;
+; -10.274 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|ByperrDelay[13]                   ; clk          ; clk         ; 1.000        ; 0.000      ; 10.941     ;
+; -10.274 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|ByperrDelay[14]                   ; clk          ; clk         ; 1.000        ; 0.000      ; 10.941     ;
+; -10.274 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|ByperrDelay[15]                   ; clk          ; clk         ; 1.000        ; 0.000      ; 10.941     ;
+; -10.216 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|ByperrDelay[2]                    ; clk          ; clk         ; 1.000        ; 0.000      ; 10.883     ;
+; -10.216 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|ByperrDelay[3]                    ; clk          ; clk         ; 1.000        ; 0.000      ; 10.883     ;
+; -10.216 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|ByperrDelay[5]                    ; clk          ; clk         ; 1.000        ; 0.000      ; 10.883     ;
+; -10.216 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|ByperrDelay[6]                    ; clk          ; clk         ; 1.000        ; 0.000      ; 10.883     ;
+; -10.216 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|ByperrDelay[7]                    ; clk          ; clk         ; 1.000        ; 0.000      ; 10.883     ;
+; -10.216 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|ByperrDelay[8]                    ; clk          ; clk         ; 1.000        ; 0.000      ; 10.883     ;
+; -10.216 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|ByperrDelay[9]                    ; clk          ; clk         ; 1.000        ; 0.000      ; 10.883     ;
+; -10.210 ; fiber_rx:fiber_rx|receive_code_cnt[1] ; fiber_rx:fiber_rx|cnt_byp[8]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 10.877     ;
+; -10.210 ; fiber_rx:fiber_rx|receive_code_cnt[1] ; fiber_rx:fiber_rx|cnt_byp[9]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 10.877     ;
+; -10.210 ; fiber_rx:fiber_rx|receive_code_cnt[1] ; fiber_rx:fiber_rx|cnt_byp[10]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.877     ;
+; -10.210 ; fiber_rx:fiber_rx|receive_code_cnt[1] ; fiber_rx:fiber_rx|cnt_byp[11]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.877     ;
+; -10.210 ; fiber_rx:fiber_rx|receive_code_cnt[1] ; fiber_rx:fiber_rx|cnt_byp[12]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.877     ;
+; -10.210 ; fiber_rx:fiber_rx|receive_code_cnt[1] ; fiber_rx:fiber_rx|cnt_byp[13]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.877     ;
+; -10.210 ; fiber_rx:fiber_rx|receive_code_cnt[1] ; fiber_rx:fiber_rx|cnt_byp[14]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.877     ;
+; -10.210 ; fiber_rx:fiber_rx|receive_code_cnt[1] ; fiber_rx:fiber_rx|cnt_byp[15]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.877     ;
+; -10.145 ; fiber_rx:fiber_rx|divide_cnt[2]       ; fiber_rx:fiber_rx|cnt_byp[8]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 10.812     ;
+; -10.145 ; fiber_rx:fiber_rx|divide_cnt[2]       ; fiber_rx:fiber_rx|cnt_byp[9]                            ; clk          ; clk         ; 1.000        ; 0.000      ; 10.812     ;
+; -10.145 ; fiber_rx:fiber_rx|divide_cnt[2]       ; fiber_rx:fiber_rx|cnt_byp[10]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.812     ;
+; -10.145 ; fiber_rx:fiber_rx|divide_cnt[2]       ; fiber_rx:fiber_rx|cnt_byp[11]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.812     ;
+; -10.145 ; fiber_rx:fiber_rx|divide_cnt[2]       ; fiber_rx:fiber_rx|cnt_byp[12]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.812     ;
+; -10.145 ; fiber_rx:fiber_rx|divide_cnt[2]       ; fiber_rx:fiber_rx|cnt_byp[13]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.812     ;
+; -10.145 ; fiber_rx:fiber_rx|divide_cnt[2]       ; fiber_rx:fiber_rx|cnt_byp[14]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.812     ;
+; -10.145 ; fiber_rx:fiber_rx|divide_cnt[2]       ; fiber_rx:fiber_rx|cnt_byp[15]                           ; clk          ; clk         ; 1.000        ; 0.000      ; 10.812     ;
+; -10.136 ; fiber_rx:fiber_rx|cnt_reset_err[1]    ; err_detect:err_detect|ByperrDelay[10]                   ; clk          ; clk         ; 1.000        ; 0.000      ; 10.803     ;
+; -10.136 ; fiber_rx:fiber_rx|cnt_reset_err[1]    ; err_detect:err_detect|ByperrDelay[11]                   ; clk          ; clk         ; 1.000        ; 0.000      ; 10.803     ;
+; -10.136 ; fiber_rx:fiber_rx|cnt_reset_err[1]    ; err_detect:err_detect|ByperrDelay[12]                   ; clk          ; clk         ; 1.000        ; 0.000      ; 10.803     ;
+; -10.136 ; fiber_rx:fiber_rx|cnt_reset_err[1]    ; err_detect:err_detect|ByperrDelay[13]                   ; clk          ; clk         ; 1.000        ; 0.000      ; 10.803     ;
+; -10.136 ; fiber_rx:fiber_rx|cnt_reset_err[1]    ; err_detect:err_detect|ByperrDelay[14]                   ; clk          ; clk         ; 1.000        ; 0.000      ; 10.803     ;
+; -10.136 ; fiber_rx:fiber_rx|cnt_reset_err[1]    ; err_detect:err_detect|ByperrDelay[15]                   ; clk          ; clk         ; 1.000        ; 0.000      ; 10.803     ;
+; -10.078 ; fiber_rx:fiber_rx|cnt_reset_err[1]    ; err_detect:err_detect|ByperrDelay[2]                    ; clk          ; clk         ; 1.000        ; 0.000      ; 10.745     ;
+; -10.078 ; fiber_rx:fiber_rx|cnt_reset_err[1]    ; err_detect:err_detect|ByperrDelay[3]                    ; clk          ; clk         ; 1.000        ; 0.000      ; 10.745     ;
+; -10.078 ; fiber_rx:fiber_rx|cnt_reset_err[1]    ; err_detect:err_detect|ByperrDelay[5]                    ; clk          ; clk         ; 1.000        ; 0.000      ; 10.745     ;
+; -10.078 ; fiber_rx:fiber_rx|cnt_reset_err[1]    ; err_detect:err_detect|ByperrDelay[6]                    ; clk          ; clk         ; 1.000        ; 0.000      ; 10.745     ;
+; -10.078 ; fiber_rx:fiber_rx|cnt_reset_err[1]    ; err_detect:err_detect|ByperrDelay[7]                    ; clk          ; clk         ; 1.000        ; 0.000      ; 10.745     ;
+; -10.078 ; fiber_rx:fiber_rx|cnt_reset_err[1]    ; err_detect:err_detect|ByperrDelay[8]                    ; clk          ; clk         ; 1.000        ; 0.000      ; 10.745     ;
+; -10.078 ; fiber_rx:fiber_rx|cnt_reset_err[1]    ; err_detect:err_detect|ByperrDelay[9]                    ; clk          ; clk         ; 1.000        ; 0.000      ; 10.745     ;
+; -10.061 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|err_high_detect:hot2|cnt_delay[5] ; clk          ; clk         ; 1.000        ; 0.000      ; 10.728     ;
+; -10.061 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|err_high_detect:hot2|cnt_delay[6] ; clk          ; clk         ; 1.000        ; 0.000      ; 10.728     ;
+; -10.061 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|err_high_detect:hot2|cnt_delay[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 10.728     ;
+; -10.061 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|err_high_detect:hot2|cnt_delay[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 10.728     ;
+; -10.061 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|err_high_detect:hot2|cnt_delay[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 10.728     ;
+; -10.061 ; fiber_rx:fiber_rx|cnt_reset_err[2]    ; err_detect:err_detect|err_high_detect:hot2|cnt_delay[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 10.728     ;
 +---------+---------------------------------------+---------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Hold: 'clk'                                                                                                                                                                                                   ;
-+-------+----------------------------------------------------------------+----------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
-; Slack ; From Node                                                      ; To Node                                                        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+-------+----------------------------------------------------------------+----------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
-; 1.375 ; volt_calc:volt_calc|real_volt[1]                               ; volt_calc:volt_calc|udc_volt[1]                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.596      ;
-; 1.380 ; volt_calc:volt_calc|udc_volt[2]                                ; fiber_tx:fiber_tx|send_volt[2]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.601      ;
-; 1.389 ; ads7822:ads7822|ad_syn[11]                                     ; ads7822:ads7822|sample_data[11]                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.610      ;
-; 1.397 ; fiber_rx:fiber_rx|rx_data_syn[0]                               ; fiber_rx:fiber_rx|rx_data_syn[1]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.618      ;
-; 1.402 ; volt_calc:volt_calc|real_volt[7]                               ; volt_calc:volt_calc|udc_volt[7]                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.623      ;
-; 1.415 ; fiber_rx:fiber_rx|rx_data_syn[2]                               ; fiber_rx:fiber_rx|rx_data_syn[3]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.636      ;
-; 1.420 ; ads7822:ads7822|ad_syn[6]                                      ; ads7822:ads7822|sample_data[6]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.641      ;
-; 1.422 ; ads7822:ads7822|ad_syn[5]                                      ; ads7822:ads7822|sample_data[5]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.643      ;
-; 1.425 ; fiber_rx:fiber_rx|rx_data_syn[2]                               ; fiber_rx:fiber_rx|verify_rx:verify_rx|rx_data[1]               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.646      ;
-; 1.428 ; ads7822:ads7822|ad_syn[2]                                      ; ads7822:ads7822|sample_data[2]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.649      ;
-; 1.431 ; volt_calc:volt_calc|real_volt[4]                               ; volt_calc:volt_calc|udc_volt[4]                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.652      ;
-; 1.434 ; ads7822:ads7822|ad_syn[3]                                      ; ads7822:ads7822|sample_data[3]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.655      ;
-; 1.439 ; ads7822:ads7822|ad_syn[0]                                      ; ads7822:ads7822|sample_data[0]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.660      ;
-; 1.659 ; fiber_rx:fiber_rx|receive_code_cnt[4]                          ; fiber_rx:fiber_rx|receive_code_cnt[4]                          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.880      ;
-; 1.659 ; err_detect:err_detect|Cnt_1ms[9]                               ; err_detect:err_detect|Cnt_1ms[9]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.880      ;
-; 1.660 ; ads7822:ads7822|ad_syn[4]                                      ; ads7822:ads7822|sample_data[4]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.881      ;
-; 1.660 ; ads7822:ads7822|ad_syn[8]                                      ; ads7822:ads7822|ad_syn[9]                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.881      ;
-; 1.661 ; pwm_out:pwm_out|RDCnt[8]                                       ; pwm_out:pwm_out|RDCnt[8]                                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.882      ;
-; 1.661 ; fiber_tx:fiber_tx|send_nums[6]                                 ; fiber_tx:fiber_tx|send_nums[6]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.882      ;
-; 1.661 ; ads7822:ads7822|numer_cnt[4]                                   ; ads7822:ads7822|numer_cnt[4]                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.882      ;
-; 1.661 ; div_1us:div_1us|cnt_time[4]                                    ; work_led:work_led|time_1us_syn[0]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.882      ;
-; 1.663 ; volt_calc:volt_calc|real_volt[6]                               ; volt_calc:volt_calc|udc_volt[6]                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.884      ;
-; 1.666 ; ads7822:ads7822|ad_syn[8]                                      ; ads7822:ads7822|sample_data[8]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.887      ;
-; 1.669 ; pwm_out:pwm_out|RUCnt[8]                                       ; pwm_out:pwm_out|RUCnt[8]                                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.890      ;
-; 1.669 ; fiber_tx:fiber_tx|send_nums[5]                                 ; fiber_tx:fiber_tx|send_nums[5]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.890      ;
-; 1.669 ; volt_calc:volt_calc|real_volt[0]                               ; volt_calc:volt_calc|udc_volt[0]                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.890      ;
-; 1.669 ; ads7822:ads7822|ad_syn[1]                                      ; ads7822:ads7822|sample_data[1]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.890      ;
-; 1.670 ; pwm_out:pwm_out|LUCnt[8]                                       ; pwm_out:pwm_out|LUCnt[8]                                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.891      ;
-; 1.670 ; pwm_out:pwm_out|LDCnt[8]                                       ; pwm_out:pwm_out|LDCnt[8]                                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.891      ;
-; 1.670 ; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[3]       ; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[3]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.891      ;
-; 1.676 ; ads7822:ads7822|ad_cs_reg                                      ; ads7822:ads7822|ad_cs_reg                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.897      ;
-; 1.677 ; ads7822:ads7822|ad_syn[10]                                     ; ads7822:ads7822|ad_syn[11]                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.898      ;
-; 1.678 ; volt_calc:volt_calc|real_volt[5]                               ; volt_calc:volt_calc|udc_volt[5]                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.899      ;
-; 1.678 ; volt_calc:volt_calc|real_volt[3]                               ; volt_calc:volt_calc|udc_volt[3]                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.899      ;
-; 1.678 ; ads7822:ads7822|ad_syn[9]                                      ; ads7822:ads7822|ad_syn[10]                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.899      ;
-; 1.679 ; ads7822:ads7822|ad_trig_syn                                    ; ads7822:ads7822|AD_Work                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.900      ;
-; 1.683 ; ads7822:ads7822|ad_trig_syn                                    ; ads7822:ads7822|ad_trig_syn1                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.904      ;
-; 1.683 ; ads7822:ads7822|ad_syn[9]                                      ; ads7822:ads7822|sample_data[9]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.904      ;
-; 1.685 ; fiber_rx:fiber_rx|rx_data_syn[1]                               ; fiber_rx:fiber_rx|rx_data_syn[2]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.906      ;
-; 1.686 ; ads7822:ads7822|ad_syn[10]                                     ; ads7822:ads7822|sample_data[10]                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.907      ;
-; 1.698 ; fiber_tx:fiber_tx|send_nums[1]                                 ; fiber_tx:fiber_tx|send_nums[1]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.919      ;
-; 1.698 ; fiber_tx:fiber_tx|cnt_4m[1]                                    ; fiber_tx:fiber_tx|cnt_4m[1]                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.919      ;
-; 1.701 ; work_led:work_led|cnt_1ms[3]                                   ; work_led:work_led|cnt_1ms[3]                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.922      ;
-; 1.702 ; fiber_tx:fiber_tx|cnt_4m[1]                                    ; fiber_tx:fiber_tx|cnt_4m[3]                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.923      ;
-; 1.703 ; volt_calc:volt_calc|real_volt[9]                               ; volt_calc:volt_calc|udc_volt[9]                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.924      ;
-; 1.704 ; ads7822:ads7822|numer_cnt[2]                                   ; ads7822:ads7822|numer_cnt[2]                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.925      ;
-; 1.708 ; fiber_tx:fiber_tx|cnt_4m[0]                                    ; fiber_tx:fiber_tx|cnt_4m[0]                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.929      ;
-; 1.710 ; work_led:work_led|cnt_1ms[4]                                   ; work_led:work_led|cnt_1ms[4]                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.931      ;
-; 1.719 ; volt_calc:volt_calc|real_volt[8]                               ; volt_calc:volt_calc|udc_volt[8]                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.940      ;
-; 1.721 ; fiber_tx:fiber_tx|cnt_4m[0]                                    ; fiber_tx:fiber_tx|cnt_4m[2]                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.942      ;
-; 1.737 ; ads7822:ads7822|numer_cnt[1]                                   ; ads7822:ads7822|numer_cnt[1]                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.958      ;
-; 1.746 ; fiber_rx:fiber_rx|divide_cnt[1]                                ; fiber_rx:fiber_rx|divide_cnt[1]                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.967      ;
-; 1.762 ; ads7822:ads7822|sample_data[9]                                 ; volt_calc:volt_calc|real_volt[9]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.983      ;
-; 1.765 ; ads7822:ads7822|sample_data[10]                                ; volt_calc:volt_calc|real_volt[10]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.986      ;
-; 1.771 ; fiber_rx:fiber_rx|rx_data_syn[1]                               ; fiber_rx:fiber_rx|verify_rx:verify_rx|rx_data[0]               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.992      ;
-; 1.814 ; err_detect:err_detect|err_high_detect:hot2|signal_out          ; fiber_tx:fiber_tx|send_moduleinfo[5]                           ; clk          ; clk         ; 0.000        ; 0.000      ; 2.035      ;
-; 1.815 ; fiber_rx:fiber_rx|rx_data_syn[3]                               ; fiber_rx:fiber_rx|verify_rx:verify_rx|rx_data[2]               ; clk          ; clk         ; 0.000        ; 0.000      ; 2.036      ;
-; 1.815 ; volt_calc:volt_calc|real_volt[10]                              ; volt_calc:volt_calc|udc_volt[10]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 2.036      ;
-; 1.899 ; div_1us:div_1us|cnt_time1ms[8]                                 ; div_1us:div_1us|cnt_time1ms[8]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.120      ;
-; 1.908 ; ads7822:ads7822|ad_clk                                         ; ads7822:ads7822|ad_clk                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.129      ;
-; 1.916 ; div_1us:div_1us|cnt_time1ms[2]                                 ; div_1us:div_1us|cnt_time1ms[2]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.137      ;
-; 1.925 ; fiber_tx:fiber_tx|send_nums[2]                                 ; fiber_tx:fiber_tx|send_nums[2]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.146      ;
-; 1.933 ; ads7822:ads7822|data_valid                                     ; ads7822:ads7822|data_valid                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 2.154      ;
-; 1.934 ; ads7822:ads7822|ad_syn[5]                                      ; ads7822:ads7822|ad_syn[6]                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.155      ;
-; 1.939 ; div_1us:div_1us|cnt_time1ms[7]                                 ; div_1us:div_1us|cnt_time1ms[7]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.160      ;
-; 1.944 ; work_led:work_led|cnt_500ms[0]                                 ; work_led:work_led|work_out                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 2.165      ;
-; 1.945 ; div_1us:div_1us|cnt_time1ms[5]                                 ; div_1us:div_1us|cnt_time1ms[5]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.166      ;
-; 1.946 ; ads7822:ads7822|ad_syn[6]                                      ; ads7822:ads7822|ad_syn[7]                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.167      ;
-; 1.956 ; ads7822:ads7822|ad_syn[0]                                      ; ads7822:ads7822|ad_syn[1]                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.177      ;
-; 1.957 ; ads7822:ads7822|ad_syn[3]                                      ; ads7822:ads7822|ad_syn[4]                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.178      ;
-; 1.960 ; fiber_rx:fiber_rx|divide_cnt[3]                                ; fiber_rx:fiber_rx|divide_cnt[3]                                ; clk          ; clk         ; 0.000        ; 0.000      ; 2.181      ;
-; 1.962 ; ads7822:ads7822|ad_syn[2]                                      ; ads7822:ads7822|ad_syn[3]                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.183      ;
-; 1.969 ; fiber_tx:fiber_tx|cnt_4m[3]                                    ; fiber_tx:fiber_tx|cnt_4m[3]                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 2.190      ;
-; 1.976 ; fiber_tx:fiber_tx|cnt_4m[3]                                    ; fiber_tx:fiber_tx|cnt_4m[1]                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 2.197      ;
-; 1.981 ; fiber_tx:fiber_tx|cnt_4m[2]                                    ; fiber_tx:fiber_tx|cnt_4m[2]                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 2.202      ;
-; 1.987 ; div_1us:div_1us|cnt_time[2]                                    ; div_1us:div_1us|cnt_time[5]                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 2.208      ;
-; 1.990 ; div_1us:div_1us|cnt_time[2]                                    ; work_led:work_led|time_1us_syn[0]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 2.211      ;
-; 1.994 ; div_1us:div_1us|cnt_time[2]                                    ; div_1us:div_1us|cnt_time[3]                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 2.215      ;
-; 1.997 ; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[0]       ; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[0]       ; clk          ; clk         ; 0.000        ; 0.000      ; 2.218      ;
-; 2.025 ; ads7822:ads7822|sample_data[11]                                ; volt_calc:volt_calc|real_volt[11]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 2.246      ;
-; 2.060 ; ads7822:ads7822|sample_data[8]                                 ; volt_calc:volt_calc|real_volt[8]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 2.281      ;
-; 2.101 ; err_detect:err_detect|err_high_detect:udc_low|cnt_delay[13]    ; err_detect:err_detect|err_high_detect:udc_low|cnt_delay[13]    ; clk          ; clk         ; 0.000        ; 0.000      ; 2.322      ;
-; 2.107 ; work_led:work_led|cnt_500ms[5]                                 ; work_led:work_led|cnt_500ms[5]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.328      ;
-; 2.107 ; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[7]   ; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[7]   ; clk          ; clk         ; 0.000        ; 0.000      ; 2.328      ;
-; 2.107 ; err_detect:err_detect|err_high_detect:err1|cnt_delay[7]        ; err_detect:err_detect|err_high_detect:err1|cnt_delay[7]        ; clk          ; clk         ; 0.000        ; 0.000      ; 2.328      ;
-; 2.107 ; err_detect:err_detect|err_high_detect:err2|cnt_delay[7]        ; err_detect:err_detect|err_high_detect:err2|cnt_delay[7]        ; clk          ; clk         ; 0.000        ; 0.000      ; 2.328      ;
-; 2.107 ; err_detect:err_detect|err_high_detect:err3|cnt_delay[7]        ; err_detect:err_detect|err_high_detect:err3|cnt_delay[7]        ; clk          ; clk         ; 0.000        ; 0.000      ; 2.328      ;
-; 2.107 ; err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[6] ; err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[6] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.328      ;
-; 2.107 ; pwm_out:pwm_out|RDCnt[0]                                       ; pwm_out:pwm_out|RDCnt[0]                                       ; clk          ; clk         ; 0.000        ; 0.000      ; 2.328      ;
-; 2.110 ; volt_calc:volt_calc|real_volt[10]                              ; volt_calc:volt_calc|DCUV                                       ; clk          ; clk         ; 0.000        ; 0.000      ; 2.331      ;
-; 2.113 ; err_high_detect:bypok_filt|cnt_delay[13]                       ; err_high_detect:bypok_filt|cnt_delay[13]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 2.334      ;
-; 2.116 ; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[8]   ; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[8]   ; clk          ; clk         ; 0.000        ; 0.000      ; 2.337      ;
-; 2.116 ; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[7]    ; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[7]    ; clk          ; clk         ; 0.000        ; 0.000      ; 2.337      ;
-; 2.116 ; err_detect:err_detect|Cnt_1ms[0]                               ; err_detect:err_detect|Cnt_1ms[0]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 2.337      ;
-; 2.116 ; err_high_detect:bypok_filt|cnt_delay[7]                        ; err_high_detect:bypok_filt|cnt_delay[7]                        ; clk          ; clk         ; 0.000        ; 0.000      ; 2.337      ;
-; 2.117 ; err_detect:err_detect|Cnt_1ms[7]                               ; err_detect:err_detect|Cnt_1ms[7]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 2.338      ;
-; 2.117 ; err_high_detect:bypok_filt|cnt_delay[9]                        ; err_high_detect:bypok_filt|cnt_delay[9]                        ; clk          ; clk         ; 0.000        ; 0.000      ; 2.338      ;
-; 2.117 ; err_high_detect:bypok_filt|cnt_delay[8]                        ; err_high_detect:bypok_filt|cnt_delay[8]                        ; clk          ; clk         ; 0.000        ; 0.000      ; 2.338      ;
-; 2.118 ; work_led:work_led|cnt_500ms[6]                                 ; work_led:work_led|cnt_500ms[6]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.339      ;
-; 2.119 ; ads7822:ads7822|numer_cnt[3]                                   ; ads7822:ads7822|numer_cnt[3]                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 2.340      ;
-+-------+----------------------------------------------------------------+----------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clk'                                                                                                                                                                                                       ;
++-------+------------------------------------------------------------------+------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                                        ; To Node                                                          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------------------------------+------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 1.375 ; volt_calc:volt_calc|udc_volt[3]                                  ; fiber_tx:fiber_tx|send_volt[3]                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.596      ;
+; 1.379 ; ads7822:ads7822|ad_syn[5]                                        ; ads7822:ads7822|sample_data[5]                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.600      ;
+; 1.385 ; volt_calc:volt_calc|udc_volt[7]                                  ; fiber_tx:fiber_tx|send_volt[7]                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.606      ;
+; 1.386 ; ads7822:ads7822|sample_data[1]                                   ; volt_calc:volt_calc|real_volt[1]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.607      ;
+; 1.390 ; volt_calc:volt_calc|udc_volt[2]                                  ; fiber_tx:fiber_tx|send_volt[2]                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.611      ;
+; 1.390 ; ads7822:ads7822|ad_syn[11]                                       ; ads7822:ads7822|sample_data[11]                                  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.611      ;
+; 1.391 ; ads7822:ads7822|sample_data[6]                                   ; volt_calc:volt_calc|real_volt[6]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.612      ;
+; 1.405 ; fiber_rx:fiber_rx|rx_data_syn[0]                                 ; fiber_rx:fiber_rx|rx_data_syn[1]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.626      ;
+; 1.426 ; volt_calc:volt_calc|real_volt[11]                                ; volt_calc:volt_calc|udc_volt[11]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.647      ;
+; 1.658 ; pwm_out:pwm_out|RDCnt[8]                                         ; pwm_out:pwm_out|RDCnt[8]                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.879      ;
+; 1.658 ; pwm_out:pwm_out|LUCnt[8]                                         ; pwm_out:pwm_out|LUCnt[8]                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.879      ;
+; 1.658 ; err_detect:err_detect|byp_err                                    ; err_detect:err_detect|byp_err                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.879      ;
+; 1.659 ; err_detect:err_detect|Cnt_1ms[9]                                 ; err_detect:err_detect|Cnt_1ms[9]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.880      ;
+; 1.662 ; ads7822:ads7822|ad_syn[10]                                       ; ads7822:ads7822|ad_syn[11]                                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.883      ;
+; 1.663 ; ads7822:ads7822|ad_syn[10]                                       ; ads7822:ads7822|sample_data[10]                                  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.884      ;
+; 1.664 ; ads7822:ads7822|ad_syn[4]                                        ; ads7822:ads7822|ad_syn[5]                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.885      ;
+; 1.665 ; ads7822:ads7822|ad_syn[4]                                        ; ads7822:ads7822|sample_data[4]                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.886      ;
+; 1.668 ; fiber_rx:fiber_rx|receive_code_cnt[4]                            ; fiber_rx:fiber_rx|receive_code_cnt[4]                            ; clk          ; clk         ; 0.000        ; 0.000      ; 1.889      ;
+; 1.668 ; fiber_tx:fiber_tx|send_nums[5]                                   ; fiber_tx:fiber_tx|send_nums[5]                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.889      ;
+; 1.670 ; pwm_out:pwm_out|RUCnt[8]                                         ; pwm_out:pwm_out|RUCnt[8]                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.891      ;
+; 1.670 ; pwm_out:pwm_out|LDCnt[8]                                         ; pwm_out:pwm_out|LDCnt[8]                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.891      ;
+; 1.677 ; work_led:work_led|cnt_1ms[8]                                     ; work_led:work_led|cnt_1ms[8]                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.898      ;
+; 1.678 ; work_led:work_led|cnt_1ms[1]                                     ; work_led:work_led|cnt_1ms[1]                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.899      ;
+; 1.681 ; ads7822:ads7822|ad_syn[7]                                        ; ads7822:ads7822|ad_syn[8]                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.902      ;
+; 1.684 ; ads7822:ads7822|ad_syn[3]                                        ; ads7822:ads7822|sample_data[3]                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.905      ;
+; 1.684 ; ads7822:ads7822|ad_syn[1]                                        ; ads7822:ads7822|ad_syn[2]                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.905      ;
+; 1.685 ; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|delay_err_cnt[4] ; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|delay_err_cnt[4] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.906      ;
+; 1.685 ; volt_calc:volt_calc|real_volt[9]                                 ; volt_calc:volt_calc|udc_volt[9]                                  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.906      ;
+; 1.687 ; volt_calc:volt_calc|real_volt[8]                                 ; volt_calc:volt_calc|udc_volt[8]                                  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.908      ;
+; 1.687 ; ads7822:ads7822|ad_syn[8]                                        ; ads7822:ads7822|ad_syn[9]                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.908      ;
+; 1.688 ; ads7822:ads7822|ad_syn[8]                                        ; ads7822:ads7822|sample_data[8]                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.909      ;
+; 1.689 ; ads7822:ads7822|ad_syn[0]                                        ; ads7822:ads7822|sample_data[0]                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.910      ;
+; 1.691 ; ads7822:ads7822|ad_syn[0]                                        ; ads7822:ads7822|ad_syn[1]                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.912      ;
+; 1.693 ; div_1us:div_1us|cnt_time1ms[5]                                   ; div_1us:div_1us|cnt_time1ms[5]                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.914      ;
+; 1.694 ; work_led:work_led|cnt_1ms[7]                                     ; work_led:work_led|cnt_1ms[7]                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.915      ;
+; 1.694 ; ads7822:ads7822|ad_syn[3]                                        ; ads7822:ads7822|ad_syn[4]                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.915      ;
+; 1.694 ; ads7822:ads7822|ad_syn[9]                                        ; ads7822:ads7822|ad_syn[10]                                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.915      ;
+; 1.695 ; work_led:work_led|cnt_500ms[0]                                   ; work_led:work_led|cnt_500ms[0]                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.916      ;
+; 1.695 ; ads7822:ads7822|ad_syn[9]                                        ; ads7822:ads7822|sample_data[9]                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.916      ;
+; 1.696 ; fiber_rx:fiber_rx|divide_cnt[1]                                  ; fiber_rx:fiber_rx|divide_cnt[1]                                  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.917      ;
+; 1.697 ; div_1us:div_1us|cnt_time1ms[9]                                   ; div_1us:div_1us|cnt_time1ms[9]                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.918      ;
+; 1.703 ; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[1]         ; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[1]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.924      ;
+; 1.709 ; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[0]         ; fiber_rx:fiber_rx|verify_rx:verify_rx|verify_err_nums[0]         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.930      ;
+; 1.748 ; ads7822:ads7822|numer_cnt[0]                                     ; ads7822:ads7822|numer_cnt[0]                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.969      ;
+; 1.753 ; fiber_tx:fiber_tx|cnt_4m[0]                                      ; fiber_tx:fiber_tx|cnt_4m[0]                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.974      ;
+; 1.754 ; fiber_tx:fiber_tx|cnt_4m[0]                                      ; fiber_tx:fiber_tx|cnt_4m[3]                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.975      ;
+; 1.762 ; ads7822:ads7822|sample_data[7]                                   ; volt_calc:volt_calc|real_volt[7]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.983      ;
+; 1.763 ; fiber_tx:fiber_tx|cnt_4m[0]                                      ; fiber_tx:fiber_tx|cnt_4m[2]                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.984      ;
+; 1.766 ; fiber_tx:fiber_tx|cnt_4m[0]                                      ; fiber_tx:fiber_tx|cnt_4m[1]                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.987      ;
+; 1.771 ; work_led:work_led|time_1us_syn[0]                                ; work_led:work_led|time_1us_syn[1]                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.992      ;
+; 1.774 ; volt_calc:volt_calc|real_volt[10]                                ; volt_calc:volt_calc|udc_volt[10]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.995      ;
+; 1.799 ; fiber_rx:fiber_rx|rx_data_syn[3]                                 ; fiber_rx:fiber_rx|rx_data_syn[4]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.020      ;
+; 1.803 ; fiber_rx:fiber_rx|rx_data_syn[4]                                 ; fiber_rx:fiber_rx|verify_rx:verify_rx|rx_data[3]                 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.024      ;
+; 1.905 ; ads7822:ads7822|ad_syn[2]                                        ; ads7822:ads7822|ad_syn[3]                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 2.126      ;
+; 1.908 ; ads7822:ads7822|ad_trig_syn1                                     ; ads7822:ads7822|AD_Work                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 2.129      ;
+; 1.908 ; div_1us:div_1us|cnt_time1ms[8]                                   ; div_1us:div_1us|cnt_time1ms[8]                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 2.129      ;
+; 1.918 ; ads7822:ads7822|numer_cnt[1]                                     ; ads7822:ads7822|numer_cnt[1]                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 2.139      ;
+; 1.926 ; fiber_tx:fiber_tx|send_nums[1]                                   ; fiber_tx:fiber_tx|send_nums[1]                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 2.147      ;
+; 1.930 ; pwm_out:pwm_out|RUCnt[7]                                         ; pwm_out:pwm_out|RUDIN                                            ; clk          ; clk         ; 0.000        ; 0.000      ; 2.151      ;
+; 1.930 ; pwm_out:pwm_out|LDCnt[7]                                         ; pwm_out:pwm_out|LDDIN                                            ; clk          ; clk         ; 0.000        ; 0.000      ; 2.151      ;
+; 1.936 ; work_led:work_led|work_out                                       ; work_led:work_led|work_out                                       ; clk          ; clk         ; 0.000        ; 0.000      ; 2.157      ;
+; 1.942 ; div_1us:div_1us|cnt_time1ms[10]                                  ; div_1us:div_1us|cnt_time1ms[10]                                  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.163      ;
+; 1.949 ; div_1us:div_1us|cnt_time[2]                                      ; div_1us:div_1us|cnt_time[5]                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.170      ;
+; 1.951 ; div_1us:div_1us|cnt_time[2]                                      ; div_1us:div_1us|cnt_time[3]                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.172      ;
+; 1.953 ; fiber_tx:fiber_tx|cnt_4m[1]                                      ; fiber_tx:fiber_tx|cnt_4m[1]                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.174      ;
+; 1.956 ; fiber_rx:fiber_rx|divide_cnt[2]                                  ; fiber_rx:fiber_rx|divide_cnt[3]                                  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.177      ;
+; 1.960 ; fiber_tx:fiber_tx|cnt_4m[1]                                      ; fiber_tx:fiber_tx|cnt_4m[2]                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.181      ;
+; 1.966 ; fiber_tx:fiber_tx|cnt_4m[1]                                      ; fiber_tx:fiber_tx|cnt_4m[3]                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.187      ;
+; 2.010 ; ads7822:ads7822|sample_data[2]                                   ; volt_calc:volt_calc|real_volt[2]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.231      ;
+; 2.011 ; ads7822:ads7822|ad_syn[5]                                        ; ads7822:ads7822|ad_syn[6]                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 2.232      ;
+; 2.063 ; fiber_rx:fiber_rx|rx_data_syn[1]                                 ; fiber_rx:fiber_rx|rx_data_syn[2]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.284      ;
+; 2.084 ; err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[13]  ; err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[13]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.305      ;
+; 2.089 ; volt_calc:volt_calc|real_volt[10]                                ; volt_calc:volt_calc|DCOV                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.310      ;
+; 2.092 ; fiber_rx:fiber_rx|rx_data_syn[2]                                 ; fiber_rx:fiber_rx|rx_data_syn[3]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.313      ;
+; 2.093 ; err_detect:err_detect|err_high_detect:udc_low|cnt_delay[13]      ; err_detect:err_detect|err_high_detect:udc_low|cnt_delay[13]      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.314      ;
+; 2.095 ; volt_calc:volt_calc|real_volt[10]                                ; volt_calc:volt_calc|DCUV                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.316      ;
+; 2.098 ; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[13]    ; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[13]    ; clk          ; clk         ; 0.000        ; 0.000      ; 2.319      ;
+; 2.103 ; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[13]    ; err_detect:err_detect|err_high_detect:soft_over|signal_out       ; clk          ; clk         ; 0.000        ; 0.000      ; 2.324      ;
+; 2.107 ; ads7822:ads7822|ad_cs_reg                                        ; ads7822:ads7822|ad_cs_reg                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 2.328      ;
+; 2.107 ; fiber_tx:fiber_tx|send_nums[2]                                   ; fiber_tx:fiber_tx|send_nums[2]                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 2.328      ;
+; 2.107 ; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[7]     ; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[7]     ; clk          ; clk         ; 0.000        ; 0.000      ; 2.328      ;
+; 2.107 ; err_detect:err_detect|err_high_detect:udc_low|cnt_delay[6]       ; err_detect:err_detect|err_high_detect:udc_low|cnt_delay[6]       ; clk          ; clk         ; 0.000        ; 0.000      ; 2.328      ;
+; 2.107 ; err_detect:err_detect|err_high_detect:err1|cnt_delay[7]          ; err_detect:err_detect|err_high_detect:err1|cnt_delay[7]          ; clk          ; clk         ; 0.000        ; 0.000      ; 2.328      ;
+; 2.107 ; err_detect:err_detect|err_high_detect:err2|cnt_delay[7]          ; err_detect:err_detect|err_high_detect:err2|cnt_delay[7]          ; clk          ; clk         ; 0.000        ; 0.000      ; 2.328      ;
+; 2.107 ; err_detect:err_detect|err_high_detect:err3|cnt_delay[7]          ; err_detect:err_detect|err_high_detect:err3|cnt_delay[7]          ; clk          ; clk         ; 0.000        ; 0.000      ; 2.328      ;
+; 2.107 ; err_detect:err_detect|err_high_detect:err4|cnt_delay[7]          ; err_detect:err_detect|err_high_detect:err4|cnt_delay[7]          ; clk          ; clk         ; 0.000        ; 0.000      ; 2.328      ;
+; 2.107 ; err_high_detect:bypok_filt|cnt_delay[7]                          ; err_high_detect:bypok_filt|cnt_delay[7]                          ; clk          ; clk         ; 0.000        ; 0.000      ; 2.328      ;
+; 2.107 ; err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[6]   ; err_detect:err_detect|err_high_detect_unlock:hot1|cnt_delay[6]   ; clk          ; clk         ; 0.000        ; 0.000      ; 2.328      ;
+; 2.108 ; work_led:work_led|cnt_500ms[5]                                   ; work_led:work_led|cnt_500ms[5]                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 2.329      ;
+; 2.115 ; err_high_detect:bypok_filt|cnt_delay[13]                         ; err_high_detect:bypok_filt|cnt_delay[13]                         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.336      ;
+; 2.116 ; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[7]      ; err_detect:err_detect|err_high_detect:soft_low|cnt_delay[7]      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.337      ;
+; 2.116 ; err_detect:err_detect|Cnt_1ms[0]                                 ; err_detect:err_detect|Cnt_1ms[0]                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 2.337      ;
+; 2.116 ; pwm_out:pwm_out|RDCnt[0]                                         ; pwm_out:pwm_out|RDCnt[0]                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.337      ;
+; 2.116 ; pwm_out:pwm_out|LUCnt[0]                                         ; pwm_out:pwm_out|LUCnt[0]                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.337      ;
+; 2.117 ; pwm_out:pwm_out|RDCnt[7]                                         ; pwm_out:pwm_out|RDCnt[7]                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.338      ;
+; 2.117 ; pwm_out:pwm_out|LUCnt[7]                                         ; pwm_out:pwm_out|LUCnt[7]                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.338      ;
+; 2.117 ; pwm_out:pwm_out|RDCnt[2]                                         ; pwm_out:pwm_out|RDCnt[2]                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.338      ;
+; 2.117 ; pwm_out:pwm_out|LUCnt[2]                                         ; pwm_out:pwm_out|LUCnt[2]                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.338      ;
+; 2.117 ; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[9]     ; err_detect:err_detect|err_high_detect:soft_over|cnt_delay[9]     ; clk          ; clk         ; 0.000        ; 0.000      ; 2.338      ;
+; 2.117 ; err_detect:err_detect|err_high_detect:hot2|cnt_delay[6]          ; err_detect:err_detect|err_high_detect:hot2|cnt_delay[6]          ; clk          ; clk         ; 0.000        ; 0.000      ; 2.338      ;
++-------+------------------------------------------------------------------+------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
 +------------------------------------------------------------------------------------------------------------------+
@@ -468,18 +468,18 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; ADout     ; clk        ; 1.897 ; 1.897 ; Rise       ; clk             ;
-; BypOk     ; clk        ; 8.759 ; 8.759 ; Rise       ; clk             ;
-; COMM_R    ; clk        ; 1.900 ; 1.900 ; Rise       ; clk             ;
-; DCOV      ; clk        ; 6.847 ; 6.847 ; Rise       ; clk             ;
-; DCUV      ; clk        ; 7.904 ; 7.904 ; Rise       ; clk             ;
-; ERR[*]    ; clk        ; 8.582 ; 8.582 ; Rise       ; clk             ;
-;  ERR[0]   ; clk        ; 8.515 ; 8.515 ; Rise       ; clk             ;
-;  ERR[1]   ; clk        ; 8.413 ; 8.413 ; Rise       ; clk             ;
-;  ERR[2]   ; clk        ; 8.582 ; 8.582 ; Rise       ; clk             ;
-;  ERR[3]   ; clk        ; 8.307 ; 8.307 ; Rise       ; clk             ;
-; HOT_1     ; clk        ; 9.124 ; 9.124 ; Rise       ; clk             ;
-; HOT_2     ; clk        ; 8.404 ; 8.404 ; Rise       ; clk             ;
+; ADout     ; clk        ; 1.677 ; 1.677 ; Rise       ; clk             ;
+; BypOk     ; clk        ; 8.328 ; 8.328 ; Rise       ; clk             ;
+; COMM_R    ; clk        ; 3.727 ; 3.727 ; Rise       ; clk             ;
+; DCOV      ; clk        ; 8.485 ; 8.485 ; Rise       ; clk             ;
+; DCUV      ; clk        ; 7.787 ; 7.787 ; Rise       ; clk             ;
+; ERR[*]    ; clk        ; 9.774 ; 9.774 ; Rise       ; clk             ;
+;  ERR[0]   ; clk        ; 9.260 ; 9.260 ; Rise       ; clk             ;
+;  ERR[1]   ; clk        ; 9.774 ; 9.774 ; Rise       ; clk             ;
+;  ERR[2]   ; clk        ; 7.562 ; 7.562 ; Rise       ; clk             ;
+;  ERR[3]   ; clk        ; 6.946 ; 6.946 ; Rise       ; clk             ;
+; HOT_1     ; clk        ; 9.401 ; 9.401 ; Rise       ; clk             ;
+; HOT_2     ; clk        ; 9.781 ; 9.781 ; Rise       ; clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -488,18 +488,18 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; ADout     ; clk        ; -1.343 ; -1.343 ; Rise       ; clk             ;
-; BypOk     ; clk        ; -6.596 ; -6.596 ; Rise       ; clk             ;
-; COMM_R    ; clk        ; -1.346 ; -1.346 ; Rise       ; clk             ;
-; DCOV      ; clk        ; -5.416 ; -5.416 ; Rise       ; clk             ;
-; DCUV      ; clk        ; -6.303 ; -6.303 ; Rise       ; clk             ;
-; ERR[*]    ; clk        ; -5.915 ; -5.915 ; Rise       ; clk             ;
-;  ERR[0]   ; clk        ; -6.478 ; -6.478 ; Rise       ; clk             ;
-;  ERR[1]   ; clk        ; -7.032 ; -7.032 ; Rise       ; clk             ;
-;  ERR[2]   ; clk        ; -6.860 ; -6.860 ; Rise       ; clk             ;
-;  ERR[3]   ; clk        ; -5.915 ; -5.915 ; Rise       ; clk             ;
-; HOT_1     ; clk        ; -6.776 ; -6.776 ; Rise       ; clk             ;
-; HOT_2     ; clk        ; -6.571 ; -6.571 ; Rise       ; clk             ;
+; ADout     ; clk        ; -1.123 ; -1.123 ; Rise       ; clk             ;
+; BypOk     ; clk        ; -6.137 ; -6.137 ; Rise       ; clk             ;
+; COMM_R    ; clk        ; -3.173 ; -3.173 ; Rise       ; clk             ;
+; DCOV      ; clk        ; -6.027 ; -6.027 ; Rise       ; clk             ;
+; DCUV      ; clk        ; -5.854 ; -5.854 ; Rise       ; clk             ;
+; ERR[*]    ; clk        ; -5.538 ; -5.538 ; Rise       ; clk             ;
+;  ERR[0]   ; clk        ; -7.352 ; -7.352 ; Rise       ; clk             ;
+;  ERR[1]   ; clk        ; -7.913 ; -7.913 ; Rise       ; clk             ;
+;  ERR[2]   ; clk        ; -5.792 ; -5.792 ; Rise       ; clk             ;
+;  ERR[3]   ; clk        ; -5.538 ; -5.538 ; Rise       ; clk             ;
+; HOT_1     ; clk        ; -6.967 ; -6.967 ; Rise       ; clk             ;
+; HOT_2     ; clk        ; -6.998 ; -6.998 ; Rise       ; clk             ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -508,23 +508,23 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; ADclk     ; clk        ; 9.754  ; 9.754  ; Rise       ; clk             ;
-; ADcon     ; clk        ; 9.112  ; 9.112  ; Rise       ; clk             ;
-; BypCon    ; clk        ; 14.330 ; 14.330 ; Rise       ; clk             ;
-; COMM_T    ; clk        ; 10.408 ; 10.408 ; Rise       ; clk             ;
-; LDDIN     ; clk        ; 9.505  ; 9.505  ; Rise       ; clk             ;
-; LED1      ; clk        ; 13.936 ; 13.936 ; Rise       ; clk             ;
-; LED2      ; clk        ; 12.485 ; 12.485 ; Rise       ; clk             ;
-; LED3      ; clk        ; 15.111 ; 15.111 ; Rise       ; clk             ;
-; LED4      ; clk        ; 8.824  ; 8.824  ; Rise       ; clk             ;
-; LED5      ; clk        ; 9.966  ; 9.966  ; Rise       ; clk             ;
-; LED6      ; clk        ; 9.925  ; 9.925  ; Rise       ; clk             ;
-; LUDIN     ; clk        ; 9.293  ; 9.293  ; Rise       ; clk             ;
-; RDDIN     ; clk        ; 8.388  ; 8.388  ; Rise       ; clk             ;
-; RUDIN     ; clk        ; 8.922  ; 8.922  ; Rise       ; clk             ;
-; test[*]   ; clk        ; 9.925  ; 9.925  ; Rise       ; clk             ;
-;  test[0]  ; clk        ; 9.925  ; 9.925  ; Rise       ; clk             ;
-;  test[1]  ; clk        ; 8.728  ; 8.728  ; Rise       ; clk             ;
+; ADclk     ; clk        ; 8.732  ; 8.732  ; Rise       ; clk             ;
+; ADcon     ; clk        ; 8.670  ; 8.670  ; Rise       ; clk             ;
+; BypCon    ; clk        ; 14.637 ; 14.637 ; Rise       ; clk             ;
+; COMM_T    ; clk        ; 10.676 ; 10.676 ; Rise       ; clk             ;
+; LDDIN     ; clk        ; 8.945  ; 8.945  ; Rise       ; clk             ;
+; LED1      ; clk        ; 14.229 ; 14.229 ; Rise       ; clk             ;
+; LED2      ; clk        ; 12.695 ; 12.695 ; Rise       ; clk             ;
+; LED3      ; clk        ; 12.970 ; 12.970 ; Rise       ; clk             ;
+; LED4      ; clk        ; 9.983  ; 9.983  ; Rise       ; clk             ;
+; LED5      ; clk        ; 9.869  ; 9.869  ; Rise       ; clk             ;
+; LED6      ; clk        ; 9.102  ; 9.102  ; Rise       ; clk             ;
+; LUDIN     ; clk        ; 10.209 ; 10.209 ; Rise       ; clk             ;
+; RDDIN     ; clk        ; 8.773  ; 8.773  ; Rise       ; clk             ;
+; RUDIN     ; clk        ; 9.215  ; 9.215  ; Rise       ; clk             ;
+; test[*]   ; clk        ; 9.970  ; 9.970  ; Rise       ; clk             ;
+;  test[0]  ; clk        ; 9.102  ; 9.102  ; Rise       ; clk             ;
+;  test[1]  ; clk        ; 9.970  ; 9.970  ; Rise       ; clk             ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -533,23 +533,23 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; ADclk     ; clk        ; 9.754  ; 9.754  ; Rise       ; clk             ;
-; ADcon     ; clk        ; 9.112  ; 9.112  ; Rise       ; clk             ;
-; BypCon    ; clk        ; 13.159 ; 13.159 ; Rise       ; clk             ;
-; COMM_T    ; clk        ; 10.408 ; 10.408 ; Rise       ; clk             ;
-; LDDIN     ; clk        ; 9.505  ; 9.505  ; Rise       ; clk             ;
-; LED1      ; clk        ; 10.465 ; 10.465 ; Rise       ; clk             ;
-; LED2      ; clk        ; 10.558 ; 10.558 ; Rise       ; clk             ;
-; LED3      ; clk        ; 13.891 ; 13.891 ; Rise       ; clk             ;
-; LED4      ; clk        ; 8.824  ; 8.824  ; Rise       ; clk             ;
-; LED5      ; clk        ; 9.966  ; 9.966  ; Rise       ; clk             ;
-; LED6      ; clk        ; 9.925  ; 9.925  ; Rise       ; clk             ;
-; LUDIN     ; clk        ; 9.293  ; 9.293  ; Rise       ; clk             ;
-; RDDIN     ; clk        ; 8.388  ; 8.388  ; Rise       ; clk             ;
-; RUDIN     ; clk        ; 8.922  ; 8.922  ; Rise       ; clk             ;
-; test[*]   ; clk        ; 8.728  ; 8.728  ; Rise       ; clk             ;
-;  test[0]  ; clk        ; 9.925  ; 9.925  ; Rise       ; clk             ;
-;  test[1]  ; clk        ; 8.728  ; 8.728  ; Rise       ; clk             ;
+; ADclk     ; clk        ; 8.732  ; 8.732  ; Rise       ; clk             ;
+; ADcon     ; clk        ; 8.670  ; 8.670  ; Rise       ; clk             ;
+; BypCon    ; clk        ; 13.502 ; 13.502 ; Rise       ; clk             ;
+; COMM_T    ; clk        ; 10.676 ; 10.676 ; Rise       ; clk             ;
+; LDDIN     ; clk        ; 8.945  ; 8.945  ; Rise       ; clk             ;
+; LED1      ; clk        ; 11.277 ; 11.277 ; Rise       ; clk             ;
+; LED2      ; clk        ; 11.270 ; 11.270 ; Rise       ; clk             ;
+; LED3      ; clk        ; 11.733 ; 11.733 ; Rise       ; clk             ;
+; LED4      ; clk        ; 9.983  ; 9.983  ; Rise       ; clk             ;
+; LED5      ; clk        ; 9.869  ; 9.869  ; Rise       ; clk             ;
+; LED6      ; clk        ; 9.102  ; 9.102  ; Rise       ; clk             ;
+; LUDIN     ; clk        ; 10.209 ; 10.209 ; Rise       ; clk             ;
+; RDDIN     ; clk        ; 8.773  ; 8.773  ; Rise       ; clk             ;
+; RUDIN     ; clk        ; 9.215  ; 9.215  ; Rise       ; clk             ;
+; test[*]   ; clk        ; 9.102  ; 9.102  ; Rise       ; clk             ;
+;  test[0]  ; clk        ; 9.102  ; 9.102  ; Rise       ; clk             ;
+;  test[1]  ; clk        ; 9.970  ; 9.970  ; Rise       ; clk             ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -582,7 +582,7 @@ No dedicated SERDES Transmitter circuitry present in device or used in design
 ---------------
 ; Report RSKM ;
 ---------------
-No dedicated SERDES Receiver circuitry present in device or used in design
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
 
 
 +------------------------------------------------+
@@ -604,8 +604,8 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +------------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Tue Mar 19 16:23:42 2024
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+    Info: Processing started: Thu Mar 21 16:08:41 2024
 Info: Command: quartus_sta driver_board -c driver_board
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 20 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 14 of the 14 physical processors detected instead.
@@ -619,26 +619,26 @@ Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name clk clk
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -13.711
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):   -13.711     -3543.379 clk 
+Info (332146): Worst-case setup slack is -14.028
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):   -14.028           -3477.895 clk 
 Info (332146): Worst-case hold slack is 1.375
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):     1.375         0.000 clk 
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     1.375               0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.289
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):    -2.289        -2.289 clk 
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.289              -2.289 clk 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4578 megabytes
-    Info: Processing ended: Tue Mar 19 16:23:43 2024
+    Info: Peak virtual memory: 4604 megabytes
+    Info: Processing ended: Thu Mar 21 16:08:42 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 

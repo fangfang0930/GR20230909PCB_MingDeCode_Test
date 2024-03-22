@@ -237,8 +237,8 @@ err_detect err_detect(
 							.DCUV		(DCUV		),//(~DCUV		),//硬件是低电平报故障，Erik
 							.SoftDCOV	(SoftDCOV	),
 							.SoftDCUV	(SoftDCUV	),
-							.HOT_1		(HOT_1		),//(~HOT_1		),//硬件是低电平报故障，Erik//hff-接到故障TEM1,ZYHG00与GR2023板子相反
-							.HOT_2		(HOT_2		),//(~HOT_2		),//硬件是低电平报故障，Erik//HFF-硬件接到GND了，
+							.HOT_1		(HOT_1		),//(~HOT_1		),//hff-接到GND,不用了 ZYHG00与GR2023板子相反,
+							.HOT_2		(HOT_2		),//(~HOT_2		),//到cpu故障的时候高电平，Erik//
 							.Powerfall	(0),//Powerfall	),hff-ZYHG003没有这个口
 							.BypPowerErr(0),//.BypPowerErr(BypPowerErr),//HFF-2024-2-23
                             .BypCon		(BypCon		),//旁路闭合信号，Erik
