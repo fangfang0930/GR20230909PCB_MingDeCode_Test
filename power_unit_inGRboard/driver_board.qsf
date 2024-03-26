@@ -58,8 +58,8 @@ set_location_assignment PIN_88 -to ADcon
 set_location_assignment PIN_91 -to ADout
 set_location_assignment PIN_32 -to BypCon
 set_location_assignment PIN_31 -to BypOk
-set_location_assignment PIN_142 -to COMM_R
-set_location_assignment PIN_144 -to COMM_T
+set_location_assignment PIN_1 -to COMM_R
+set_location_assignment PIN_4 -to COMM_T
 set_location_assignment PIN_108 -to DCOV
 set_location_assignment PIN_102 -to DCUV
 set_location_assignment PIN_133 -to ERR[0]
@@ -110,5 +110,5 @@ set_location_assignment PIN_51 -to LED7
 set_location_assignment PIN_53 -to LED8
 set_location_assignment PIN_57 -to LED9
 set_location_assignment PIN_59 -to LED10
-set_location_assignment PIN_1 -to rx2
-set_location_assignment PIN_4 -to tx2
+set_location_assignment PIN_142 -to rx2
+set_location_assignment PIN_144 -to tx2

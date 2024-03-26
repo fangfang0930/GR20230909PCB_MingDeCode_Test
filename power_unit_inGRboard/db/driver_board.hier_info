@@ -1,27 +1,27 @@
 |driver_board
 clk => clk.IN10
-RUDIN <= pwm_out:pwm_out.RUDIN
-RDDIN <= pwm_out:pwm_out.RDDIN
-LUDIN <= pwm_out:pwm_out.LUDIN
-LDDIN <= pwm_out:pwm_out.LDDIN
+RUDIN << pwm_out:pwm_out.RUDIN
+RDDIN << pwm_out:pwm_out.RDDIN
+LUDIN << pwm_out:pwm_out.LUDIN
+LDDIN << pwm_out:pwm_out.LDDIN
 ERR[0] => _.IN1
 ERR[1] => _.IN1
 ERR[2] => _.IN1
 ERR[3] => _.IN1
-LED1 <= LED1.DB_MAX_OUTPUT_PORT_TYPE
-LED2 <= err_all.DB_MAX_OUTPUT_PORT_TYPE
-LED3 <= reset_unit.DB_MAX_OUTPUT_PORT_TYPE
-LED4 <= fiber_delay_err.DB_MAX_OUTPUT_PORT_TYPE
-LED5 <= fiber_verify_err.DB_MAX_OUTPUT_PORT_TYPE
-LED6 <= err_detect:err_detect.err_unit
-LED7 <= <GND>
-LED8 <= <GND>
-LED9 <= <GND>
-LED10 <= <GND>
+LED1 << LED1.DB_MAX_OUTPUT_PORT_TYPE
+LED2 << err_all.DB_MAX_OUTPUT_PORT_TYPE
+LED3 << reset_unit.DB_MAX_OUTPUT_PORT_TYPE
+LED4 << fiber_delay_err.DB_MAX_OUTPUT_PORT_TYPE
+LED5 << fiber_verify_err.DB_MAX_OUTPUT_PORT_TYPE
+LED6 << err_detect:err_detect.err_unit
+LED7 << <GND>
+LED8 << <GND>
+LED9 << <GND>
+LED10 << <GND>
 COMM_R => COMM_R.IN1
-COMM_T <= fiber_tx:fiber_tx.COMM_T
-ADclk <= ads7822:ads7822.ad_clk
-ADcon <= ads7822:ads7822.ad_cs
+COMM_T << fiber_tx:fiber_tx.COMM_T
+ADclk << ads7822:ads7822.ad_clk
+ADcon << ads7822:ads7822.ad_cs
 ADout => ADout.IN1
 DCOV => DCOV.IN1
 DCUV => DCUV.IN1
@@ -29,13 +29,13 @@ HOT_1 => HOT_1.IN1
 HOT_2 => HOT_2.IN1
 Powerfall => ~NO_FANOUT~
 BypPowerErr => ~NO_FANOUT~
-BypCon <= BypCon.DB_MAX_OUTPUT_PORT_TYPE
+BypCon << BypCon.DB_MAX_OUTPUT_PORT_TYPE
 BypOk => _.IN1
 rx2 => ~NO_FANOUT~
-tx2 <= <GND>
-test[0] <= err_detect:err_detect.err_unit
-test[1] <= start_stop.DB_MAX_OUTPUT_PORT_TYPE
-test[2] <= <GND>
+tx2 << <GND>
+test[0] << err_detect:err_detect.err_unit
+test[1] << start_stop.DB_MAX_OUTPUT_PORT_TYPE
+test[2] << <GND>
 
 
 |driver_board|fiber_rx:fiber_rx

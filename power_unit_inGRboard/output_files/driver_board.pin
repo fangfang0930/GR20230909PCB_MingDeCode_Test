@@ -64,10 +64,10 @@ CHIP  "driver_board"  ASSIGNED TO AN: EPM1270T144I5
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
-rx2                          : 1         : input  : 3.3-V LVTTL       :         : 1         : Y              
+COMM_R                       : 1         : input  : 3.3-V LVTTL       :         : 1         : Y              
 GND*                         : 2         :        :                   :         : 1         :                
 GND*                         : 3         :        :                   :         : 1         :                
-tx2                          : 4         : output : 3.3-V LVTTL       :         : 1         : Y              
+COMM_T                       : 4         : output : 3.3-V LVTTL       :         : 1         : Y              
 GND*                         : 5         :        :                   :         : 1         :                
 GND*                         : 6         :        :                   :         : 1         :                
 GND*                         : 7         :        :                   :         : 1         :                
@@ -93,7 +93,7 @@ GNDIO                        : 26        : gnd    :                   :         
 GND*                         : 27        :        :                   :         : 1         :                
 GND*                         : 28        :        :                   :         : 1         :                
 GND*                         : 29        :        :                   :         : 1         :                
-test[2]                      : 30        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 30        :        :                   :         : 1         :                
 BypOk                        : 31        : input  : 3.3-V LVTTL       :         : 1         : Y              
 BypCon                       : 32        : output : 3.3-V LVTTL       :         : 1         : Y              
 TMS                          : 33        : input  :                   :         : 1         :                
@@ -130,8 +130,8 @@ GND*                         : 63        :        :                   :         
 VCCIO4                       : 64        : power  :                   : 3.3V    : 4         :                
 GNDIO                        : 65        : gnd    :                   :         :           :                
 GND*                         : 66        :        :                   :         : 4         :                
-BypPowerErr                  : 67        : input  : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : 68        :        :                   :         : 4         :                
+GND*                         : 67        :        :                   :         : 4         :                
+test[2]                      : 68        : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : 69        :        :                   :         : 4         :                
 GND*                         : 70        :        :                   :         : 4         :                
 Powerfall                    : 71        : input  : 3.3-V LVTTL       :         : 4         : Y              
@@ -175,12 +175,12 @@ DCOV                         : 108       : input  : 3.3-V LVTTL       :         
 LUDIN                        : 109       : output : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : 110       :        :                   :         : 2         :                
 GND*                         : 111       :        :                   :         : 2         :                
-GND*                         : 112       :        :                   :         : 2         :                
+test[1]                      : 112       : output : 3.3-V LVTTL       :         : 2         : N              
 LDDIN                        : 113       : output : 3.3-V LVTTL       :         : 2         : Y              
-test[1]                      : 114       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 114       :        :                   :         : 2         :                
 GNDIO                        : 115       : gnd    :                   :         :           :                
 VCCIO2                       : 116       : power  :                   : 3.3V    : 2         :                
-GND*                         : 117       :        :                   :         : 2         :                
+BypPowerErr                  : 117       : input  : 3.3-V LVTTL       :         : 2         : N              
 RUDIN                        : 118       : output : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : 119       :        :                   :         : 2         :                
 GND*                         : 120       :        :                   :         : 2         :                
@@ -205,6 +205,6 @@ ERR[3]                       : 138       : input  : 3.3-V LVTTL       :         
 GND*                         : 139       :        :                   :         : 2         :                
 GND*                         : 140       :        :                   :         : 2         :                
 GND*                         : 141       :        :                   :         : 2         :                
-COMM_R                       : 142       : input  : 3.3-V LVTTL       :         : 2         : Y              
+rx2                          : 142       : input  : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : 143       :        :                   :         : 2         :                
-COMM_T                       : 144       : output : 3.3-V LVTTL       :         : 2         : Y              
+tx2                          : 144       : output : 3.3-V LVTTL       :         : 2         : Y              
