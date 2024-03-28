@@ -116,14 +116,18 @@ wire SoftDCUV;
 wire BypConRx;//接收到的旁通闭合信号,Erik
 //assign rst_n=((~Reset) && PllLock);//Erik
 assign LED1=~(work_out&start_stop&(~err_all));//工作指示灯
-assign LED2=~err_all; 
-assign LED3=~reset_unit;//低电平亮灯，Erik
+assign LED2=~DCOV; //通信 1178 1147
+assign LED3=~SoftDCOV;//低电平亮灯，Erik  1140
 //添加几个LED---hff
-assign LED4=~fiber_delay_err;//光纤通讯20us没有数据
-assign LED5=~fiber_verify_err;//光纤通讯，校验错误
-assign LED6=~err_unit;//
+assign LED4=~DCUV;	//522	556
+assign LED5=~SoftDCUV;	//495
+assign LED6=~HOT_2;	//
+assign LED7=~err_info[8];//ERR[0];	
+assign LED8=~err_info[7];
+assign LED9=~err_info[6];	
+assign LED10=~err_info[5];//         
+//-----------HOT_1	HOT_2	------
 
-//-----------------
 assign test[0] = err_unit;
 assign test[1] = start_stop;
 //assign test[7] = Clk80M;
@@ -232,7 +236,7 @@ err_detect err_detect(
                             .time_1ms	(time_1ms	),
 							.start_stop	(start_stop	),//启动停止
 							.reset_unit	(reset_unit	),//复位故障控制信号			
-							.ERR		(~ERR		),//硬件是低电平报故障，Erik
+							.ERR		(~ERR		),//硬件是低电平报故障，Erikhff-高
 							.DCOV		(DCOV		),//(~DCOV		),//硬件是低电平报故障，Erik
 							.DCUV		(DCUV		),//(~DCUV		),//硬件是低电平报故障，Erik
 							.SoftDCOV	(SoftDCOV	),
