@@ -40,7 +40,7 @@ mux12 mux(
 		.done(done)
 		);
 */
-
+reg [31:0]real_volt_tmp;
 
 always@(posedge clk or negedge rst_n)
 begin 
@@ -64,7 +64,10 @@ begin
 	if(!rst_n)
 	udc_volt<=12'd0;
     else if(done&&DSW==6'b111111)//拨码开关全是1，则默认不校对
-    udc_volt<=real_volt;
+	begin
+	real_volt_tmp=(real_volt*970)>>10;//((real_volt<<6)-real_volt-real_volt-real_volt-real_volt-real_volt-real_volt-real_volt)>>10;
+    udc_volt<=real_volt_tmp[11:0];//(((real_volt<<6)-real_volt-real_volt-real_volt-real_volt-real_volt-real_volt-real_volt)>>10);//real_volt*1.0555;
+	end
 	else if(done&&DSW[5]==1'b0&&real_volt<12'd4033)//限幅 矫正
 	udc_volt<=real_volt + volt_delta;
 	else if(done&&DSW[5]==1'b1&&real_volt>12'd62)//限幅 矫正

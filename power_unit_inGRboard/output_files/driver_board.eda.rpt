@@ -1,5 +1,5 @@
 EDA Netlist Writer report for driver_board
-Thu Mar 28 15:02:04 2024
+Sat Apr 13 10:32:34 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Mar 28 15:02:04 2024 ;
+; EDA Netlist Writer Status ; Successful - Sat Apr 13 10:32:34 2024 ;
 ; Revision Name             ; driver_board                          ;
 ; Top-level Entity Name     ; driver_board                          ;
 ; Family                    ; MAX II                                ;
@@ -82,14 +82,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Thu Mar 28 15:02:03 2024
+    Info: Processing started: Sat Apr 13 10:32:34 2024
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off driver_board -c driver_board
 Warning (202000): An incorrect timescale is selected for the Verilog Output (.VO) file of this PLL design. It's required that the timescale should be 1 ps when simulating a PLL design in a third party EDA tool.
 Info (204018): Generated files "driver_board.vo" and "driver_board_v.sdo" in directory "D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/GR20230909PCB_MingDeCode_Test/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4543 megabytes
-    Info: Processing ended: Thu Mar 28 15:02:04 2024
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4554 megabytes
+    Info: Processing ended: Sat Apr 13 10:32:34 2024
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 
