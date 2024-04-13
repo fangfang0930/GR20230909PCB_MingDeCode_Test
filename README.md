@@ -11,3 +11,8 @@
 	assign LED8=~err_info[7]; //Igbt2故障
 	assign LED9=~err_info[6];	 //Igbt3故障
 	assign LED10=~err_info[5];//  Igbt4故障
+
+
+20240413
+1  改线序 igbt驱动 Q1 和Q2对调、 Q3和 Q4对调。
+2  旁路状态改为一直不旁路，已测试

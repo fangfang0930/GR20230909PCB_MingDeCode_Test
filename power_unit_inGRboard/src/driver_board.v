@@ -164,7 +164,7 @@ fiber_tx fiber_tx(
 							.udc_volt 	(udc_volt		),//udc_volt),//要发送的电压值
 							.err_info	(unit_err_info	),//要发送的单元信息值
                             .ModuRun	(start_stop&(~err_all)),
-                            .BypOk		(Bypok_filt	),
+                            .BypOk		(0),// .BypOk		(Bypok_filt	),hff-20240413旁路状态不上传
 							.AD_Work	(AD_trigger		),//定时触发AD采样的信号
 							.COMM_T		(COMM_T  		)
 							);

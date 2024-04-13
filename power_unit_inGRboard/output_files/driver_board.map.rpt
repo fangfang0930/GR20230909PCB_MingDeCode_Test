@@ -1,5 +1,5 @@
 Analysis & Synthesis report for driver_board
-Sat Apr 13 10:32:48 2024
+Sat Apr 13 13:11:04 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -76,12 +76,12 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat Apr 13 10:32:47 2024       ;
+; Analysis & Synthesis Status ; Successful - Sat Apr 13 13:11:04 2024       ;
 ; Quartus II 64-Bit Version   ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name               ; driver_board                                ;
 ; Top-level Entity Name       ; driver_board                                ;
 ; Family                      ; MAX II                                      ;
-; Total logic elements        ; 861                                         ;
+; Total logic elements        ; 855                                         ;
 ; Total pins                  ; 37                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
@@ -229,33 +229,33 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 861   ;
-;     -- Combinational with no register       ; 401   ;
-;     -- Register only                        ; 71    ;
+; Total logic elements                        ; 855   ;
+;     -- Combinational with no register       ; 396   ;
+;     -- Register only                        ; 70    ;
 ;     -- Combinational with a register        ; 389   ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 325   ;
-;     -- 3 input functions                    ; 60    ;
-;     -- 2 input functions                    ; 368   ;
-;     -- 1 input functions                    ; 36    ;
+;     -- 4 input functions                    ; 326   ;
+;     -- 3 input functions                    ; 61    ;
+;     -- 2 input functions                    ; 360   ;
+;     -- 1 input functions                    ; 37    ;
 ;     -- 0 input functions                    ; 1     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 515   ;
-;     -- arithmetic mode                      ; 346   ;
+;     -- normal mode                          ; 512   ;
+;     -- arithmetic mode                      ; 343   ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
 ;     -- synchronous clear/load mode          ; 256   ;
 ;     -- asynchronous clear/load mode         ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 460   ;
-; Total logic cells in carry chains           ; 386   ;
+; Total registers                             ; 459   ;
+; Total logic cells in carry chains           ; 382   ;
 ; I/O pins                                    ; 37    ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 460   ;
-; Total fan-out                               ; 3400  ;
-; Average fan-out                             ; 3.79  ;
+; Maximum fan-out                             ; 459   ;
+; Total fan-out                               ; 3390  ;
+; Average fan-out                             ; 3.80  ;
 +---------------------------------------------+-------+
 
 
@@ -264,13 +264,13 @@ applicable agreement for further details.
 +------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                     ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                                                            ; Library Name ;
 +------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |driver_board                                  ; 861 (3)     ; 460          ; 0          ; 37   ; 0            ; 401 (3)      ; 71 (0)            ; 389 (0)          ; 386 (0)         ; 0 (0)      ; |driver_board                                                                                                                                  ; work         ;
+; |driver_board                                  ; 855 (3)     ; 459          ; 0          ; 37   ; 0            ; 396 (3)      ; 70 (0)            ; 389 (0)          ; 382 (0)         ; 0 (0)      ; |driver_board                                                                                                                                  ; work         ;
 ;    |ads7822:ads7822|                           ; 63 (63)     ; 43           ; 0          ; 0    ; 0            ; 20 (20)      ; 14 (14)           ; 29 (29)          ; 12 (12)         ; 0 (0)      ; |driver_board|ads7822:ads7822                                                                                                                  ; work         ;
 ;    |div_1us:div_1us|                           ; 39 (39)     ; 16           ; 0          ; 0    ; 0            ; 23 (23)      ; 3 (3)             ; 13 (13)          ; 16 (16)         ; 0 (0)      ; |driver_board|div_1us:div_1us                                                                                                                  ; work         ;
 ;    |err_detect:err_detect|                     ; 314 (66)    ; 182          ; 0          ; 0    ; 0            ; 132 (36)     ; 3 (2)             ; 179 (28)         ; 166 (26)        ; 0 (0)      ; |driver_board|err_detect:err_detect                                                                                                            ; work         ;
-;       |err_high_detect:err1|                   ; 26 (26)     ; 15           ; 0          ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:err1                                                                                       ; work         ;
+;       |err_high_detect:err1|                   ; 25 (25)     ; 15           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:err1                                                                                       ; work         ;
 ;       |err_high_detect:err2|                   ; 25 (25)     ; 15           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:err2                                                                                       ; work         ;
-;       |err_high_detect:err3|                   ; 25 (25)     ; 15           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:err3                                                                                       ; work         ;
+;       |err_high_detect:err3|                   ; 26 (26)     ; 15           ; 0          ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:err3                                                                                       ; work         ;
 ;       |err_high_detect:err4|                   ; 25 (25)     ; 15           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:err4                                                                                       ; work         ;
 ;       |err_high_detect:hot2|                   ; 27 (27)     ; 17           ; 0          ; 0    ; 0            ; 10 (10)      ; 1 (1)             ; 16 (16)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:hot2                                                                                       ; work         ;
 ;       |err_high_detect:soft_low|               ; 24 (24)     ; 15           ; 0          ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:soft_low                                                                                   ; work         ;
@@ -279,10 +279,10 @@ applicable agreement for further details.
 ;       |err_high_detect:udc_over|               ; 24 (24)     ; 15           ; 0          ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect:udc_over                                                                                   ; work         ;
 ;       |err_high_detect_unlock:hot1|            ; 25 (25)     ; 15           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_detect:err_detect|err_high_detect_unlock:hot1                                                                                ; work         ;
 ;    |err_high_detect:bypok_filt|                ; 23 (23)     ; 15           ; 0          ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 15 (15)          ; 14 (14)         ; 0 (0)      ; |driver_board|err_high_detect:bypok_filt                                                                                                       ; work         ;
-;    |fiber_rx:fiber_rx|                         ; 139 (112)   ; 80           ; 0          ; 0    ; 0            ; 59 (47)      ; 11 (7)            ; 69 (58)          ; 57 (52)         ; 0 (0)      ; |driver_board|fiber_rx:fiber_rx                                                                                                                ; work         ;
+;    |fiber_rx:fiber_rx|                         ; 138 (111)   ; 80           ; 0          ; 0    ; 0            ; 58 (46)      ; 11 (7)            ; 69 (58)          ; 57 (52)         ; 0 (0)      ; |driver_board|fiber_rx:fiber_rx                                                                                                                ; work         ;
 ;       |fiber_delay_rx:fiber_delay_rx|          ; 10 (10)     ; 6            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 6 (6)            ; 5 (5)           ; 0 (0)      ; |driver_board|fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx                                                                                  ; work         ;
 ;       |verify_rx:verify_rx|                    ; 17 (17)     ; 9            ; 0          ; 0    ; 0            ; 8 (8)        ; 4 (4)             ; 5 (5)            ; 0 (0)           ; 0 (0)      ; |driver_board|fiber_rx:fiber_rx|verify_rx:verify_rx                                                                                            ; work         ;
-;    |fiber_tx:fiber_tx|                         ; 103 (103)   ; 36           ; 0          ; 0    ; 0            ; 67 (67)      ; 23 (23)           ; 13 (13)          ; 40 (40)         ; 0 (0)      ; |driver_board|fiber_tx:fiber_tx                                                                                                                ; work         ;
+;    |fiber_tx:fiber_tx|                         ; 98 (98)     ; 35           ; 0          ; 0    ; 0            ; 63 (63)      ; 22 (22)           ; 13 (13)          ; 36 (36)         ; 0 (0)      ; |driver_board|fiber_tx:fiber_tx                                                                                                                ; work         ;
 ;    |pwm_out:pwm_out|                           ; 52 (52)     ; 40           ; 0          ; 0    ; 0            ; 12 (12)      ; 4 (4)             ; 36 (36)          ; 36 (36)         ; 0 (0)      ; |driver_board|pwm_out:pwm_out                                                                                                                  ; work         ;
 ;    |volt_calc:volt_calc|                       ; 77 (31)     ; 26           ; 0          ; 0    ; 0            ; 51 (5)       ; 12 (12)           ; 14 (14)          ; 26 (13)         ; 0 (0)      ; |driver_board|volt_calc:volt_calc                                                                                                              ; work         ;
 ;       |lpm_mult:Mult0|                         ; 46 (0)      ; 0            ; 0          ; 0    ; 0            ; 46 (0)       ; 0 (0)             ; 0 (0)            ; 13 (0)          ; 0 (0)      ; |driver_board|volt_calc:volt_calc|lpm_mult:Mult0                                                                                               ; work         ;
@@ -306,6 +306,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; err_detect:err_detect|err_high_detect:powererr|time_1us_syn[0,1]    ; Lost fanout                                                              ;
 ; err_detect:err_detect|err_high_detect:powererr|cnt_delay[0..13]     ; Stuck at GND due to stuck port data_in                                   ;
 ; volt_calc:volt_calc|done                                            ; Stuck at VCC due to stuck port data_in                                   ;
+; fiber_tx:fiber_tx|send_moduleinfo[13]                               ; Stuck at GND due to stuck port data_in                                   ;
 ; fiber_rx:fiber_rx|time_1us_syn[0]                                   ; Merged with work_led:work_led|time_1us_syn[0]                            ;
 ; fiber_rx:fiber_rx|fiber_delay_rx:fiber_delay_rx|time_1us_syn[0]     ; Merged with work_led:work_led|time_1us_syn[0]                            ;
 ; err_high_detect:bypok_filt|time_1us_syn[0]                          ; Merged with work_led:work_led|time_1us_syn[0]                            ;
@@ -337,7 +338,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; err_detect:err_detect|err_high_detect:byppowererr|signal_out        ; Stuck at GND due to stuck port data_in                                   ;
 ; fiber_tx:fiber_tx|send_moduleinfo[10]                               ; Stuck at GND due to stuck port data_in                                   ;
 ; div_1us:div_1us|cnt_time[0]                                         ; Merged with fiber_tx:fiber_tx|cnt_4m[0]                                  ;
-; Total Number of Removed Registers = 64                              ;                                                                          ;
+; Total Number of Removed Registers = 65                              ;                                                                          ;
 +---------------------------------------------------------------------+--------------------------------------------------------------------------+
 
 
@@ -358,7 +359,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 460   ;
+; Total registers                              ; 459   ;
 ; Number of registers using Synchronous Clear  ; 234   ;
 ; Number of registers using Synchronous Load   ; 22    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -803,6 +804,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; rst_n     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
 ; rst_n[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; BypOk     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; BypOk[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
 +-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -822,7 +825,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Sat Apr 13 10:32:46 2024
+    Info: Processing started: Sat Apr 13 13:11:03 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off driver_board -c driver_board
 Info (11104): Parallel Compilation has detected 20 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 14 of the 14 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file tb_pwm_out.v
@@ -864,7 +867,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file src/byp
     Info (12023): Found entity 1: BypDeal
 Info (12021): Found 1 design units, including 1 entities, in source file src/ads7822.v
     Info (12023): Found entity 1: ads7822
-Warning (10236): Verilog HDL Implicit Net warning at driver_board.v(167): created implicit net for "Bypok_filt"
+Warning (10236): Verilog HDL Implicit Net warning at driver_board.v(192): created implicit net for "Bypok_filt"
 Info (12127): Elaborating entity "driver_board" for the top level hierarchy
 Warning (10034): Output port "test[2]" at driver_board.v(92) has no driver
 Warning (10034): Output port "tx2" at driver_board.v(69) has no driver
@@ -920,15 +923,15 @@ Warning (21074): Design contains 3 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Powerfall"
     Warning (15610): No output dependent on input pin "BypPowerErr"
     Warning (15610): No output dependent on input pin "rx2"
-Info (21057): Implemented 898 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 892 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 22 output pins
-    Info (21061): Implemented 861 logic cells
+    Info (21061): Implemented 855 logic cells
 Info (144001): Generated suppressed messages file D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/GR20230909PCB_MingDeCode_Test/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/output_files/driver_board.map.smsg
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 16 warnings
-    Info: Peak virtual memory: 4623 megabytes
-    Info: Processing ended: Sat Apr 13 10:32:48 2024
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 4627 megabytes
+    Info: Processing ended: Sat Apr 13 13:11:04 2024
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 
