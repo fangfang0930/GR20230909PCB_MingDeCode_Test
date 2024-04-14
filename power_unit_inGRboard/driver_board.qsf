@@ -62,11 +62,11 @@ set_location_assignment PIN_1 -to COMM_R
 set_location_assignment PIN_4 -to COMM_T
 set_location_assignment PIN_108 -to DCOV
 set_location_assignment PIN_102 -to DCUV
-set_location_assignment PIN_133 -to ERR[0]
+set_location_assignment PIN_134 -to ERR[0]
 set_location_assignment PIN_78 -to HOT_1
-set_location_assignment PIN_134 -to ERR[1]
-set_location_assignment PIN_137 -to ERR[2]
-set_location_assignment PIN_138 -to ERR[3]
+set_location_assignment PIN_133 -to ERR[1]
+set_location_assignment PIN_138 -to ERR[2]
+set_location_assignment PIN_137 -to ERR[3]
 set_location_assignment PIN_37 -to LED1
 set_location_assignment PIN_39 -to LED2
 set_location_assignment PIN_41 -to LED3

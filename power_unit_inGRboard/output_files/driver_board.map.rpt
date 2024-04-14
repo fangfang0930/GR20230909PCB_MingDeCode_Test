@@ -1,5 +1,5 @@
 Analysis & Synthesis report for driver_board
-Sat Apr 13 13:11:04 2024
+Sun Apr 14 11:20:02 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -76,7 +76,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat Apr 13 13:11:04 2024       ;
+; Analysis & Synthesis Status ; Successful - Sun Apr 14 11:20:02 2024       ;
 ; Quartus II 64-Bit Version   ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name               ; driver_board                                ;
 ; Top-level Entity Name       ; driver_board                                ;
@@ -825,7 +825,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Sat Apr 13 13:11:03 2024
+    Info: Processing started: Sun Apr 14 11:20:01 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off driver_board -c driver_board
 Info (11104): Parallel Compilation has detected 20 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 14 of the 14 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file tb_pwm_out.v
@@ -930,8 +930,8 @@ Info (21057): Implemented 892 device resources after synthesis - the final resou
 Info (144001): Generated suppressed messages file D:/temp/ZhiYuan_ING/PowerUnit_replace/git_ZYHG003/GR20230909PCB_MingDeCode_Test/GR20230909PCB_MingDeCode_Test/power_unit_inGRboard/output_files/driver_board.map.smsg
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 16 warnings
     Info: Peak virtual memory: 4627 megabytes
-    Info: Processing ended: Sat Apr 13 13:11:04 2024
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Sun Apr 14 11:20:03 2024
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:00
 
 
