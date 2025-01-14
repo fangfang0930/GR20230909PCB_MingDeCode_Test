@@ -1,4 +1,1 @@
-set tool_name "ModelSim (Verilog)"
-set corner_file_list {
-	{{"Slow Model"} {driver_board.vo driver_board_v.sdo}}
-}
+set tool_name "ModelSim-Altera (VHDL)"

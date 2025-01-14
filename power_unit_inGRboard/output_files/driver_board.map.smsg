@@ -1,3 +1,0 @@
-Warning (10268): Verilog HDL information at volt_calc.v(62): always construct contains both blocking and non-blocking assignments
-Warning (10268): Verilog HDL information at mux12.v(64): always construct contains both blocking and non-blocking assignments
-Info (10281): Verilog HDL Declaration information at err_detect.v(37): object "BypPowerErr" differs only in case from object "byppowererr" in the same scope
