@@ -1,0 +1,11 @@
+Fitter Status : Successful - Mon Feb 17 17:31:00 2025
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : driver_board
+Top-level Entity Name : driver_board
+Family : MAX II
+Device : EPM1270T144I5
+Timing Models : Final
+Total logic elements : 835 / 1,270 ( 66 % )
+Total pins : 37 / 116 ( 32 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )
